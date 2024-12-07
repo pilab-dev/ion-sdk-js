@@ -11,15 +11,18 @@
 /* eslint-disable */
 // @ts-nocheck
 
-var jspb = require('google-protobuf');
+import jspb from 'google-protobuf';
+
 var goog = jspb;
 var global =
-    (typeof globalThis !== 'undefined' && globalThis) ||
-    (typeof window !== 'undefined' && window) ||
-    (typeof global !== 'undefined' && global) ||
-    (typeof self !== 'undefined' && self) ||
-    (function () { return this; }).call(null) ||
-    Function('return this')();
+  (typeof globalThis !== 'undefined' && globalThis) ||
+  (typeof window !== 'undefined' && window) ||
+  (typeof global !== 'undefined' && global) ||
+  (typeof self !== 'undefined' && self) ||
+  function () {
+    return this;
+  }.call(null) ||
+  Function('return this')();
 
 goog.exportSymbol('proto.rtc.ActiveSpeaker', null, global);
 goog.exportSymbol('proto.rtc.AudioLevelSpeaker', null, global);
@@ -51,7 +54,7 @@ goog.exportSymbol('proto.rtc.UpdateTrackReply', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.JoinRequest = function(opt_data) {
+proto.rtc.JoinRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.JoinRequest, jspb.Message);
@@ -72,7 +75,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.JoinReply = function(opt_data) {
+proto.rtc.JoinReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.JoinReply, jspb.Message);
@@ -93,7 +96,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.TrackInfo = function(opt_data) {
+proto.rtc.TrackInfo = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.TrackInfo, jspb.Message);
@@ -114,7 +117,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.SessionDescription = function(opt_data) {
+proto.rtc.SessionDescription = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, proto.rtc.SessionDescription.repeatedFields_, null);
 };
 goog.inherits(proto.rtc.SessionDescription, jspb.Message);
@@ -135,7 +138,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.Trickle = function(opt_data) {
+proto.rtc.Trickle = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.Trickle, jspb.Message);
@@ -156,7 +159,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.Error = function(opt_data) {
+proto.rtc.Error = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.Error, jspb.Message);
@@ -177,7 +180,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.TrackEvent = function(opt_data) {
+proto.rtc.TrackEvent = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, proto.rtc.TrackEvent.repeatedFields_, null);
 };
 goog.inherits(proto.rtc.TrackEvent, jspb.Message);
@@ -198,7 +201,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.Subscription = function(opt_data) {
+proto.rtc.Subscription = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.Subscription, jspb.Message);
@@ -219,7 +222,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.SubscriptionRequest = function(opt_data) {
+proto.rtc.SubscriptionRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, proto.rtc.SubscriptionRequest.repeatedFields_, null);
 };
 goog.inherits(proto.rtc.SubscriptionRequest, jspb.Message);
@@ -240,7 +243,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.SubscriptionReply = function(opt_data) {
+proto.rtc.SubscriptionReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.SubscriptionReply, jspb.Message);
@@ -261,7 +264,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.UpdateTrackReply = function(opt_data) {
+proto.rtc.UpdateTrackReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.UpdateTrackReply, jspb.Message);
@@ -282,7 +285,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.ActiveSpeaker = function(opt_data) {
+proto.rtc.ActiveSpeaker = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, proto.rtc.ActiveSpeaker.repeatedFields_, null);
 };
 goog.inherits(proto.rtc.ActiveSpeaker, jspb.Message);
@@ -303,7 +306,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.AudioLevelSpeaker = function(opt_data) {
+proto.rtc.AudioLevelSpeaker = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.rtc.AudioLevelSpeaker, jspb.Message);
@@ -324,7 +327,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.Request = function(opt_data) {
+proto.rtc.Request = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, proto.rtc.Request.oneofGroups_);
 };
 goog.inherits(proto.rtc.Request, jspb.Message);
@@ -345,7 +348,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.rtc.Reply = function(opt_data) {
+proto.rtc.Reply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, proto.rtc.Reply.oneofGroups_);
 };
 goog.inherits(proto.rtc.Reply, jspb.Message);
@@ -357,62 +360,58 @@ if (goog.DEBUG && !COMPILED) {
   proto.rtc.Reply.displayName = 'proto.rtc.Reply';
 }
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.JoinRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.JoinRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.JoinRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.JoinRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-configMap: (f = msg.getConfigMap()) ? f.toObject(includeInstance, undefined) : [],
-description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.JoinRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.JoinRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.JoinRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.JoinRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        uid: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        configMap: (f = msg.getConfigMap()) ? f.toObject(includeInstance, undefined) : [],
+        description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.JoinRequest}
  */
-proto.rtc.JoinRequest.deserializeBinary = function(bytes) {
+proto.rtc.JoinRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.JoinRequest;
+  var msg = new proto.rtc.JoinRequest();
   return proto.rtc.JoinRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -421,51 +420,57 @@ proto.rtc.JoinRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.JoinRequest}
  */
-proto.rtc.JoinRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.JoinRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setUid(value);
-      break;
-    case 3:
-      var value = msg.getConfigMap();
-      reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
-         });
-      break;
-    case 4:
-      var value = new proto.rtc.SessionDescription;
-      reader.readMessage(value,proto.rtc.SessionDescription.deserializeBinaryFromReader);
-      msg.setDescription(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setUid(value);
+        break;
+      case 3:
+        var value = msg.getConfigMap();
+        reader.readMessage(value, function (message, reader) {
+          jspb.Map.deserializeBinary(
+            message,
+            reader,
+            jspb.BinaryReader.prototype.readString,
+            jspb.BinaryReader.prototype.readString,
+            null,
+            '',
+            '',
+          );
+        });
+        break;
+      case 4:
+        var value = new proto.rtc.SessionDescription();
+        reader.readMessage(value, proto.rtc.SessionDescription.deserializeBinaryFromReader);
+        msg.setDescription(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.JoinRequest.prototype.serializeBinary = function() {
+proto.rtc.JoinRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.JoinRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -474,21 +479,15 @@ proto.rtc.JoinRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.JoinRequest.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.JoinRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getUid();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getConfigMap(true);
   if (f && f.getLength() > 0) {
@@ -496,50 +495,41 @@ proto.rtc.JoinRequest.serializeBinaryToWriter = function(message, writer) {
   }
   f = message.getDescription();
   if (f != null) {
-    writer.writeMessage(
-      4,
-      f,
-      proto.rtc.SessionDescription.serializeBinaryToWriter
-    );
+    writer.writeMessage(4, f, proto.rtc.SessionDescription.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.rtc.JoinRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.rtc.JoinRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.JoinRequest} returns this
  */
-proto.rtc.JoinRequest.prototype.setSid = function(value) {
+proto.rtc.JoinRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string uid = 2;
  * @return {string}
  */
-proto.rtc.JoinRequest.prototype.getUid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.JoinRequest.prototype.getUid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.JoinRequest} returns this
  */
-proto.rtc.JoinRequest.prototype.setUid = function(value) {
+proto.rtc.JoinRequest.prototype.setUid = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * map<string, string> config = 3;
@@ -547,116 +537,106 @@ proto.rtc.JoinRequest.prototype.setUid = function(value) {
  * empty, instead returning `undefined`
  * @return {!jspb.Map<string,string>}
  */
-proto.rtc.JoinRequest.prototype.getConfigMap = function(opt_noLazyCreate) {
-  return /** @type {!jspb.Map<string,string>} */ (
-      jspb.Message.getMapField(this, 3, opt_noLazyCreate,
-      null));
+proto.rtc.JoinRequest.prototype.getConfigMap = function (opt_noLazyCreate) {
+  return /** @type {!jspb.Map<string,string>} */ (jspb.Message.getMapField(this, 3, opt_noLazyCreate, null));
 };
-
 
 /**
  * Clears values from the map. The map will be non-null.
  * @return {!proto.rtc.JoinRequest} returns this
  */
-proto.rtc.JoinRequest.prototype.clearConfigMap = function() {
+proto.rtc.JoinRequest.prototype.clearConfigMap = function () {
   this.getConfigMap().clear();
   return this;
 };
-
 
 /**
  * optional SessionDescription description = 4;
  * @return {?proto.rtc.SessionDescription}
  */
-proto.rtc.JoinRequest.prototype.getDescription = function() {
-  return /** @type{?proto.rtc.SessionDescription} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.SessionDescription, 4));
+proto.rtc.JoinRequest.prototype.getDescription = function () {
+  return /** @type{?proto.rtc.SessionDescription} */ (jspb.Message.getWrapperField(
+    this,
+    proto.rtc.SessionDescription,
+    4,
+  ));
 };
-
 
 /**
  * @param {?proto.rtc.SessionDescription|undefined} value
  * @return {!proto.rtc.JoinRequest} returns this
-*/
-proto.rtc.JoinRequest.prototype.setDescription = function(value) {
+ */
+proto.rtc.JoinRequest.prototype.setDescription = function (value) {
   return jspb.Message.setWrapperField(this, 4, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.JoinRequest} returns this
  */
-proto.rtc.JoinRequest.prototype.clearDescription = function() {
+proto.rtc.JoinRequest.prototype.clearDescription = function () {
   return this.setDescription(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.JoinRequest.prototype.hasDescription = function() {
+proto.rtc.JoinRequest.prototype.hasDescription = function () {
   return jspb.Message.getField(this, 4) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.JoinReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.JoinReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.JoinReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.JoinReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
-description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.JoinReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.JoinReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.JoinReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.JoinReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
+        description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.JoinReply}
  */
-proto.rtc.JoinReply.deserializeBinary = function(bytes) {
+proto.rtc.JoinReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.JoinReply;
+  var msg = new proto.rtc.JoinReply();
   return proto.rtc.JoinReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -665,46 +645,44 @@ proto.rtc.JoinReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.JoinReply}
  */
-proto.rtc.JoinReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.JoinReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.rtc.Error;
-      reader.readMessage(value,proto.rtc.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    case 3:
-      var value = new proto.rtc.SessionDescription;
-      reader.readMessage(value,proto.rtc.SessionDescription.deserializeBinaryFromReader);
-      msg.setDescription(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.rtc.Error();
+        reader.readMessage(value, proto.rtc.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      case 3:
+        var value = new proto.rtc.SessionDescription();
+        reader.readMessage(value, proto.rtc.SessionDescription.deserializeBinaryFromReader);
+        msg.setDescription(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.JoinReply.prototype.serializeBinary = function() {
+proto.rtc.JoinReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.JoinReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -713,189 +691,164 @@ proto.rtc.JoinReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.JoinReply.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.JoinReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.rtc.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.rtc.Error.serializeBinaryToWriter);
   }
   f = message.getDescription();
   if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.rtc.SessionDescription.serializeBinaryToWriter
-    );
+    writer.writeMessage(3, f, proto.rtc.SessionDescription.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.rtc.JoinReply.prototype.getSuccess = function() {
+proto.rtc.JoinReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.JoinReply} returns this
  */
-proto.rtc.JoinReply.prototype.setSuccess = function(value) {
+proto.rtc.JoinReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.rtc.Error}
  */
-proto.rtc.JoinReply.prototype.getError = function() {
-  return /** @type{?proto.rtc.Error} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.Error, 2));
+proto.rtc.JoinReply.prototype.getError = function () {
+  return /** @type{?proto.rtc.Error} */ (jspb.Message.getWrapperField(this, proto.rtc.Error, 2));
 };
-
 
 /**
  * @param {?proto.rtc.Error|undefined} value
  * @return {!proto.rtc.JoinReply} returns this
-*/
-proto.rtc.JoinReply.prototype.setError = function(value) {
+ */
+proto.rtc.JoinReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.JoinReply} returns this
  */
-proto.rtc.JoinReply.prototype.clearError = function() {
+proto.rtc.JoinReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.JoinReply.prototype.hasError = function() {
+proto.rtc.JoinReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * optional SessionDescription description = 3;
  * @return {?proto.rtc.SessionDescription}
  */
-proto.rtc.JoinReply.prototype.getDescription = function() {
-  return /** @type{?proto.rtc.SessionDescription} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.SessionDescription, 3));
+proto.rtc.JoinReply.prototype.getDescription = function () {
+  return /** @type{?proto.rtc.SessionDescription} */ (jspb.Message.getWrapperField(
+    this,
+    proto.rtc.SessionDescription,
+    3,
+  ));
 };
-
 
 /**
  * @param {?proto.rtc.SessionDescription|undefined} value
  * @return {!proto.rtc.JoinReply} returns this
-*/
-proto.rtc.JoinReply.prototype.setDescription = function(value) {
+ */
+proto.rtc.JoinReply.prototype.setDescription = function (value) {
   return jspb.Message.setWrapperField(this, 3, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.JoinReply} returns this
  */
-proto.rtc.JoinReply.prototype.clearDescription = function() {
+proto.rtc.JoinReply.prototype.clearDescription = function () {
   return this.setDescription(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.JoinReply.prototype.hasDescription = function() {
+proto.rtc.JoinReply.prototype.hasDescription = function () {
   return jspb.Message.getField(this, 3) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.TrackInfo.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.TrackInfo.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.TrackInfo} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.TrackInfo.toObject = function(includeInstance, msg) {
-  var f, obj = {
-id: jspb.Message.getFieldWithDefault(msg, 1, ""),
-kind: jspb.Message.getFieldWithDefault(msg, 2, ""),
-muted: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-type: jspb.Message.getFieldWithDefault(msg, 4, 0),
-streamid: jspb.Message.getFieldWithDefault(msg, 5, ""),
-label: jspb.Message.getFieldWithDefault(msg, 6, ""),
-layer: jspb.Message.getFieldWithDefault(msg, 7, ""),
-width: jspb.Message.getFieldWithDefault(msg, 8, 0),
-height: jspb.Message.getFieldWithDefault(msg, 9, 0),
-framerate: jspb.Message.getFieldWithDefault(msg, 10, 0)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.TrackInfo.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.TrackInfo.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.TrackInfo} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.TrackInfo.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        id: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        kind: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        muted: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+        type: jspb.Message.getFieldWithDefault(msg, 4, 0),
+        streamid: jspb.Message.getFieldWithDefault(msg, 5, ''),
+        label: jspb.Message.getFieldWithDefault(msg, 6, ''),
+        layer: jspb.Message.getFieldWithDefault(msg, 7, ''),
+        width: jspb.Message.getFieldWithDefault(msg, 8, 0),
+        height: jspb.Message.getFieldWithDefault(msg, 9, 0),
+        framerate: jspb.Message.getFieldWithDefault(msg, 10, 0),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.TrackInfo}
  */
-proto.rtc.TrackInfo.deserializeBinary = function(bytes) {
+proto.rtc.TrackInfo.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.TrackInfo;
+  var msg = new proto.rtc.TrackInfo();
   return proto.rtc.TrackInfo.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -904,72 +857,70 @@ proto.rtc.TrackInfo.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.TrackInfo}
  */
-proto.rtc.TrackInfo.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.TrackInfo.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setId(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setKind(value);
-      break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setMuted(value);
-      break;
-    case 4:
-      var value = /** @type {!proto.rtc.MediaType} */ (reader.readEnum());
-      msg.setType(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setStreamid(value);
-      break;
-    case 6:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setLabel(value);
-      break;
-    case 7:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setLayer(value);
-      break;
-    case 8:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setWidth(value);
-      break;
-    case 9:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setHeight(value);
-      break;
-    case 10:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setFramerate(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setId(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setKind(value);
+        break;
+      case 3:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setMuted(value);
+        break;
+      case 4:
+        var value = /** @type {!proto.rtc.MediaType} */ (reader.readEnum());
+        msg.setType(value);
+        break;
+      case 5:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setStreamid(value);
+        break;
+      case 6:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setLabel(value);
+        break;
+      case 7:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setLayer(value);
+        break;
+      case 8:
+        var value = /** @type {number} */ (reader.readUint32());
+        msg.setWidth(value);
+        break;
+      case 9:
+        var value = /** @type {number} */ (reader.readUint32());
+        msg.setHeight(value);
+        break;
+      case 10:
+        var value = /** @type {number} */ (reader.readUint32());
+        msg.setFramerate(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.TrackInfo.prototype.serializeBinary = function() {
+proto.rtc.TrackInfo.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.TrackInfo.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -978,261 +929,209 @@ proto.rtc.TrackInfo.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.TrackInfo.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.TrackInfo.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getId();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getKind();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getMuted();
   if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
+    writer.writeBool(3, f);
   }
   f = message.getType();
   if (f !== 0.0) {
-    writer.writeEnum(
-      4,
-      f
-    );
+    writer.writeEnum(4, f);
   }
   f = message.getStreamid();
   if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
+    writer.writeString(5, f);
   }
   f = message.getLabel();
   if (f.length > 0) {
-    writer.writeString(
-      6,
-      f
-    );
+    writer.writeString(6, f);
   }
   f = message.getLayer();
   if (f.length > 0) {
-    writer.writeString(
-      7,
-      f
-    );
+    writer.writeString(7, f);
   }
   f = message.getWidth();
   if (f !== 0) {
-    writer.writeUint32(
-      8,
-      f
-    );
+    writer.writeUint32(8, f);
   }
   f = message.getHeight();
   if (f !== 0) {
-    writer.writeUint32(
-      9,
-      f
-    );
+    writer.writeUint32(9, f);
   }
   f = message.getFramerate();
   if (f !== 0) {
-    writer.writeUint32(
-      10,
-      f
-    );
+    writer.writeUint32(10, f);
   }
 };
-
 
 /**
  * optional string id = 1;
  * @return {string}
  */
-proto.rtc.TrackInfo.prototype.getId = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.rtc.TrackInfo.prototype.getId = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setId = function(value) {
+proto.rtc.TrackInfo.prototype.setId = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string kind = 2;
  * @return {string}
  */
-proto.rtc.TrackInfo.prototype.getKind = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.TrackInfo.prototype.getKind = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setKind = function(value) {
+proto.rtc.TrackInfo.prototype.setKind = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional bool muted = 3;
  * @return {boolean}
  */
-proto.rtc.TrackInfo.prototype.getMuted = function() {
+proto.rtc.TrackInfo.prototype.getMuted = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setMuted = function(value) {
+proto.rtc.TrackInfo.prototype.setMuted = function (value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
-
 
 /**
  * optional MediaType type = 4;
  * @return {!proto.rtc.MediaType}
  */
-proto.rtc.TrackInfo.prototype.getType = function() {
+proto.rtc.TrackInfo.prototype.getType = function () {
   return /** @type {!proto.rtc.MediaType} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
-
 
 /**
  * @param {!proto.rtc.MediaType} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setType = function(value) {
+proto.rtc.TrackInfo.prototype.setType = function (value) {
   return jspb.Message.setProto3EnumField(this, 4, value);
 };
-
 
 /**
  * optional string streamId = 5;
  * @return {string}
  */
-proto.rtc.TrackInfo.prototype.getStreamid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+proto.rtc.TrackInfo.prototype.getStreamid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setStreamid = function(value) {
+proto.rtc.TrackInfo.prototype.setStreamid = function (value) {
   return jspb.Message.setProto3StringField(this, 5, value);
 };
-
 
 /**
  * optional string label = 6;
  * @return {string}
  */
-proto.rtc.TrackInfo.prototype.getLabel = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+proto.rtc.TrackInfo.prototype.getLabel = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setLabel = function(value) {
+proto.rtc.TrackInfo.prototype.setLabel = function (value) {
   return jspb.Message.setProto3StringField(this, 6, value);
 };
-
 
 /**
  * optional string layer = 7;
  * @return {string}
  */
-proto.rtc.TrackInfo.prototype.getLayer = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+proto.rtc.TrackInfo.prototype.getLayer = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setLayer = function(value) {
+proto.rtc.TrackInfo.prototype.setLayer = function (value) {
   return jspb.Message.setProto3StringField(this, 7, value);
 };
-
 
 /**
  * optional uint32 width = 8;
  * @return {number}
  */
-proto.rtc.TrackInfo.prototype.getWidth = function() {
+proto.rtc.TrackInfo.prototype.getWidth = function () {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
-
 
 /**
  * @param {number} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setWidth = function(value) {
+proto.rtc.TrackInfo.prototype.setWidth = function (value) {
   return jspb.Message.setProto3IntField(this, 8, value);
 };
-
 
 /**
  * optional uint32 height = 9;
  * @return {number}
  */
-proto.rtc.TrackInfo.prototype.getHeight = function() {
+proto.rtc.TrackInfo.prototype.getHeight = function () {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
 };
-
 
 /**
  * @param {number} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setHeight = function(value) {
+proto.rtc.TrackInfo.prototype.setHeight = function (value) {
   return jspb.Message.setProto3IntField(this, 9, value);
 };
-
 
 /**
  * optional uint32 frameRate = 10;
  * @return {number}
  */
-proto.rtc.TrackInfo.prototype.getFramerate = function() {
+proto.rtc.TrackInfo.prototype.getFramerate = function () {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
 };
-
 
 /**
  * @param {number} value
  * @return {!proto.rtc.TrackInfo} returns this
  */
-proto.rtc.TrackInfo.prototype.setFramerate = function(value) {
+proto.rtc.TrackInfo.prototype.setFramerate = function (value) {
   return jspb.Message.setProto3IntField(this, 10, value);
 };
-
-
 
 /**
  * List of repeated fields within this message type.
@@ -1241,63 +1140,62 @@ proto.rtc.TrackInfo.prototype.setFramerate = function(value) {
  */
 proto.rtc.SessionDescription.repeatedFields_ = [4];
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.SessionDescription.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.SessionDescription.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.SessionDescription} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.SessionDescription.toObject = function(includeInstance, msg) {
-  var f, obj = {
-target: jspb.Message.getFieldWithDefault(msg, 1, 0),
-type: jspb.Message.getFieldWithDefault(msg, 2, ""),
-sdp: jspb.Message.getFieldWithDefault(msg, 3, ""),
-trackinfosList: jspb.Message.toObjectList(msg.getTrackinfosList(),
-    proto.rtc.TrackInfo.toObject, includeInstance)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.SessionDescription.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.SessionDescription.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.SessionDescription} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.SessionDescription.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        target: jspb.Message.getFieldWithDefault(msg, 1, 0),
+        type: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        sdp: jspb.Message.getFieldWithDefault(msg, 3, ''),
+        trackinfosList: jspb.Message.toObjectList(
+          msg.getTrackinfosList(),
+          proto.rtc.TrackInfo.toObject,
+          includeInstance,
+        ),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.SessionDescription}
  */
-proto.rtc.SessionDescription.deserializeBinary = function(bytes) {
+proto.rtc.SessionDescription.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.SessionDescription;
+  var msg = new proto.rtc.SessionDescription();
   return proto.rtc.SessionDescription.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1306,49 +1204,47 @@ proto.rtc.SessionDescription.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.SessionDescription}
  */
-proto.rtc.SessionDescription.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.SessionDescription.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {!proto.rtc.Target} */ (reader.readEnum());
-      msg.setTarget(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setType(value);
-      break;
-    case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSdp(value);
-      break;
-    case 4:
-      var value = new proto.rtc.TrackInfo;
-      reader.readMessage(value,proto.rtc.TrackInfo.deserializeBinaryFromReader);
-      msg.addTrackinfos(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {!proto.rtc.Target} */ (reader.readEnum());
+        msg.setTarget(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setType(value);
+        break;
+      case 3:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSdp(value);
+        break;
+      case 4:
+        var value = new proto.rtc.TrackInfo();
+        reader.readMessage(value, proto.rtc.TrackInfo.deserializeBinaryFromReader);
+        msg.addTrackinfos(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.SessionDescription.prototype.serializeBinary = function() {
+proto.rtc.SessionDescription.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.SessionDescription.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1357,187 +1253,161 @@ proto.rtc.SessionDescription.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.SessionDescription.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.SessionDescription.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getTarget();
   if (f !== 0.0) {
-    writer.writeEnum(
-      1,
-      f
-    );
+    writer.writeEnum(1, f);
   }
   f = message.getType();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getSdp();
   if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
+    writer.writeString(3, f);
   }
   f = message.getTrackinfosList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      4,
-      f,
-      proto.rtc.TrackInfo.serializeBinaryToWriter
-    );
+    writer.writeRepeatedMessage(4, f, proto.rtc.TrackInfo.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional Target target = 1;
  * @return {!proto.rtc.Target}
  */
-proto.rtc.SessionDescription.prototype.getTarget = function() {
+proto.rtc.SessionDescription.prototype.getTarget = function () {
   return /** @type {!proto.rtc.Target} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
-
 
 /**
  * @param {!proto.rtc.Target} value
  * @return {!proto.rtc.SessionDescription} returns this
  */
-proto.rtc.SessionDescription.prototype.setTarget = function(value) {
+proto.rtc.SessionDescription.prototype.setTarget = function (value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
-
 
 /**
  * optional string type = 2;
  * @return {string}
  */
-proto.rtc.SessionDescription.prototype.getType = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.SessionDescription.prototype.getType = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.SessionDescription} returns this
  */
-proto.rtc.SessionDescription.prototype.setType = function(value) {
+proto.rtc.SessionDescription.prototype.setType = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional string sdp = 3;
  * @return {string}
  */
-proto.rtc.SessionDescription.prototype.getSdp = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+proto.rtc.SessionDescription.prototype.getSdp = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.SessionDescription} returns this
  */
-proto.rtc.SessionDescription.prototype.setSdp = function(value) {
+proto.rtc.SessionDescription.prototype.setSdp = function (value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
-
 
 /**
  * repeated TrackInfo trackInfos = 4;
  * @return {!Array<!proto.rtc.TrackInfo>}
  */
-proto.rtc.SessionDescription.prototype.getTrackinfosList = function() {
-  return /** @type{!Array<!proto.rtc.TrackInfo>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.rtc.TrackInfo, 4));
+proto.rtc.SessionDescription.prototype.getTrackinfosList = function () {
+  return /** @type{!Array<!proto.rtc.TrackInfo>} */ (jspb.Message.getRepeatedWrapperField(
+    this,
+    proto.rtc.TrackInfo,
+    4,
+  ));
 };
-
 
 /**
  * @param {!Array<!proto.rtc.TrackInfo>} value
  * @return {!proto.rtc.SessionDescription} returns this
-*/
-proto.rtc.SessionDescription.prototype.setTrackinfosList = function(value) {
+ */
+proto.rtc.SessionDescription.prototype.setTrackinfosList = function (value) {
   return jspb.Message.setRepeatedWrapperField(this, 4, value);
 };
-
 
 /**
  * @param {!proto.rtc.TrackInfo=} opt_value
  * @param {number=} opt_index
  * @return {!proto.rtc.TrackInfo}
  */
-proto.rtc.SessionDescription.prototype.addTrackinfos = function(opt_value, opt_index) {
+proto.rtc.SessionDescription.prototype.addTrackinfos = function (opt_value, opt_index) {
   return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.rtc.TrackInfo, opt_index);
 };
-
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.rtc.SessionDescription} returns this
  */
-proto.rtc.SessionDescription.prototype.clearTrackinfosList = function() {
+proto.rtc.SessionDescription.prototype.clearTrackinfosList = function () {
   return this.setTrackinfosList([]);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.Trickle.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.Trickle.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.Trickle} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.Trickle.toObject = function(includeInstance, msg) {
-  var f, obj = {
-target: jspb.Message.getFieldWithDefault(msg, 1, 0),
-init: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.Trickle.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.Trickle.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.Trickle} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.Trickle.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        target: jspb.Message.getFieldWithDefault(msg, 1, 0),
+        init: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.Trickle}
  */
-proto.rtc.Trickle.deserializeBinary = function(bytes) {
+proto.rtc.Trickle.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.Trickle;
+  var msg = new proto.rtc.Trickle();
   return proto.rtc.Trickle.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1546,40 +1416,38 @@ proto.rtc.Trickle.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.Trickle}
  */
-proto.rtc.Trickle.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.Trickle.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {!proto.rtc.Target} */ (reader.readEnum());
-      msg.setTarget(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setInit(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {!proto.rtc.Target} */ (reader.readEnum());
+        msg.setTarget(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setInit(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.Trickle.prototype.serializeBinary = function() {
+proto.rtc.Trickle.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.Trickle.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1588,116 +1456,100 @@ proto.rtc.Trickle.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.Trickle.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.Trickle.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getTarget();
   if (f !== 0.0) {
-    writer.writeEnum(
-      1,
-      f
-    );
+    writer.writeEnum(1, f);
   }
   f = message.getInit();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional Target target = 1;
  * @return {!proto.rtc.Target}
  */
-proto.rtc.Trickle.prototype.getTarget = function() {
+proto.rtc.Trickle.prototype.getTarget = function () {
   return /** @type {!proto.rtc.Target} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
-
 
 /**
  * @param {!proto.rtc.Target} value
  * @return {!proto.rtc.Trickle} returns this
  */
-proto.rtc.Trickle.prototype.setTarget = function(value) {
+proto.rtc.Trickle.prototype.setTarget = function (value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
-
 
 /**
  * optional string init = 2;
  * @return {string}
  */
-proto.rtc.Trickle.prototype.getInit = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.Trickle.prototype.getInit = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.Trickle} returns this
  */
-proto.rtc.Trickle.prototype.setInit = function(value) {
+proto.rtc.Trickle.prototype.setInit = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.Error.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.Error.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.Error} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.Error.toObject = function(includeInstance, msg) {
-  var f, obj = {
-code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.Error.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.Error.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.Error} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.Error.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+        reason: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.Error}
  */
-proto.rtc.Error.deserializeBinary = function(bytes) {
+proto.rtc.Error.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.Error;
+  var msg = new proto.rtc.Error();
   return proto.rtc.Error.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1706,40 +1558,38 @@ proto.rtc.Error.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.Error}
  */
-proto.rtc.Error.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.Error.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setCode(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setReason(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {number} */ (reader.readInt32());
+        msg.setCode(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setReason(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.Error.prototype.serializeBinary = function() {
+proto.rtc.Error.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.Error.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1748,61 +1598,49 @@ proto.rtc.Error.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.Error.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.Error.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0) {
-    writer.writeInt32(
-      1,
-      f
-    );
+    writer.writeInt32(1, f);
   }
   f = message.getReason();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional int32 code = 1;
  * @return {number}
  */
-proto.rtc.Error.prototype.getCode = function() {
+proto.rtc.Error.prototype.getCode = function () {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
-
 
 /**
  * @param {number} value
  * @return {!proto.rtc.Error} returns this
  */
-proto.rtc.Error.prototype.setCode = function(value) {
+proto.rtc.Error.prototype.setCode = function (value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
-
 
 /**
  * optional string reason = 2;
  * @return {string}
  */
-proto.rtc.Error.prototype.getReason = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.Error.prototype.getReason = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.Error} returns this
  */
-proto.rtc.Error.prototype.setReason = function(value) {
+proto.rtc.Error.prototype.setReason = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
-
 
 /**
  * List of repeated fields within this message type.
@@ -1811,62 +1649,57 @@ proto.rtc.Error.prototype.setReason = function(value) {
  */
 proto.rtc.TrackEvent.repeatedFields_ = [3];
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.TrackEvent.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.TrackEvent.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.TrackEvent} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.TrackEvent.toObject = function(includeInstance, msg) {
-  var f, obj = {
-state: jspb.Message.getFieldWithDefault(msg, 1, 0),
-uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-tracksList: jspb.Message.toObjectList(msg.getTracksList(),
-    proto.rtc.TrackInfo.toObject, includeInstance)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.TrackEvent.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.TrackEvent.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.TrackEvent} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.TrackEvent.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        state: jspb.Message.getFieldWithDefault(msg, 1, 0),
+        uid: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        tracksList: jspb.Message.toObjectList(msg.getTracksList(), proto.rtc.TrackInfo.toObject, includeInstance),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.TrackEvent}
  */
-proto.rtc.TrackEvent.deserializeBinary = function(bytes) {
+proto.rtc.TrackEvent.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.TrackEvent;
+  var msg = new proto.rtc.TrackEvent();
   return proto.rtc.TrackEvent.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1875,45 +1708,43 @@ proto.rtc.TrackEvent.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.TrackEvent}
  */
-proto.rtc.TrackEvent.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.TrackEvent.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {!proto.rtc.TrackEvent.State} */ (reader.readEnum());
-      msg.setState(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setUid(value);
-      break;
-    case 3:
-      var value = new proto.rtc.TrackInfo;
-      reader.readMessage(value,proto.rtc.TrackInfo.deserializeBinaryFromReader);
-      msg.addTracks(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {!proto.rtc.TrackEvent.State} */ (reader.readEnum());
+        msg.setState(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setUid(value);
+        break;
+      case 3:
+        var value = new proto.rtc.TrackInfo();
+        reader.readMessage(value, proto.rtc.TrackInfo.deserializeBinaryFromReader);
+        msg.addTracks(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.TrackEvent.prototype.serializeBinary = function() {
+proto.rtc.TrackEvent.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.TrackEvent.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1922,32 +1753,21 @@ proto.rtc.TrackEvent.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.TrackEvent.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.TrackEvent.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getState();
   if (f !== 0.0) {
-    writer.writeEnum(
-      1,
-      f
-    );
+    writer.writeEnum(1, f);
   }
   f = message.getUid();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getTracksList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      3,
-      f,
-      proto.rtc.TrackInfo.serializeBinaryToWriter
-    );
+    writer.writeRepeatedMessage(3, f, proto.rtc.TrackInfo.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * @enum {number}
@@ -1955,140 +1775,130 @@ proto.rtc.TrackEvent.serializeBinaryToWriter = function(message, writer) {
 proto.rtc.TrackEvent.State = {
   ADD: 0,
   UPDATE: 1,
-  REMOVE: 2
+  REMOVE: 2,
 };
 
 /**
  * optional State state = 1;
  * @return {!proto.rtc.TrackEvent.State}
  */
-proto.rtc.TrackEvent.prototype.getState = function() {
+proto.rtc.TrackEvent.prototype.getState = function () {
   return /** @type {!proto.rtc.TrackEvent.State} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
-
 
 /**
  * @param {!proto.rtc.TrackEvent.State} value
  * @return {!proto.rtc.TrackEvent} returns this
  */
-proto.rtc.TrackEvent.prototype.setState = function(value) {
+proto.rtc.TrackEvent.prototype.setState = function (value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
-
 
 /**
  * optional string uid = 2;
  * @return {string}
  */
-proto.rtc.TrackEvent.prototype.getUid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.TrackEvent.prototype.getUid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.TrackEvent} returns this
  */
-proto.rtc.TrackEvent.prototype.setUid = function(value) {
+proto.rtc.TrackEvent.prototype.setUid = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * repeated TrackInfo tracks = 3;
  * @return {!Array<!proto.rtc.TrackInfo>}
  */
-proto.rtc.TrackEvent.prototype.getTracksList = function() {
-  return /** @type{!Array<!proto.rtc.TrackInfo>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.rtc.TrackInfo, 3));
+proto.rtc.TrackEvent.prototype.getTracksList = function () {
+  return /** @type{!Array<!proto.rtc.TrackInfo>} */ (jspb.Message.getRepeatedWrapperField(
+    this,
+    proto.rtc.TrackInfo,
+    3,
+  ));
 };
-
 
 /**
  * @param {!Array<!proto.rtc.TrackInfo>} value
  * @return {!proto.rtc.TrackEvent} returns this
-*/
-proto.rtc.TrackEvent.prototype.setTracksList = function(value) {
+ */
+proto.rtc.TrackEvent.prototype.setTracksList = function (value) {
   return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
-
 
 /**
  * @param {!proto.rtc.TrackInfo=} opt_value
  * @param {number=} opt_index
  * @return {!proto.rtc.TrackInfo}
  */
-proto.rtc.TrackEvent.prototype.addTracks = function(opt_value, opt_index) {
+proto.rtc.TrackEvent.prototype.addTracks = function (opt_value, opt_index) {
   return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.rtc.TrackInfo, opt_index);
 };
-
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.rtc.TrackEvent} returns this
  */
-proto.rtc.TrackEvent.prototype.clearTracksList = function() {
+proto.rtc.TrackEvent.prototype.clearTracksList = function () {
   return this.setTracksList([]);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.Subscription.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.Subscription.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.Subscription} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.Subscription.toObject = function(includeInstance, msg) {
-  var f, obj = {
-trackid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-mute: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-subscribe: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
-layer: jspb.Message.getFieldWithDefault(msg, 5, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.Subscription.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.Subscription.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.Subscription} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.Subscription.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        trackid: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        mute: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+        subscribe: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
+        layer: jspb.Message.getFieldWithDefault(msg, 5, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.Subscription}
  */
-proto.rtc.Subscription.deserializeBinary = function(bytes) {
+proto.rtc.Subscription.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.Subscription;
+  var msg = new proto.rtc.Subscription();
   return proto.rtc.Subscription.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2097,48 +1907,46 @@ proto.rtc.Subscription.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.Subscription}
  */
-proto.rtc.Subscription.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.Subscription.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setTrackid(value);
-      break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setMute(value);
-      break;
-    case 4:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSubscribe(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setLayer(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setTrackid(value);
+        break;
+      case 3:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setMute(value);
+        break;
+      case 4:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSubscribe(value);
+        break;
+      case 5:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setLayer(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.Subscription.prototype.serializeBinary = function() {
+proto.rtc.Subscription.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.Subscription.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2147,111 +1955,89 @@ proto.rtc.Subscription.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.Subscription.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.Subscription.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getTrackid();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getMute();
   if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
+    writer.writeBool(3, f);
   }
   f = message.getSubscribe();
   if (f) {
-    writer.writeBool(
-      4,
-      f
-    );
+    writer.writeBool(4, f);
   }
   f = message.getLayer();
   if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
+    writer.writeString(5, f);
   }
 };
-
 
 /**
  * optional string trackId = 2;
  * @return {string}
  */
-proto.rtc.Subscription.prototype.getTrackid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.rtc.Subscription.prototype.getTrackid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.Subscription} returns this
  */
-proto.rtc.Subscription.prototype.setTrackid = function(value) {
+proto.rtc.Subscription.prototype.setTrackid = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional bool mute = 3;
  * @return {boolean}
  */
-proto.rtc.Subscription.prototype.getMute = function() {
+proto.rtc.Subscription.prototype.getMute = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.Subscription} returns this
  */
-proto.rtc.Subscription.prototype.setMute = function(value) {
+proto.rtc.Subscription.prototype.setMute = function (value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
-
 
 /**
  * optional bool subscribe = 4;
  * @return {boolean}
  */
-proto.rtc.Subscription.prototype.getSubscribe = function() {
+proto.rtc.Subscription.prototype.getSubscribe = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.Subscription} returns this
  */
-proto.rtc.Subscription.prototype.setSubscribe = function(value) {
+proto.rtc.Subscription.prototype.setSubscribe = function (value) {
   return jspb.Message.setProto3BooleanField(this, 4, value);
 };
-
 
 /**
  * optional string layer = 5;
  * @return {string}
  */
-proto.rtc.Subscription.prototype.getLayer = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+proto.rtc.Subscription.prototype.getLayer = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.Subscription} returns this
  */
-proto.rtc.Subscription.prototype.setLayer = function(value) {
+proto.rtc.Subscription.prototype.setLayer = function (value) {
   return jspb.Message.setProto3StringField(this, 5, value);
 };
-
-
 
 /**
  * List of repeated fields within this message type.
@@ -2260,60 +2046,59 @@ proto.rtc.Subscription.prototype.setLayer = function(value) {
  */
 proto.rtc.SubscriptionRequest.repeatedFields_ = [1];
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.SubscriptionRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.SubscriptionRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.SubscriptionRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.SubscriptionRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-subscriptionsList: jspb.Message.toObjectList(msg.getSubscriptionsList(),
-    proto.rtc.Subscription.toObject, includeInstance)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.SubscriptionRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.SubscriptionRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.SubscriptionRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.SubscriptionRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        subscriptionsList: jspb.Message.toObjectList(
+          msg.getSubscriptionsList(),
+          proto.rtc.Subscription.toObject,
+          includeInstance,
+        ),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.SubscriptionRequest}
  */
-proto.rtc.SubscriptionRequest.deserializeBinary = function(bytes) {
+proto.rtc.SubscriptionRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.SubscriptionRequest;
+  var msg = new proto.rtc.SubscriptionRequest();
   return proto.rtc.SubscriptionRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2322,37 +2107,35 @@ proto.rtc.SubscriptionRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.SubscriptionRequest}
  */
-proto.rtc.SubscriptionRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.SubscriptionRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.rtc.Subscription;
-      reader.readMessage(value,proto.rtc.Subscription.deserializeBinaryFromReader);
-      msg.addSubscriptions(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.rtc.Subscription();
+        reader.readMessage(value, proto.rtc.Subscription.deserializeBinaryFromReader);
+        msg.addSubscriptions(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.SubscriptionRequest.prototype.serializeBinary = function() {
+proto.rtc.SubscriptionRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.SubscriptionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2361,112 +2144,101 @@ proto.rtc.SubscriptionRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.SubscriptionRequest.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.SubscriptionRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSubscriptionsList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      1,
-      f,
-      proto.rtc.Subscription.serializeBinaryToWriter
-    );
+    writer.writeRepeatedMessage(1, f, proto.rtc.Subscription.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * repeated Subscription subscriptions = 1;
  * @return {!Array<!proto.rtc.Subscription>}
  */
-proto.rtc.SubscriptionRequest.prototype.getSubscriptionsList = function() {
-  return /** @type{!Array<!proto.rtc.Subscription>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.rtc.Subscription, 1));
+proto.rtc.SubscriptionRequest.prototype.getSubscriptionsList = function () {
+  return /** @type{!Array<!proto.rtc.Subscription>} */ (jspb.Message.getRepeatedWrapperField(
+    this,
+    proto.rtc.Subscription,
+    1,
+  ));
 };
-
 
 /**
  * @param {!Array<!proto.rtc.Subscription>} value
  * @return {!proto.rtc.SubscriptionRequest} returns this
-*/
-proto.rtc.SubscriptionRequest.prototype.setSubscriptionsList = function(value) {
+ */
+proto.rtc.SubscriptionRequest.prototype.setSubscriptionsList = function (value) {
   return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
-
 
 /**
  * @param {!proto.rtc.Subscription=} opt_value
  * @param {number=} opt_index
  * @return {!proto.rtc.Subscription}
  */
-proto.rtc.SubscriptionRequest.prototype.addSubscriptions = function(opt_value, opt_index) {
+proto.rtc.SubscriptionRequest.prototype.addSubscriptions = function (opt_value, opt_index) {
   return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.rtc.Subscription, opt_index);
 };
-
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.rtc.SubscriptionRequest} returns this
  */
-proto.rtc.SubscriptionRequest.prototype.clearSubscriptionsList = function() {
+proto.rtc.SubscriptionRequest.prototype.clearSubscriptionsList = function () {
   return this.setSubscriptionsList([]);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.SubscriptionReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.SubscriptionReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.SubscriptionReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.SubscriptionReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.SubscriptionReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.SubscriptionReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.SubscriptionReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.SubscriptionReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.SubscriptionReply}
  */
-proto.rtc.SubscriptionReply.deserializeBinary = function(bytes) {
+proto.rtc.SubscriptionReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.SubscriptionReply;
+  var msg = new proto.rtc.SubscriptionReply();
   return proto.rtc.SubscriptionReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2475,41 +2247,39 @@ proto.rtc.SubscriptionReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.SubscriptionReply}
  */
-proto.rtc.SubscriptionReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.SubscriptionReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.rtc.Error;
-      reader.readMessage(value,proto.rtc.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.rtc.Error();
+        reader.readMessage(value, proto.rtc.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.SubscriptionReply.prototype.serializeBinary = function() {
+proto.rtc.SubscriptionReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.SubscriptionReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2518,136 +2288,116 @@ proto.rtc.SubscriptionReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.SubscriptionReply.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.SubscriptionReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.rtc.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.rtc.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.rtc.SubscriptionReply.prototype.getSuccess = function() {
+proto.rtc.SubscriptionReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.SubscriptionReply} returns this
  */
-proto.rtc.SubscriptionReply.prototype.setSuccess = function(value) {
+proto.rtc.SubscriptionReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.rtc.Error}
  */
-proto.rtc.SubscriptionReply.prototype.getError = function() {
-  return /** @type{?proto.rtc.Error} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.Error, 2));
+proto.rtc.SubscriptionReply.prototype.getError = function () {
+  return /** @type{?proto.rtc.Error} */ (jspb.Message.getWrapperField(this, proto.rtc.Error, 2));
 };
-
 
 /**
  * @param {?proto.rtc.Error|undefined} value
  * @return {!proto.rtc.SubscriptionReply} returns this
-*/
-proto.rtc.SubscriptionReply.prototype.setError = function(value) {
+ */
+proto.rtc.SubscriptionReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.SubscriptionReply} returns this
  */
-proto.rtc.SubscriptionReply.prototype.clearError = function() {
+proto.rtc.SubscriptionReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.SubscriptionReply.prototype.hasError = function() {
+proto.rtc.SubscriptionReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.UpdateTrackReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.UpdateTrackReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.UpdateTrackReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.UpdateTrackReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.UpdateTrackReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.UpdateTrackReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.UpdateTrackReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.UpdateTrackReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.UpdateTrackReply}
  */
-proto.rtc.UpdateTrackReply.deserializeBinary = function(bytes) {
+proto.rtc.UpdateTrackReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.UpdateTrackReply;
+  var msg = new proto.rtc.UpdateTrackReply();
   return proto.rtc.UpdateTrackReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2656,41 +2406,39 @@ proto.rtc.UpdateTrackReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.UpdateTrackReply}
  */
-proto.rtc.UpdateTrackReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.UpdateTrackReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.rtc.Error;
-      reader.readMessage(value,proto.rtc.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.rtc.Error();
+        reader.readMessage(value, proto.rtc.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.UpdateTrackReply.prototype.serializeBinary = function() {
+proto.rtc.UpdateTrackReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.UpdateTrackReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2699,81 +2447,65 @@ proto.rtc.UpdateTrackReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.UpdateTrackReply.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.UpdateTrackReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.rtc.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.rtc.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.rtc.UpdateTrackReply.prototype.getSuccess = function() {
+proto.rtc.UpdateTrackReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.UpdateTrackReply} returns this
  */
-proto.rtc.UpdateTrackReply.prototype.setSuccess = function(value) {
+proto.rtc.UpdateTrackReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.rtc.Error}
  */
-proto.rtc.UpdateTrackReply.prototype.getError = function() {
-  return /** @type{?proto.rtc.Error} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.Error, 2));
+proto.rtc.UpdateTrackReply.prototype.getError = function () {
+  return /** @type{?proto.rtc.Error} */ (jspb.Message.getWrapperField(this, proto.rtc.Error, 2));
 };
-
 
 /**
  * @param {?proto.rtc.Error|undefined} value
  * @return {!proto.rtc.UpdateTrackReply} returns this
-*/
-proto.rtc.UpdateTrackReply.prototype.setError = function(value) {
+ */
+proto.rtc.UpdateTrackReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.UpdateTrackReply} returns this
  */
-proto.rtc.UpdateTrackReply.prototype.clearError = function() {
+proto.rtc.UpdateTrackReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.UpdateTrackReply.prototype.hasError = function() {
+proto.rtc.UpdateTrackReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
-
 
 /**
  * List of repeated fields within this message type.
@@ -2782,60 +2514,59 @@ proto.rtc.UpdateTrackReply.prototype.hasError = function() {
  */
 proto.rtc.ActiveSpeaker.repeatedFields_ = [1];
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.ActiveSpeaker.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.ActiveSpeaker.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.ActiveSpeaker} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.ActiveSpeaker.toObject = function(includeInstance, msg) {
-  var f, obj = {
-speakersList: jspb.Message.toObjectList(msg.getSpeakersList(),
-    proto.rtc.AudioLevelSpeaker.toObject, includeInstance)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.ActiveSpeaker.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.ActiveSpeaker.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.ActiveSpeaker} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.ActiveSpeaker.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        speakersList: jspb.Message.toObjectList(
+          msg.getSpeakersList(),
+          proto.rtc.AudioLevelSpeaker.toObject,
+          includeInstance,
+        ),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.ActiveSpeaker}
  */
-proto.rtc.ActiveSpeaker.deserializeBinary = function(bytes) {
+proto.rtc.ActiveSpeaker.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.ActiveSpeaker;
+  var msg = new proto.rtc.ActiveSpeaker();
   return proto.rtc.ActiveSpeaker.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2844,37 +2575,35 @@ proto.rtc.ActiveSpeaker.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.ActiveSpeaker}
  */
-proto.rtc.ActiveSpeaker.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.ActiveSpeaker.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.rtc.AudioLevelSpeaker;
-      reader.readMessage(value,proto.rtc.AudioLevelSpeaker.deserializeBinaryFromReader);
-      msg.addSpeakers(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.rtc.AudioLevelSpeaker();
+        reader.readMessage(value, proto.rtc.AudioLevelSpeaker.deserializeBinaryFromReader);
+        msg.addSpeakers(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.ActiveSpeaker.prototype.serializeBinary = function() {
+proto.rtc.ActiveSpeaker.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.ActiveSpeaker.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2883,113 +2612,102 @@ proto.rtc.ActiveSpeaker.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.ActiveSpeaker.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.ActiveSpeaker.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSpeakersList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      1,
-      f,
-      proto.rtc.AudioLevelSpeaker.serializeBinaryToWriter
-    );
+    writer.writeRepeatedMessage(1, f, proto.rtc.AudioLevelSpeaker.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * repeated AudioLevelSpeaker speakers = 1;
  * @return {!Array<!proto.rtc.AudioLevelSpeaker>}
  */
-proto.rtc.ActiveSpeaker.prototype.getSpeakersList = function() {
-  return /** @type{!Array<!proto.rtc.AudioLevelSpeaker>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.rtc.AudioLevelSpeaker, 1));
+proto.rtc.ActiveSpeaker.prototype.getSpeakersList = function () {
+  return /** @type{!Array<!proto.rtc.AudioLevelSpeaker>} */ (jspb.Message.getRepeatedWrapperField(
+    this,
+    proto.rtc.AudioLevelSpeaker,
+    1,
+  ));
 };
-
 
 /**
  * @param {!Array<!proto.rtc.AudioLevelSpeaker>} value
  * @return {!proto.rtc.ActiveSpeaker} returns this
-*/
-proto.rtc.ActiveSpeaker.prototype.setSpeakersList = function(value) {
+ */
+proto.rtc.ActiveSpeaker.prototype.setSpeakersList = function (value) {
   return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
-
 
 /**
  * @param {!proto.rtc.AudioLevelSpeaker=} opt_value
  * @param {number=} opt_index
  * @return {!proto.rtc.AudioLevelSpeaker}
  */
-proto.rtc.ActiveSpeaker.prototype.addSpeakers = function(opt_value, opt_index) {
+proto.rtc.ActiveSpeaker.prototype.addSpeakers = function (opt_value, opt_index) {
   return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.rtc.AudioLevelSpeaker, opt_index);
 };
-
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.rtc.ActiveSpeaker} returns this
  */
-proto.rtc.ActiveSpeaker.prototype.clearSpeakersList = function() {
+proto.rtc.ActiveSpeaker.prototype.clearSpeakersList = function () {
   return this.setSpeakersList([]);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.AudioLevelSpeaker.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.AudioLevelSpeaker.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.AudioLevelSpeaker} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.AudioLevelSpeaker.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-level: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
-active: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.AudioLevelSpeaker.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.AudioLevelSpeaker.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.AudioLevelSpeaker} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.AudioLevelSpeaker.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        level: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
+        active: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.AudioLevelSpeaker}
  */
-proto.rtc.AudioLevelSpeaker.deserializeBinary = function(bytes) {
+proto.rtc.AudioLevelSpeaker.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.AudioLevelSpeaker;
+  var msg = new proto.rtc.AudioLevelSpeaker();
   return proto.rtc.AudioLevelSpeaker.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2998,44 +2716,42 @@ proto.rtc.AudioLevelSpeaker.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.AudioLevelSpeaker}
  */
-proto.rtc.AudioLevelSpeaker.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.AudioLevelSpeaker.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {number} */ (reader.readFloat());
-      msg.setLevel(value);
-      break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setActive(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {number} */ (reader.readFloat());
+        msg.setLevel(value);
+        break;
+      case 3:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setActive(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.AudioLevelSpeaker.prototype.serializeBinary = function() {
+proto.rtc.AudioLevelSpeaker.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.AudioLevelSpeaker.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3044,86 +2760,69 @@ proto.rtc.AudioLevelSpeaker.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.AudioLevelSpeaker.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.AudioLevelSpeaker.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getLevel();
   if (f !== 0.0) {
-    writer.writeFloat(
-      2,
-      f
-    );
+    writer.writeFloat(2, f);
   }
   f = message.getActive();
   if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
+    writer.writeBool(3, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.rtc.AudioLevelSpeaker.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.rtc.AudioLevelSpeaker.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.rtc.AudioLevelSpeaker} returns this
  */
-proto.rtc.AudioLevelSpeaker.prototype.setSid = function(value) {
+proto.rtc.AudioLevelSpeaker.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional float level = 2;
  * @return {number}
  */
-proto.rtc.AudioLevelSpeaker.prototype.getLevel = function() {
+proto.rtc.AudioLevelSpeaker.prototype.getLevel = function () {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
 };
-
 
 /**
  * @param {number} value
  * @return {!proto.rtc.AudioLevelSpeaker} returns this
  */
-proto.rtc.AudioLevelSpeaker.prototype.setLevel = function(value) {
+proto.rtc.AudioLevelSpeaker.prototype.setLevel = function (value) {
   return jspb.Message.setProto3FloatField(this, 2, value);
 };
-
 
 /**
  * optional bool active = 3;
  * @return {boolean}
  */
-proto.rtc.AudioLevelSpeaker.prototype.getActive = function() {
+proto.rtc.AudioLevelSpeaker.prototype.getActive = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.rtc.AudioLevelSpeaker} returns this
  */
-proto.rtc.AudioLevelSpeaker.prototype.setActive = function(value) {
+proto.rtc.AudioLevelSpeaker.prototype.setActive = function (value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
-
-
 
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -3133,7 +2832,7 @@ proto.rtc.AudioLevelSpeaker.prototype.setActive = function(value) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.rtc.Request.oneofGroups_ = [[1,2,3,4]];
+proto.rtc.Request.oneofGroups_ = [[1, 2, 3, 4]];
 
 /**
  * @enum {number}
@@ -3143,72 +2842,71 @@ proto.rtc.Request.PayloadCase = {
   JOIN: 1,
   DESCRIPTION: 2,
   TRICKLE: 3,
-  SUBSCRIPTION: 4
+  SUBSCRIPTION: 4,
 };
 
 /**
  * @return {proto.rtc.Request.PayloadCase}
  */
-proto.rtc.Request.prototype.getPayloadCase = function() {
-  return /** @type {proto.rtc.Request.PayloadCase} */(jspb.Message.computeOneofCase(this, proto.rtc.Request.oneofGroups_[0]));
+proto.rtc.Request.prototype.getPayloadCase = function () {
+  return /** @type {proto.rtc.Request.PayloadCase} */ (jspb.Message.computeOneofCase(
+    this,
+    proto.rtc.Request.oneofGroups_[0],
+  ));
 };
-
-
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.Request.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.Request.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.Request} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.Request.toObject = function(includeInstance, msg) {
-  var f, obj = {
-join: (f = msg.getJoin()) && proto.rtc.JoinRequest.toObject(includeInstance, f),
-description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
-trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
-subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionRequest.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.Request.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.Request.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.Request} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.Request.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        join: (f = msg.getJoin()) && proto.rtc.JoinRequest.toObject(includeInstance, f),
+        description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
+        trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
+        subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionRequest.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.Request}
  */
-proto.rtc.Request.deserializeBinary = function(bytes) {
+proto.rtc.Request.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.Request;
+  var msg = new proto.rtc.Request();
   return proto.rtc.Request.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3217,52 +2915,50 @@ proto.rtc.Request.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.Request}
  */
-proto.rtc.Request.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.Request.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.rtc.JoinRequest;
-      reader.readMessage(value,proto.rtc.JoinRequest.deserializeBinaryFromReader);
-      msg.setJoin(value);
-      break;
-    case 2:
-      var value = new proto.rtc.SessionDescription;
-      reader.readMessage(value,proto.rtc.SessionDescription.deserializeBinaryFromReader);
-      msg.setDescription(value);
-      break;
-    case 3:
-      var value = new proto.rtc.Trickle;
-      reader.readMessage(value,proto.rtc.Trickle.deserializeBinaryFromReader);
-      msg.setTrickle(value);
-      break;
-    case 4:
-      var value = new proto.rtc.SubscriptionRequest;
-      reader.readMessage(value,proto.rtc.SubscriptionRequest.deserializeBinaryFromReader);
-      msg.setSubscription(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.rtc.JoinRequest();
+        reader.readMessage(value, proto.rtc.JoinRequest.deserializeBinaryFromReader);
+        msg.setJoin(value);
+        break;
+      case 2:
+        var value = new proto.rtc.SessionDescription();
+        reader.readMessage(value, proto.rtc.SessionDescription.deserializeBinaryFromReader);
+        msg.setDescription(value);
+        break;
+      case 3:
+        var value = new proto.rtc.Trickle();
+        reader.readMessage(value, proto.rtc.Trickle.deserializeBinaryFromReader);
+        msg.setTrickle(value);
+        break;
+      case 4:
+        var value = new proto.rtc.SubscriptionRequest();
+        reader.readMessage(value, proto.rtc.SubscriptionRequest.deserializeBinaryFromReader);
+        msg.setSubscription(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.Request.prototype.serializeBinary = function() {
+proto.rtc.Request.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.Request.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3271,191 +2967,161 @@ proto.rtc.Request.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.Request.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.Request.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getJoin();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.rtc.JoinRequest.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.rtc.JoinRequest.serializeBinaryToWriter);
   }
   f = message.getDescription();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.rtc.SessionDescription.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.rtc.SessionDescription.serializeBinaryToWriter);
   }
   f = message.getTrickle();
   if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.rtc.Trickle.serializeBinaryToWriter
-    );
+    writer.writeMessage(3, f, proto.rtc.Trickle.serializeBinaryToWriter);
   }
   f = message.getSubscription();
   if (f != null) {
-    writer.writeMessage(
-      4,
-      f,
-      proto.rtc.SubscriptionRequest.serializeBinaryToWriter
-    );
+    writer.writeMessage(4, f, proto.rtc.SubscriptionRequest.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional JoinRequest join = 1;
  * @return {?proto.rtc.JoinRequest}
  */
-proto.rtc.Request.prototype.getJoin = function() {
-  return /** @type{?proto.rtc.JoinRequest} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.JoinRequest, 1));
+proto.rtc.Request.prototype.getJoin = function () {
+  return /** @type{?proto.rtc.JoinRequest} */ (jspb.Message.getWrapperField(this, proto.rtc.JoinRequest, 1));
 };
-
 
 /**
  * @param {?proto.rtc.JoinRequest|undefined} value
  * @return {!proto.rtc.Request} returns this
-*/
-proto.rtc.Request.prototype.setJoin = function(value) {
+ */
+proto.rtc.Request.prototype.setJoin = function (value) {
   return jspb.Message.setOneofWrapperField(this, 1, proto.rtc.Request.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Request} returns this
  */
-proto.rtc.Request.prototype.clearJoin = function() {
+proto.rtc.Request.prototype.clearJoin = function () {
   return this.setJoin(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Request.prototype.hasJoin = function() {
+proto.rtc.Request.prototype.hasJoin = function () {
   return jspb.Message.getField(this, 1) != null;
 };
-
 
 /**
  * optional SessionDescription description = 2;
  * @return {?proto.rtc.SessionDescription}
  */
-proto.rtc.Request.prototype.getDescription = function() {
-  return /** @type{?proto.rtc.SessionDescription} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.SessionDescription, 2));
+proto.rtc.Request.prototype.getDescription = function () {
+  return /** @type{?proto.rtc.SessionDescription} */ (jspb.Message.getWrapperField(
+    this,
+    proto.rtc.SessionDescription,
+    2,
+  ));
 };
-
 
 /**
  * @param {?proto.rtc.SessionDescription|undefined} value
  * @return {!proto.rtc.Request} returns this
-*/
-proto.rtc.Request.prototype.setDescription = function(value) {
+ */
+proto.rtc.Request.prototype.setDescription = function (value) {
   return jspb.Message.setOneofWrapperField(this, 2, proto.rtc.Request.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Request} returns this
  */
-proto.rtc.Request.prototype.clearDescription = function() {
+proto.rtc.Request.prototype.clearDescription = function () {
   return this.setDescription(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Request.prototype.hasDescription = function() {
+proto.rtc.Request.prototype.hasDescription = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * optional Trickle trickle = 3;
  * @return {?proto.rtc.Trickle}
  */
-proto.rtc.Request.prototype.getTrickle = function() {
-  return /** @type{?proto.rtc.Trickle} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.Trickle, 3));
+proto.rtc.Request.prototype.getTrickle = function () {
+  return /** @type{?proto.rtc.Trickle} */ (jspb.Message.getWrapperField(this, proto.rtc.Trickle, 3));
 };
-
 
 /**
  * @param {?proto.rtc.Trickle|undefined} value
  * @return {!proto.rtc.Request} returns this
-*/
-proto.rtc.Request.prototype.setTrickle = function(value) {
+ */
+proto.rtc.Request.prototype.setTrickle = function (value) {
   return jspb.Message.setOneofWrapperField(this, 3, proto.rtc.Request.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Request} returns this
  */
-proto.rtc.Request.prototype.clearTrickle = function() {
+proto.rtc.Request.prototype.clearTrickle = function () {
   return this.setTrickle(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Request.prototype.hasTrickle = function() {
+proto.rtc.Request.prototype.hasTrickle = function () {
   return jspb.Message.getField(this, 3) != null;
 };
-
 
 /**
  * optional SubscriptionRequest subscription = 4;
  * @return {?proto.rtc.SubscriptionRequest}
  */
-proto.rtc.Request.prototype.getSubscription = function() {
-  return /** @type{?proto.rtc.SubscriptionRequest} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.SubscriptionRequest, 4));
+proto.rtc.Request.prototype.getSubscription = function () {
+  return /** @type{?proto.rtc.SubscriptionRequest} */ (jspb.Message.getWrapperField(
+    this,
+    proto.rtc.SubscriptionRequest,
+    4,
+  ));
 };
-
 
 /**
  * @param {?proto.rtc.SubscriptionRequest|undefined} value
  * @return {!proto.rtc.Request} returns this
-*/
-proto.rtc.Request.prototype.setSubscription = function(value) {
+ */
+proto.rtc.Request.prototype.setSubscription = function (value) {
   return jspb.Message.setOneofWrapperField(this, 4, proto.rtc.Request.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Request} returns this
  */
-proto.rtc.Request.prototype.clearSubscription = function() {
+proto.rtc.Request.prototype.clearSubscription = function () {
   return this.setSubscription(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Request.prototype.hasSubscription = function() {
+proto.rtc.Request.prototype.hasSubscription = function () {
   return jspb.Message.getField(this, 4) != null;
 };
-
-
 
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -3465,7 +3131,7 @@ proto.rtc.Request.prototype.hasSubscription = function() {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.rtc.Reply.oneofGroups_ = [[1,2,3,4,5,7]];
+proto.rtc.Reply.oneofGroups_ = [[1, 2, 3, 4, 5, 7]];
 
 /**
  * @enum {number}
@@ -3477,74 +3143,73 @@ proto.rtc.Reply.PayloadCase = {
   TRICKLE: 3,
   TRACKEVENT: 4,
   SUBSCRIPTION: 5,
-  ERROR: 7
+  ERROR: 7,
 };
 
 /**
  * @return {proto.rtc.Reply.PayloadCase}
  */
-proto.rtc.Reply.prototype.getPayloadCase = function() {
-  return /** @type {proto.rtc.Reply.PayloadCase} */(jspb.Message.computeOneofCase(this, proto.rtc.Reply.oneofGroups_[0]));
+proto.rtc.Reply.prototype.getPayloadCase = function () {
+  return /** @type {proto.rtc.Reply.PayloadCase} */ (jspb.Message.computeOneofCase(
+    this,
+    proto.rtc.Reply.oneofGroups_[0],
+  ));
 };
-
-
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.rtc.Reply.prototype.toObject = function(opt_includeInstance) {
-  return proto.rtc.Reply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.rtc.Reply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.rtc.Reply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-join: (f = msg.getJoin()) && proto.rtc.JoinReply.toObject(includeInstance, f),
-description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
-trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
-trackevent: (f = msg.getTrackevent()) && proto.rtc.TrackEvent.toObject(includeInstance, f),
-subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionReply.toObject(includeInstance, f),
-error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.rtc.Reply.prototype.toObject = function (opt_includeInstance) {
+    return proto.rtc.Reply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.rtc.Reply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.rtc.Reply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        join: (f = msg.getJoin()) && proto.rtc.JoinReply.toObject(includeInstance, f),
+        description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
+        trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
+        trackevent: (f = msg.getTrackevent()) && proto.rtc.TrackEvent.toObject(includeInstance, f),
+        subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionReply.toObject(includeInstance, f),
+        error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.rtc.Reply}
  */
-proto.rtc.Reply.deserializeBinary = function(bytes) {
+proto.rtc.Reply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.rtc.Reply;
+  var msg = new proto.rtc.Reply();
   return proto.rtc.Reply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3553,62 +3218,60 @@ proto.rtc.Reply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.rtc.Reply}
  */
-proto.rtc.Reply.deserializeBinaryFromReader = function(msg, reader) {
+proto.rtc.Reply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.rtc.JoinReply;
-      reader.readMessage(value,proto.rtc.JoinReply.deserializeBinaryFromReader);
-      msg.setJoin(value);
-      break;
-    case 2:
-      var value = new proto.rtc.SessionDescription;
-      reader.readMessage(value,proto.rtc.SessionDescription.deserializeBinaryFromReader);
-      msg.setDescription(value);
-      break;
-    case 3:
-      var value = new proto.rtc.Trickle;
-      reader.readMessage(value,proto.rtc.Trickle.deserializeBinaryFromReader);
-      msg.setTrickle(value);
-      break;
-    case 4:
-      var value = new proto.rtc.TrackEvent;
-      reader.readMessage(value,proto.rtc.TrackEvent.deserializeBinaryFromReader);
-      msg.setTrackevent(value);
-      break;
-    case 5:
-      var value = new proto.rtc.SubscriptionReply;
-      reader.readMessage(value,proto.rtc.SubscriptionReply.deserializeBinaryFromReader);
-      msg.setSubscription(value);
-      break;
-    case 7:
-      var value = new proto.rtc.Error;
-      reader.readMessage(value,proto.rtc.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.rtc.JoinReply();
+        reader.readMessage(value, proto.rtc.JoinReply.deserializeBinaryFromReader);
+        msg.setJoin(value);
+        break;
+      case 2:
+        var value = new proto.rtc.SessionDescription();
+        reader.readMessage(value, proto.rtc.SessionDescription.deserializeBinaryFromReader);
+        msg.setDescription(value);
+        break;
+      case 3:
+        var value = new proto.rtc.Trickle();
+        reader.readMessage(value, proto.rtc.Trickle.deserializeBinaryFromReader);
+        msg.setTrickle(value);
+        break;
+      case 4:
+        var value = new proto.rtc.TrackEvent();
+        reader.readMessage(value, proto.rtc.TrackEvent.deserializeBinaryFromReader);
+        msg.setTrackevent(value);
+        break;
+      case 5:
+        var value = new proto.rtc.SubscriptionReply();
+        reader.readMessage(value, proto.rtc.SubscriptionReply.deserializeBinaryFromReader);
+        msg.setSubscription(value);
+        break;
+      case 7:
+        var value = new proto.rtc.Error();
+        reader.readMessage(value, proto.rtc.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.rtc.Reply.prototype.serializeBinary = function() {
+proto.rtc.Reply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.rtc.Reply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3617,287 +3280,240 @@ proto.rtc.Reply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.rtc.Reply.serializeBinaryToWriter = function(message, writer) {
+proto.rtc.Reply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getJoin();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.rtc.JoinReply.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.rtc.JoinReply.serializeBinaryToWriter);
   }
   f = message.getDescription();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.rtc.SessionDescription.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.rtc.SessionDescription.serializeBinaryToWriter);
   }
   f = message.getTrickle();
   if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.rtc.Trickle.serializeBinaryToWriter
-    );
+    writer.writeMessage(3, f, proto.rtc.Trickle.serializeBinaryToWriter);
   }
   f = message.getTrackevent();
   if (f != null) {
-    writer.writeMessage(
-      4,
-      f,
-      proto.rtc.TrackEvent.serializeBinaryToWriter
-    );
+    writer.writeMessage(4, f, proto.rtc.TrackEvent.serializeBinaryToWriter);
   }
   f = message.getSubscription();
   if (f != null) {
-    writer.writeMessage(
-      5,
-      f,
-      proto.rtc.SubscriptionReply.serializeBinaryToWriter
-    );
+    writer.writeMessage(5, f, proto.rtc.SubscriptionReply.serializeBinaryToWriter);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      7,
-      f,
-      proto.rtc.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(7, f, proto.rtc.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional JoinReply join = 1;
  * @return {?proto.rtc.JoinReply}
  */
-proto.rtc.Reply.prototype.getJoin = function() {
-  return /** @type{?proto.rtc.JoinReply} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.JoinReply, 1));
+proto.rtc.Reply.prototype.getJoin = function () {
+  return /** @type{?proto.rtc.JoinReply} */ (jspb.Message.getWrapperField(this, proto.rtc.JoinReply, 1));
 };
-
 
 /**
  * @param {?proto.rtc.JoinReply|undefined} value
  * @return {!proto.rtc.Reply} returns this
-*/
-proto.rtc.Reply.prototype.setJoin = function(value) {
+ */
+proto.rtc.Reply.prototype.setJoin = function (value) {
   return jspb.Message.setOneofWrapperField(this, 1, proto.rtc.Reply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Reply} returns this
  */
-proto.rtc.Reply.prototype.clearJoin = function() {
+proto.rtc.Reply.prototype.clearJoin = function () {
   return this.setJoin(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Reply.prototype.hasJoin = function() {
+proto.rtc.Reply.prototype.hasJoin = function () {
   return jspb.Message.getField(this, 1) != null;
 };
-
 
 /**
  * optional SessionDescription description = 2;
  * @return {?proto.rtc.SessionDescription}
  */
-proto.rtc.Reply.prototype.getDescription = function() {
-  return /** @type{?proto.rtc.SessionDescription} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.SessionDescription, 2));
+proto.rtc.Reply.prototype.getDescription = function () {
+  return /** @type{?proto.rtc.SessionDescription} */ (jspb.Message.getWrapperField(
+    this,
+    proto.rtc.SessionDescription,
+    2,
+  ));
 };
-
 
 /**
  * @param {?proto.rtc.SessionDescription|undefined} value
  * @return {!proto.rtc.Reply} returns this
-*/
-proto.rtc.Reply.prototype.setDescription = function(value) {
+ */
+proto.rtc.Reply.prototype.setDescription = function (value) {
   return jspb.Message.setOneofWrapperField(this, 2, proto.rtc.Reply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Reply} returns this
  */
-proto.rtc.Reply.prototype.clearDescription = function() {
+proto.rtc.Reply.prototype.clearDescription = function () {
   return this.setDescription(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Reply.prototype.hasDescription = function() {
+proto.rtc.Reply.prototype.hasDescription = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * optional Trickle trickle = 3;
  * @return {?proto.rtc.Trickle}
  */
-proto.rtc.Reply.prototype.getTrickle = function() {
-  return /** @type{?proto.rtc.Trickle} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.Trickle, 3));
+proto.rtc.Reply.prototype.getTrickle = function () {
+  return /** @type{?proto.rtc.Trickle} */ (jspb.Message.getWrapperField(this, proto.rtc.Trickle, 3));
 };
-
 
 /**
  * @param {?proto.rtc.Trickle|undefined} value
  * @return {!proto.rtc.Reply} returns this
-*/
-proto.rtc.Reply.prototype.setTrickle = function(value) {
+ */
+proto.rtc.Reply.prototype.setTrickle = function (value) {
   return jspb.Message.setOneofWrapperField(this, 3, proto.rtc.Reply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Reply} returns this
  */
-proto.rtc.Reply.prototype.clearTrickle = function() {
+proto.rtc.Reply.prototype.clearTrickle = function () {
   return this.setTrickle(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Reply.prototype.hasTrickle = function() {
+proto.rtc.Reply.prototype.hasTrickle = function () {
   return jspb.Message.getField(this, 3) != null;
 };
-
 
 /**
  * optional TrackEvent trackEvent = 4;
  * @return {?proto.rtc.TrackEvent}
  */
-proto.rtc.Reply.prototype.getTrackevent = function() {
-  return /** @type{?proto.rtc.TrackEvent} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.TrackEvent, 4));
+proto.rtc.Reply.prototype.getTrackevent = function () {
+  return /** @type{?proto.rtc.TrackEvent} */ (jspb.Message.getWrapperField(this, proto.rtc.TrackEvent, 4));
 };
-
 
 /**
  * @param {?proto.rtc.TrackEvent|undefined} value
  * @return {!proto.rtc.Reply} returns this
-*/
-proto.rtc.Reply.prototype.setTrackevent = function(value) {
+ */
+proto.rtc.Reply.prototype.setTrackevent = function (value) {
   return jspb.Message.setOneofWrapperField(this, 4, proto.rtc.Reply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Reply} returns this
  */
-proto.rtc.Reply.prototype.clearTrackevent = function() {
+proto.rtc.Reply.prototype.clearTrackevent = function () {
   return this.setTrackevent(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Reply.prototype.hasTrackevent = function() {
+proto.rtc.Reply.prototype.hasTrackevent = function () {
   return jspb.Message.getField(this, 4) != null;
 };
-
 
 /**
  * optional SubscriptionReply subscription = 5;
  * @return {?proto.rtc.SubscriptionReply}
  */
-proto.rtc.Reply.prototype.getSubscription = function() {
-  return /** @type{?proto.rtc.SubscriptionReply} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.SubscriptionReply, 5));
+proto.rtc.Reply.prototype.getSubscription = function () {
+  return /** @type{?proto.rtc.SubscriptionReply} */ (jspb.Message.getWrapperField(
+    this,
+    proto.rtc.SubscriptionReply,
+    5,
+  ));
 };
-
 
 /**
  * @param {?proto.rtc.SubscriptionReply|undefined} value
  * @return {!proto.rtc.Reply} returns this
-*/
-proto.rtc.Reply.prototype.setSubscription = function(value) {
+ */
+proto.rtc.Reply.prototype.setSubscription = function (value) {
   return jspb.Message.setOneofWrapperField(this, 5, proto.rtc.Reply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Reply} returns this
  */
-proto.rtc.Reply.prototype.clearSubscription = function() {
+proto.rtc.Reply.prototype.clearSubscription = function () {
   return this.setSubscription(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Reply.prototype.hasSubscription = function() {
+proto.rtc.Reply.prototype.hasSubscription = function () {
   return jspb.Message.getField(this, 5) != null;
 };
-
 
 /**
  * optional Error error = 7;
  * @return {?proto.rtc.Error}
  */
-proto.rtc.Reply.prototype.getError = function() {
-  return /** @type{?proto.rtc.Error} */ (
-    jspb.Message.getWrapperField(this, proto.rtc.Error, 7));
+proto.rtc.Reply.prototype.getError = function () {
+  return /** @type{?proto.rtc.Error} */ (jspb.Message.getWrapperField(this, proto.rtc.Error, 7));
 };
-
 
 /**
  * @param {?proto.rtc.Error|undefined} value
  * @return {!proto.rtc.Reply} returns this
-*/
-proto.rtc.Reply.prototype.setError = function(value) {
+ */
+proto.rtc.Reply.prototype.setError = function (value) {
   return jspb.Message.setOneofWrapperField(this, 7, proto.rtc.Reply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.rtc.Reply} returns this
  */
-proto.rtc.Reply.prototype.clearError = function() {
+proto.rtc.Reply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.rtc.Reply.prototype.hasError = function() {
+proto.rtc.Reply.prototype.hasError = function () {
   return jspb.Message.getField(this, 7) != null;
 };
-
 
 /**
  * @enum {number}
  */
 proto.rtc.Target = {
   PUBLISHER: 0,
-  SUBSCRIBER: 1
+  SUBSCRIBER: 1,
 };
 
 /**
@@ -3909,7 +3525,7 @@ proto.rtc.MediaType = {
   SCREENCAPTURE: 2,
   CANVAS: 3,
   STREAMING: 4,
-  VOIP: 5
+  VOIP: 5,
 };
 
 goog.object.extend(exports, proto.rtc);

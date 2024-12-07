@@ -1,85 +1,85 @@
 // package: room
 // file: room.proto
 
-var room_pb = require("./room_pb");
-var grpc = require("@improbable-eng/grpc-web").grpc;
+import { grpc } from '@improbable-eng/grpc-web';
+import * as room_pb from './room_pb';
 
 var RoomService = (function () {
   function RoomService() {}
-  RoomService.serviceName = "room.RoomService";
+  RoomService.serviceName = 'room.RoomService';
   return RoomService;
-}());
+})();
 
 RoomService.CreateRoom = {
-  methodName: "CreateRoom",
+  methodName: 'CreateRoom',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.CreateRoomRequest,
-  responseType: room_pb.CreateRoomReply
+  responseType: room_pb.CreateRoomReply,
 };
 
 RoomService.UpdateRoom = {
-  methodName: "UpdateRoom",
+  methodName: 'UpdateRoom',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.UpdateRoomRequest,
-  responseType: room_pb.UpdateRoomReply
+  responseType: room_pb.UpdateRoomReply,
 };
 
 RoomService.EndRoom = {
-  methodName: "EndRoom",
+  methodName: 'EndRoom',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.EndRoomRequest,
-  responseType: room_pb.EndRoomReply
+  responseType: room_pb.EndRoomReply,
 };
 
 RoomService.GetRooms = {
-  methodName: "GetRooms",
+  methodName: 'GetRooms',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.GetRoomsRequest,
-  responseType: room_pb.GetRoomsReply
+  responseType: room_pb.GetRoomsReply,
 };
 
 RoomService.AddPeer = {
-  methodName: "AddPeer",
+  methodName: 'AddPeer',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.AddPeerRequest,
-  responseType: room_pb.AddPeerReply
+  responseType: room_pb.AddPeerReply,
 };
 
 RoomService.UpdatePeer = {
-  methodName: "UpdatePeer",
+  methodName: 'UpdatePeer',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.UpdatePeerRequest,
-  responseType: room_pb.UpdatePeerReply
+  responseType: room_pb.UpdatePeerReply,
 };
 
 RoomService.RemovePeer = {
-  methodName: "RemovePeer",
+  methodName: 'RemovePeer',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.RemovePeerRequest,
-  responseType: room_pb.RemovePeerReply
+  responseType: room_pb.RemovePeerReply,
 };
 
 RoomService.GetPeers = {
-  methodName: "GetPeers",
+  methodName: 'GetPeers',
   service: RoomService,
   requestStream: false,
   responseStream: false,
   requestType: room_pb.GetPeersRequest,
-  responseType: room_pb.GetPeersReply
+  responseType: room_pb.GetPeersReply,
 };
 
 exports.RoomService = RoomService;
@@ -110,13 +110,13 @@ RoomServiceClient.prototype.createRoom = function createRoom(requestMessage, met
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -141,13 +141,13 @@ RoomServiceClient.prototype.updateRoom = function updateRoom(requestMessage, met
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -172,13 +172,13 @@ RoomServiceClient.prototype.endRoom = function endRoom(requestMessage, metadata,
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -203,13 +203,13 @@ RoomServiceClient.prototype.getRooms = function getRooms(requestMessage, metadat
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -234,13 +234,13 @@ RoomServiceClient.prototype.addPeer = function addPeer(requestMessage, metadata,
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -265,13 +265,13 @@ RoomServiceClient.prototype.updatePeer = function updatePeer(requestMessage, met
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -296,13 +296,13 @@ RoomServiceClient.prototype.removePeer = function removePeer(requestMessage, met
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -327,13 +327,13 @@ RoomServiceClient.prototype.getPeers = function getPeers(requestMessage, metadat
           callback(null, response.message);
         }
       }
-    }
+    },
   });
   return {
     cancel: function () {
       callback = null;
       client.close();
-    }
+    },
   };
 };
 
@@ -341,17 +341,17 @@ exports.RoomServiceClient = RoomServiceClient;
 
 var RoomSignal = (function () {
   function RoomSignal() {}
-  RoomSignal.serviceName = "room.RoomSignal";
+  RoomSignal.serviceName = 'room.RoomSignal';
   return RoomSignal;
-}());
+})();
 
 RoomSignal.Signal = {
-  methodName: "Signal",
+  methodName: 'Signal',
   service: RoomSignal,
   requestStream: true,
   responseStream: true,
   requestType: room_pb.SignalRequest,
-  responseType: room_pb.SignalReply
+  responseType: room_pb.SignalReply,
 };
 
 exports.RoomSignal = RoomSignal;
@@ -365,12 +365,12 @@ RoomSignalClient.prototype.signal = function signal(metadata) {
   var listeners = {
     data: [],
     end: [],
-    status: []
+    status: [],
   };
   var client = grpc.client(RoomSignal.Signal, {
     host: this.serviceHost,
     metadata: metadata,
-    transport: this.options.transport
+    transport: this.options.transport,
   });
   client.onEnd(function (status, statusMessage, trailers) {
     listeners.status.forEach(function (handler) {
@@ -384,7 +384,7 @@ RoomSignalClient.prototype.signal = function signal(metadata) {
   client.onMessage(function (message) {
     listeners.data.forEach(function (handler) {
       handler(message);
-    })
+    });
   });
   client.start(metadata);
   return {
@@ -402,9 +402,8 @@ RoomSignalClient.prototype.signal = function signal(metadata) {
     cancel: function () {
       listeners = null;
       client.close();
-    }
+    },
   };
 };
 
 exports.RoomSignalClient = RoomSignalClient;
-

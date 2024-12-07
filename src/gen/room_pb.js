@@ -11,15 +11,17 @@
 /* eslint-disable */
 // @ts-nocheck
 
-var jspb = require('google-protobuf');
+import jspb from 'google-protobuf';
 var goog = jspb;
 var global =
-    (typeof globalThis !== 'undefined' && globalThis) ||
-    (typeof window !== 'undefined' && window) ||
-    (typeof global !== 'undefined' && global) ||
-    (typeof self !== 'undefined' && self) ||
-    (function () { return this; }).call(null) ||
-    Function('return this')();
+  (typeof globalThis !== 'undefined' && globalThis) ||
+  (typeof window !== 'undefined' && window) ||
+  (typeof global !== 'undefined' && global) ||
+  (typeof self !== 'undefined' && self) ||
+  function () {
+    return this;
+  }.call(null) ||
+  Function('return this')();
 
 goog.exportSymbol('proto.room.AddPeerReply', null, global);
 goog.exportSymbol('proto.room.AddPeerRequest', null, global);
@@ -70,7 +72,7 @@ goog.exportSymbol('proto.room.UpdateRoomRequest', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.Error = function(opt_data) {
+proto.room.Error = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.Error, jspb.Message);
@@ -91,7 +93,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.SignalRequest = function(opt_data) {
+proto.room.SignalRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, proto.room.SignalRequest.oneofGroups_);
 };
 goog.inherits(proto.room.SignalRequest, jspb.Message);
@@ -112,7 +114,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.SignalReply = function(opt_data) {
+proto.room.SignalReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, proto.room.SignalReply.oneofGroups_);
 };
 goog.inherits(proto.room.SignalReply, jspb.Message);
@@ -133,7 +135,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.CreateRoomRequest = function(opt_data) {
+proto.room.CreateRoomRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.CreateRoomRequest, jspb.Message);
@@ -154,7 +156,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.CreateRoomReply = function(opt_data) {
+proto.room.CreateRoomReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.CreateRoomReply, jspb.Message);
@@ -175,7 +177,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.DeleteRoomRequest = function(opt_data) {
+proto.room.DeleteRoomRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.DeleteRoomRequest, jspb.Message);
@@ -196,7 +198,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.DeleteRoomReply = function(opt_data) {
+proto.room.DeleteRoomReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.DeleteRoomReply, jspb.Message);
@@ -217,7 +219,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.JoinRequest = function(opt_data) {
+proto.room.JoinRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.JoinRequest, jspb.Message);
@@ -238,7 +240,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.Room = function(opt_data) {
+proto.room.Room = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.Room, jspb.Message);
@@ -259,7 +261,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.JoinReply = function(opt_data) {
+proto.room.JoinReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.JoinReply, jspb.Message);
@@ -280,7 +282,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.LeaveRequest = function(opt_data) {
+proto.room.LeaveRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.LeaveRequest, jspb.Message);
@@ -301,7 +303,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.LeaveReply = function(opt_data) {
+proto.room.LeaveReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.LeaveReply, jspb.Message);
@@ -322,7 +324,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.Peer = function(opt_data) {
+proto.room.Peer = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.Peer, jspb.Message);
@@ -343,7 +345,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.AddPeerRequest = function(opt_data) {
+proto.room.AddPeerRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.AddPeerRequest, jspb.Message);
@@ -364,7 +366,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.AddPeerReply = function(opt_data) {
+proto.room.AddPeerReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.AddPeerReply, jspb.Message);
@@ -385,7 +387,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.GetPeersRequest = function(opt_data) {
+proto.room.GetPeersRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.GetPeersRequest, jspb.Message);
@@ -406,7 +408,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.GetPeersReply = function(opt_data) {
+proto.room.GetPeersReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, proto.room.GetPeersReply.repeatedFields_, null);
 };
 goog.inherits(proto.room.GetPeersReply, jspb.Message);
@@ -427,7 +429,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.Message = function(opt_data) {
+proto.room.Message = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.Message, jspb.Message);
@@ -448,7 +450,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.SendMessageRequest = function(opt_data) {
+proto.room.SendMessageRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.SendMessageRequest, jspb.Message);
@@ -469,7 +471,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.SendMessageReply = function(opt_data) {
+proto.room.SendMessageReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.SendMessageReply, jspb.Message);
@@ -490,7 +492,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.Disconnect = function(opt_data) {
+proto.room.Disconnect = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.Disconnect, jspb.Message);
@@ -511,7 +513,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.PeerEvent = function(opt_data) {
+proto.room.PeerEvent = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.PeerEvent, jspb.Message);
@@ -532,7 +534,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.UpdateRoomRequest = function(opt_data) {
+proto.room.UpdateRoomRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.UpdateRoomRequest, jspb.Message);
@@ -553,7 +555,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.UpdateRoomReply = function(opt_data) {
+proto.room.UpdateRoomReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.UpdateRoomReply, jspb.Message);
@@ -574,7 +576,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.EndRoomRequest = function(opt_data) {
+proto.room.EndRoomRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.EndRoomRequest, jspb.Message);
@@ -595,7 +597,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.EndRoomReply = function(opt_data) {
+proto.room.EndRoomReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.EndRoomReply, jspb.Message);
@@ -616,7 +618,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.GetRoomsRequest = function(opt_data) {
+proto.room.GetRoomsRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.GetRoomsRequest, jspb.Message);
@@ -637,7 +639,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.GetRoomsReply = function(opt_data) {
+proto.room.GetRoomsReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, proto.room.GetRoomsReply.repeatedFields_, null);
 };
 goog.inherits(proto.room.GetRoomsReply, jspb.Message);
@@ -658,7 +660,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.UpdatePeerRequest = function(opt_data) {
+proto.room.UpdatePeerRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.UpdatePeerRequest, jspb.Message);
@@ -679,7 +681,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.UpdatePeerReply = function(opt_data) {
+proto.room.UpdatePeerReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.UpdatePeerReply, jspb.Message);
@@ -700,7 +702,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.RemovePeerRequest = function(opt_data) {
+proto.room.RemovePeerRequest = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.RemovePeerRequest, jspb.Message);
@@ -721,7 +723,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.room.RemovePeerReply = function(opt_data) {
+proto.room.RemovePeerReply = function (opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.room.RemovePeerReply, jspb.Message);
@@ -733,60 +735,56 @@ if (goog.DEBUG && !COMPILED) {
   proto.room.RemovePeerReply.displayName = 'proto.room.RemovePeerReply';
 }
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.Error.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.Error.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.Error} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.Error.toObject = function(includeInstance, msg) {
-  var f, obj = {
-code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.Error.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.Error.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.Error} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.Error.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+        reason: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.Error}
  */
-proto.room.Error.deserializeBinary = function(bytes) {
+proto.room.Error.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.Error;
+  var msg = new proto.room.Error();
   return proto.room.Error.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -795,40 +793,38 @@ proto.room.Error.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.Error}
  */
-proto.room.Error.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.Error.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {!proto.room.ErrorType} */ (reader.readEnum());
-      msg.setCode(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setReason(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {!proto.room.ErrorType} */ (reader.readEnum());
+        msg.setCode(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setReason(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.Error.prototype.serializeBinary = function() {
+proto.room.Error.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.Error.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -837,61 +833,49 @@ proto.room.Error.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.Error.serializeBinaryToWriter = function(message, writer) {
+proto.room.Error.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getCode();
   if (f !== 0.0) {
-    writer.writeEnum(
-      1,
-      f
-    );
+    writer.writeEnum(1, f);
   }
   f = message.getReason();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional ErrorType code = 1;
  * @return {!proto.room.ErrorType}
  */
-proto.room.Error.prototype.getCode = function() {
+proto.room.Error.prototype.getCode = function () {
   return /** @type {!proto.room.ErrorType} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
-
 
 /**
  * @param {!proto.room.ErrorType} value
  * @return {!proto.room.Error} returns this
  */
-proto.room.Error.prototype.setCode = function(value) {
+proto.room.Error.prototype.setCode = function (value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
-
 
 /**
  * optional string reason = 2;
  * @return {string}
  */
-proto.room.Error.prototype.getReason = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.Error.prototype.getReason = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Error} returns this
  */
-proto.room.Error.prototype.setReason = function(value) {
+proto.room.Error.prototype.setReason = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
-
 
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -901,7 +885,7 @@ proto.room.Error.prototype.setReason = function(value) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.room.SignalRequest.oneofGroups_ = [[1,2,3,4]];
+proto.room.SignalRequest.oneofGroups_ = [[1, 2, 3, 4]];
 
 /**
  * @enum {number}
@@ -911,72 +895,71 @@ proto.room.SignalRequest.PayloadCase = {
   JOIN: 1,
   LEAVE: 2,
   SENDMESSAGE: 3,
-  UPDATEROOM: 4
+  UPDATEROOM: 4,
 };
 
 /**
  * @return {proto.room.SignalRequest.PayloadCase}
  */
-proto.room.SignalRequest.prototype.getPayloadCase = function() {
-  return /** @type {proto.room.SignalRequest.PayloadCase} */(jspb.Message.computeOneofCase(this, proto.room.SignalRequest.oneofGroups_[0]));
+proto.room.SignalRequest.prototype.getPayloadCase = function () {
+  return /** @type {proto.room.SignalRequest.PayloadCase} */ (jspb.Message.computeOneofCase(
+    this,
+    proto.room.SignalRequest.oneofGroups_[0],
+  ));
 };
-
-
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.SignalRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.SignalRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.SignalRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.SignalRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-join: (f = msg.getJoin()) && proto.room.JoinRequest.toObject(includeInstance, f),
-leave: (f = msg.getLeave()) && proto.room.LeaveRequest.toObject(includeInstance, f),
-sendmessage: (f = msg.getSendmessage()) && proto.room.SendMessageRequest.toObject(includeInstance, f),
-updateroom: (f = msg.getUpdateroom()) && proto.room.UpdateRoomRequest.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.SignalRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.SignalRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.SignalRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.SignalRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        join: (f = msg.getJoin()) && proto.room.JoinRequest.toObject(includeInstance, f),
+        leave: (f = msg.getLeave()) && proto.room.LeaveRequest.toObject(includeInstance, f),
+        sendmessage: (f = msg.getSendmessage()) && proto.room.SendMessageRequest.toObject(includeInstance, f),
+        updateroom: (f = msg.getUpdateroom()) && proto.room.UpdateRoomRequest.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.SignalRequest}
  */
-proto.room.SignalRequest.deserializeBinary = function(bytes) {
+proto.room.SignalRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.SignalRequest;
+  var msg = new proto.room.SignalRequest();
   return proto.room.SignalRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -985,52 +968,50 @@ proto.room.SignalRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.SignalRequest}
  */
-proto.room.SignalRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.SignalRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.JoinRequest;
-      reader.readMessage(value,proto.room.JoinRequest.deserializeBinaryFromReader);
-      msg.setJoin(value);
-      break;
-    case 2:
-      var value = new proto.room.LeaveRequest;
-      reader.readMessage(value,proto.room.LeaveRequest.deserializeBinaryFromReader);
-      msg.setLeave(value);
-      break;
-    case 3:
-      var value = new proto.room.SendMessageRequest;
-      reader.readMessage(value,proto.room.SendMessageRequest.deserializeBinaryFromReader);
-      msg.setSendmessage(value);
-      break;
-    case 4:
-      var value = new proto.room.UpdateRoomRequest;
-      reader.readMessage(value,proto.room.UpdateRoomRequest.deserializeBinaryFromReader);
-      msg.setUpdateroom(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.JoinRequest();
+        reader.readMessage(value, proto.room.JoinRequest.deserializeBinaryFromReader);
+        msg.setJoin(value);
+        break;
+      case 2:
+        var value = new proto.room.LeaveRequest();
+        reader.readMessage(value, proto.room.LeaveRequest.deserializeBinaryFromReader);
+        msg.setLeave(value);
+        break;
+      case 3:
+        var value = new proto.room.SendMessageRequest();
+        reader.readMessage(value, proto.room.SendMessageRequest.deserializeBinaryFromReader);
+        msg.setSendmessage(value);
+        break;
+      case 4:
+        var value = new proto.room.UpdateRoomRequest();
+        reader.readMessage(value, proto.room.UpdateRoomRequest.deserializeBinaryFromReader);
+        msg.setUpdateroom(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.SignalRequest.prototype.serializeBinary = function() {
+proto.room.SignalRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.SignalRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1039,191 +1020,161 @@ proto.room.SignalRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.SignalRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.SignalRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getJoin();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.JoinRequest.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.JoinRequest.serializeBinaryToWriter);
   }
   f = message.getLeave();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.LeaveRequest.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.LeaveRequest.serializeBinaryToWriter);
   }
   f = message.getSendmessage();
   if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.room.SendMessageRequest.serializeBinaryToWriter
-    );
+    writer.writeMessage(3, f, proto.room.SendMessageRequest.serializeBinaryToWriter);
   }
   f = message.getUpdateroom();
   if (f != null) {
-    writer.writeMessage(
-      4,
-      f,
-      proto.room.UpdateRoomRequest.serializeBinaryToWriter
-    );
+    writer.writeMessage(4, f, proto.room.UpdateRoomRequest.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional JoinRequest join = 1;
  * @return {?proto.room.JoinRequest}
  */
-proto.room.SignalRequest.prototype.getJoin = function() {
-  return /** @type{?proto.room.JoinRequest} */ (
-    jspb.Message.getWrapperField(this, proto.room.JoinRequest, 1));
+proto.room.SignalRequest.prototype.getJoin = function () {
+  return /** @type{?proto.room.JoinRequest} */ (jspb.Message.getWrapperField(this, proto.room.JoinRequest, 1));
 };
-
 
 /**
  * @param {?proto.room.JoinRequest|undefined} value
  * @return {!proto.room.SignalRequest} returns this
-*/
-proto.room.SignalRequest.prototype.setJoin = function(value) {
+ */
+proto.room.SignalRequest.prototype.setJoin = function (value) {
   return jspb.Message.setOneofWrapperField(this, 1, proto.room.SignalRequest.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalRequest} returns this
  */
-proto.room.SignalRequest.prototype.clearJoin = function() {
+proto.room.SignalRequest.prototype.clearJoin = function () {
   return this.setJoin(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalRequest.prototype.hasJoin = function() {
+proto.room.SignalRequest.prototype.hasJoin = function () {
   return jspb.Message.getField(this, 1) != null;
 };
-
 
 /**
  * optional LeaveRequest leave = 2;
  * @return {?proto.room.LeaveRequest}
  */
-proto.room.SignalRequest.prototype.getLeave = function() {
-  return /** @type{?proto.room.LeaveRequest} */ (
-    jspb.Message.getWrapperField(this, proto.room.LeaveRequest, 2));
+proto.room.SignalRequest.prototype.getLeave = function () {
+  return /** @type{?proto.room.LeaveRequest} */ (jspb.Message.getWrapperField(this, proto.room.LeaveRequest, 2));
 };
-
 
 /**
  * @param {?proto.room.LeaveRequest|undefined} value
  * @return {!proto.room.SignalRequest} returns this
-*/
-proto.room.SignalRequest.prototype.setLeave = function(value) {
+ */
+proto.room.SignalRequest.prototype.setLeave = function (value) {
   return jspb.Message.setOneofWrapperField(this, 2, proto.room.SignalRequest.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalRequest} returns this
  */
-proto.room.SignalRequest.prototype.clearLeave = function() {
+proto.room.SignalRequest.prototype.clearLeave = function () {
   return this.setLeave(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalRequest.prototype.hasLeave = function() {
+proto.room.SignalRequest.prototype.hasLeave = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * optional SendMessageRequest sendMessage = 3;
  * @return {?proto.room.SendMessageRequest}
  */
-proto.room.SignalRequest.prototype.getSendmessage = function() {
-  return /** @type{?proto.room.SendMessageRequest} */ (
-    jspb.Message.getWrapperField(this, proto.room.SendMessageRequest, 3));
+proto.room.SignalRequest.prototype.getSendmessage = function () {
+  return /** @type{?proto.room.SendMessageRequest} */ (jspb.Message.getWrapperField(
+    this,
+    proto.room.SendMessageRequest,
+    3,
+  ));
 };
-
 
 /**
  * @param {?proto.room.SendMessageRequest|undefined} value
  * @return {!proto.room.SignalRequest} returns this
-*/
-proto.room.SignalRequest.prototype.setSendmessage = function(value) {
+ */
+proto.room.SignalRequest.prototype.setSendmessage = function (value) {
   return jspb.Message.setOneofWrapperField(this, 3, proto.room.SignalRequest.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalRequest} returns this
  */
-proto.room.SignalRequest.prototype.clearSendmessage = function() {
+proto.room.SignalRequest.prototype.clearSendmessage = function () {
   return this.setSendmessage(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalRequest.prototype.hasSendmessage = function() {
+proto.room.SignalRequest.prototype.hasSendmessage = function () {
   return jspb.Message.getField(this, 3) != null;
 };
-
 
 /**
  * optional UpdateRoomRequest updateRoom = 4;
  * @return {?proto.room.UpdateRoomRequest}
  */
-proto.room.SignalRequest.prototype.getUpdateroom = function() {
-  return /** @type{?proto.room.UpdateRoomRequest} */ (
-    jspb.Message.getWrapperField(this, proto.room.UpdateRoomRequest, 4));
+proto.room.SignalRequest.prototype.getUpdateroom = function () {
+  return /** @type{?proto.room.UpdateRoomRequest} */ (jspb.Message.getWrapperField(
+    this,
+    proto.room.UpdateRoomRequest,
+    4,
+  ));
 };
-
 
 /**
  * @param {?proto.room.UpdateRoomRequest|undefined} value
  * @return {!proto.room.SignalRequest} returns this
-*/
-proto.room.SignalRequest.prototype.setUpdateroom = function(value) {
+ */
+proto.room.SignalRequest.prototype.setUpdateroom = function (value) {
   return jspb.Message.setOneofWrapperField(this, 4, proto.room.SignalRequest.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalRequest} returns this
  */
-proto.room.SignalRequest.prototype.clearUpdateroom = function() {
+proto.room.SignalRequest.prototype.clearUpdateroom = function () {
   return this.setUpdateroom(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalRequest.prototype.hasUpdateroom = function() {
+proto.room.SignalRequest.prototype.hasUpdateroom = function () {
   return jspb.Message.getField(this, 4) != null;
 };
-
-
 
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -1233,7 +1184,7 @@ proto.room.SignalRequest.prototype.hasUpdateroom = function() {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.room.SignalReply.oneofGroups_ = [[1,2,3,4,5,6,7]];
+proto.room.SignalReply.oneofGroups_ = [[1, 2, 3, 4, 5, 6, 7]];
 
 /**
  * @enum {number}
@@ -1246,75 +1197,74 @@ proto.room.SignalReply.PayloadCase = {
   PEER: 4,
   MESSAGE: 5,
   DISCONNECT: 6,
-  ROOM: 7
+  ROOM: 7,
 };
 
 /**
  * @return {proto.room.SignalReply.PayloadCase}
  */
-proto.room.SignalReply.prototype.getPayloadCase = function() {
-  return /** @type {proto.room.SignalReply.PayloadCase} */(jspb.Message.computeOneofCase(this, proto.room.SignalReply.oneofGroups_[0]));
+proto.room.SignalReply.prototype.getPayloadCase = function () {
+  return /** @type {proto.room.SignalReply.PayloadCase} */ (jspb.Message.computeOneofCase(
+    this,
+    proto.room.SignalReply.oneofGroups_[0],
+  ));
 };
-
-
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.SignalReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.SignalReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.SignalReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.SignalReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-join: (f = msg.getJoin()) && proto.room.JoinReply.toObject(includeInstance, f),
-leave: (f = msg.getLeave()) && proto.room.LeaveReply.toObject(includeInstance, f),
-sendmessage: (f = msg.getSendmessage()) && proto.room.SendMessageReply.toObject(includeInstance, f),
-peer: (f = msg.getPeer()) && proto.room.PeerEvent.toObject(includeInstance, f),
-message: (f = msg.getMessage()) && proto.room.Message.toObject(includeInstance, f),
-disconnect: (f = msg.getDisconnect()) && proto.room.Disconnect.toObject(includeInstance, f),
-room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.SignalReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.SignalReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.SignalReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.SignalReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        join: (f = msg.getJoin()) && proto.room.JoinReply.toObject(includeInstance, f),
+        leave: (f = msg.getLeave()) && proto.room.LeaveReply.toObject(includeInstance, f),
+        sendmessage: (f = msg.getSendmessage()) && proto.room.SendMessageReply.toObject(includeInstance, f),
+        peer: (f = msg.getPeer()) && proto.room.PeerEvent.toObject(includeInstance, f),
+        message: (f = msg.getMessage()) && proto.room.Message.toObject(includeInstance, f),
+        disconnect: (f = msg.getDisconnect()) && proto.room.Disconnect.toObject(includeInstance, f),
+        room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.SignalReply}
  */
-proto.room.SignalReply.deserializeBinary = function(bytes) {
+proto.room.SignalReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.SignalReply;
+  var msg = new proto.room.SignalReply();
   return proto.room.SignalReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1323,67 +1273,65 @@ proto.room.SignalReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.SignalReply}
  */
-proto.room.SignalReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.SignalReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.JoinReply;
-      reader.readMessage(value,proto.room.JoinReply.deserializeBinaryFromReader);
-      msg.setJoin(value);
-      break;
-    case 2:
-      var value = new proto.room.LeaveReply;
-      reader.readMessage(value,proto.room.LeaveReply.deserializeBinaryFromReader);
-      msg.setLeave(value);
-      break;
-    case 3:
-      var value = new proto.room.SendMessageReply;
-      reader.readMessage(value,proto.room.SendMessageReply.deserializeBinaryFromReader);
-      msg.setSendmessage(value);
-      break;
-    case 4:
-      var value = new proto.room.PeerEvent;
-      reader.readMessage(value,proto.room.PeerEvent.deserializeBinaryFromReader);
-      msg.setPeer(value);
-      break;
-    case 5:
-      var value = new proto.room.Message;
-      reader.readMessage(value,proto.room.Message.deserializeBinaryFromReader);
-      msg.setMessage(value);
-      break;
-    case 6:
-      var value = new proto.room.Disconnect;
-      reader.readMessage(value,proto.room.Disconnect.deserializeBinaryFromReader);
-      msg.setDisconnect(value);
-      break;
-    case 7:
-      var value = new proto.room.Room;
-      reader.readMessage(value,proto.room.Room.deserializeBinaryFromReader);
-      msg.setRoom(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.JoinReply();
+        reader.readMessage(value, proto.room.JoinReply.deserializeBinaryFromReader);
+        msg.setJoin(value);
+        break;
+      case 2:
+        var value = new proto.room.LeaveReply();
+        reader.readMessage(value, proto.room.LeaveReply.deserializeBinaryFromReader);
+        msg.setLeave(value);
+        break;
+      case 3:
+        var value = new proto.room.SendMessageReply();
+        reader.readMessage(value, proto.room.SendMessageReply.deserializeBinaryFromReader);
+        msg.setSendmessage(value);
+        break;
+      case 4:
+        var value = new proto.room.PeerEvent();
+        reader.readMessage(value, proto.room.PeerEvent.deserializeBinaryFromReader);
+        msg.setPeer(value);
+        break;
+      case 5:
+        var value = new proto.room.Message();
+        reader.readMessage(value, proto.room.Message.deserializeBinaryFromReader);
+        msg.setMessage(value);
+        break;
+      case 6:
+        var value = new proto.room.Disconnect();
+        reader.readMessage(value, proto.room.Disconnect.deserializeBinaryFromReader);
+        msg.setDisconnect(value);
+        break;
+      case 7:
+        var value = new proto.room.Room();
+        reader.readMessage(value, proto.room.Room.deserializeBinaryFromReader);
+        msg.setRoom(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.SignalReply.prototype.serializeBinary = function() {
+proto.room.SignalReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.SignalReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1392,380 +1340,315 @@ proto.room.SignalReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.SignalReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.SignalReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getJoin();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.JoinReply.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.JoinReply.serializeBinaryToWriter);
   }
   f = message.getLeave();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.LeaveReply.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.LeaveReply.serializeBinaryToWriter);
   }
   f = message.getSendmessage();
   if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.room.SendMessageReply.serializeBinaryToWriter
-    );
+    writer.writeMessage(3, f, proto.room.SendMessageReply.serializeBinaryToWriter);
   }
   f = message.getPeer();
   if (f != null) {
-    writer.writeMessage(
-      4,
-      f,
-      proto.room.PeerEvent.serializeBinaryToWriter
-    );
+    writer.writeMessage(4, f, proto.room.PeerEvent.serializeBinaryToWriter);
   }
   f = message.getMessage();
   if (f != null) {
-    writer.writeMessage(
-      5,
-      f,
-      proto.room.Message.serializeBinaryToWriter
-    );
+    writer.writeMessage(5, f, proto.room.Message.serializeBinaryToWriter);
   }
   f = message.getDisconnect();
   if (f != null) {
-    writer.writeMessage(
-      6,
-      f,
-      proto.room.Disconnect.serializeBinaryToWriter
-    );
+    writer.writeMessage(6, f, proto.room.Disconnect.serializeBinaryToWriter);
   }
   f = message.getRoom();
   if (f != null) {
-    writer.writeMessage(
-      7,
-      f,
-      proto.room.Room.serializeBinaryToWriter
-    );
+    writer.writeMessage(7, f, proto.room.Room.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional JoinReply join = 1;
  * @return {?proto.room.JoinReply}
  */
-proto.room.SignalReply.prototype.getJoin = function() {
-  return /** @type{?proto.room.JoinReply} */ (
-    jspb.Message.getWrapperField(this, proto.room.JoinReply, 1));
+proto.room.SignalReply.prototype.getJoin = function () {
+  return /** @type{?proto.room.JoinReply} */ (jspb.Message.getWrapperField(this, proto.room.JoinReply, 1));
 };
-
 
 /**
  * @param {?proto.room.JoinReply|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setJoin = function(value) {
+ */
+proto.room.SignalReply.prototype.setJoin = function (value) {
   return jspb.Message.setOneofWrapperField(this, 1, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearJoin = function() {
+proto.room.SignalReply.prototype.clearJoin = function () {
   return this.setJoin(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasJoin = function() {
+proto.room.SignalReply.prototype.hasJoin = function () {
   return jspb.Message.getField(this, 1) != null;
 };
-
 
 /**
  * optional LeaveReply leave = 2;
  * @return {?proto.room.LeaveReply}
  */
-proto.room.SignalReply.prototype.getLeave = function() {
-  return /** @type{?proto.room.LeaveReply} */ (
-    jspb.Message.getWrapperField(this, proto.room.LeaveReply, 2));
+proto.room.SignalReply.prototype.getLeave = function () {
+  return /** @type{?proto.room.LeaveReply} */ (jspb.Message.getWrapperField(this, proto.room.LeaveReply, 2));
 };
-
 
 /**
  * @param {?proto.room.LeaveReply|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setLeave = function(value) {
+ */
+proto.room.SignalReply.prototype.setLeave = function (value) {
   return jspb.Message.setOneofWrapperField(this, 2, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearLeave = function() {
+proto.room.SignalReply.prototype.clearLeave = function () {
   return this.setLeave(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasLeave = function() {
+proto.room.SignalReply.prototype.hasLeave = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * optional SendMessageReply sendMessage = 3;
  * @return {?proto.room.SendMessageReply}
  */
-proto.room.SignalReply.prototype.getSendmessage = function() {
-  return /** @type{?proto.room.SendMessageReply} */ (
-    jspb.Message.getWrapperField(this, proto.room.SendMessageReply, 3));
+proto.room.SignalReply.prototype.getSendmessage = function () {
+  return /** @type{?proto.room.SendMessageReply} */ (jspb.Message.getWrapperField(
+    this,
+    proto.room.SendMessageReply,
+    3,
+  ));
 };
-
 
 /**
  * @param {?proto.room.SendMessageReply|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setSendmessage = function(value) {
+ */
+proto.room.SignalReply.prototype.setSendmessage = function (value) {
   return jspb.Message.setOneofWrapperField(this, 3, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearSendmessage = function() {
+proto.room.SignalReply.prototype.clearSendmessage = function () {
   return this.setSendmessage(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasSendmessage = function() {
+proto.room.SignalReply.prototype.hasSendmessage = function () {
   return jspb.Message.getField(this, 3) != null;
 };
-
 
 /**
  * optional PeerEvent Peer = 4;
  * @return {?proto.room.PeerEvent}
  */
-proto.room.SignalReply.prototype.getPeer = function() {
-  return /** @type{?proto.room.PeerEvent} */ (
-    jspb.Message.getWrapperField(this, proto.room.PeerEvent, 4));
+proto.room.SignalReply.prototype.getPeer = function () {
+  return /** @type{?proto.room.PeerEvent} */ (jspb.Message.getWrapperField(this, proto.room.PeerEvent, 4));
 };
-
 
 /**
  * @param {?proto.room.PeerEvent|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setPeer = function(value) {
+ */
+proto.room.SignalReply.prototype.setPeer = function (value) {
   return jspb.Message.setOneofWrapperField(this, 4, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearPeer = function() {
+proto.room.SignalReply.prototype.clearPeer = function () {
   return this.setPeer(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasPeer = function() {
+proto.room.SignalReply.prototype.hasPeer = function () {
   return jspb.Message.getField(this, 4) != null;
 };
-
 
 /**
  * optional Message message = 5;
  * @return {?proto.room.Message}
  */
-proto.room.SignalReply.prototype.getMessage = function() {
-  return /** @type{?proto.room.Message} */ (
-    jspb.Message.getWrapperField(this, proto.room.Message, 5));
+proto.room.SignalReply.prototype.getMessage = function () {
+  return /** @type{?proto.room.Message} */ (jspb.Message.getWrapperField(this, proto.room.Message, 5));
 };
-
 
 /**
  * @param {?proto.room.Message|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setMessage = function(value) {
+ */
+proto.room.SignalReply.prototype.setMessage = function (value) {
   return jspb.Message.setOneofWrapperField(this, 5, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearMessage = function() {
+proto.room.SignalReply.prototype.clearMessage = function () {
   return this.setMessage(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasMessage = function() {
+proto.room.SignalReply.prototype.hasMessage = function () {
   return jspb.Message.getField(this, 5) != null;
 };
-
 
 /**
  * optional Disconnect disconnect = 6;
  * @return {?proto.room.Disconnect}
  */
-proto.room.SignalReply.prototype.getDisconnect = function() {
-  return /** @type{?proto.room.Disconnect} */ (
-    jspb.Message.getWrapperField(this, proto.room.Disconnect, 6));
+proto.room.SignalReply.prototype.getDisconnect = function () {
+  return /** @type{?proto.room.Disconnect} */ (jspb.Message.getWrapperField(this, proto.room.Disconnect, 6));
 };
-
 
 /**
  * @param {?proto.room.Disconnect|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setDisconnect = function(value) {
+ */
+proto.room.SignalReply.prototype.setDisconnect = function (value) {
   return jspb.Message.setOneofWrapperField(this, 6, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearDisconnect = function() {
+proto.room.SignalReply.prototype.clearDisconnect = function () {
   return this.setDisconnect(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasDisconnect = function() {
+proto.room.SignalReply.prototype.hasDisconnect = function () {
   return jspb.Message.getField(this, 6) != null;
 };
-
 
 /**
  * optional Room room = 7;
  * @return {?proto.room.Room}
  */
-proto.room.SignalReply.prototype.getRoom = function() {
-  return /** @type{?proto.room.Room} */ (
-    jspb.Message.getWrapperField(this, proto.room.Room, 7));
+proto.room.SignalReply.prototype.getRoom = function () {
+  return /** @type{?proto.room.Room} */ (jspb.Message.getWrapperField(this, proto.room.Room, 7));
 };
-
 
 /**
  * @param {?proto.room.Room|undefined} value
  * @return {!proto.room.SignalReply} returns this
-*/
-proto.room.SignalReply.prototype.setRoom = function(value) {
+ */
+proto.room.SignalReply.prototype.setRoom = function (value) {
   return jspb.Message.setOneofWrapperField(this, 7, proto.room.SignalReply.oneofGroups_[0], value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SignalReply} returns this
  */
-proto.room.SignalReply.prototype.clearRoom = function() {
+proto.room.SignalReply.prototype.clearRoom = function () {
   return this.setRoom(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SignalReply.prototype.hasRoom = function() {
+proto.room.SignalReply.prototype.hasRoom = function () {
   return jspb.Message.getField(this, 7) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.CreateRoomRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.CreateRoomRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.CreateRoomRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.CreateRoomRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.CreateRoomRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.CreateRoomRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.CreateRoomRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.CreateRoomRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.CreateRoomRequest}
  */
-proto.room.CreateRoomRequest.deserializeBinary = function(bytes) {
+proto.room.CreateRoomRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.CreateRoomRequest;
+  var msg = new proto.room.CreateRoomRequest();
   return proto.room.CreateRoomRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1774,37 +1657,35 @@ proto.room.CreateRoomRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.CreateRoomRequest}
  */
-proto.room.CreateRoomRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.CreateRoomRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.Room;
-      reader.readMessage(value,proto.room.Room.deserializeBinaryFromReader);
-      msg.setRoom(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.Room();
+        reader.readMessage(value, proto.room.Room.deserializeBinaryFromReader);
+        msg.setRoom(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.CreateRoomRequest.prototype.serializeBinary = function() {
+proto.room.CreateRoomRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.CreateRoomRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1813,111 +1694,96 @@ proto.room.CreateRoomRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.CreateRoomRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.CreateRoomRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getRoom();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.Room.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.Room.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional Room room = 1;
  * @return {?proto.room.Room}
  */
-proto.room.CreateRoomRequest.prototype.getRoom = function() {
-  return /** @type{?proto.room.Room} */ (
-    jspb.Message.getWrapperField(this, proto.room.Room, 1));
+proto.room.CreateRoomRequest.prototype.getRoom = function () {
+  return /** @type{?proto.room.Room} */ (jspb.Message.getWrapperField(this, proto.room.Room, 1));
 };
-
 
 /**
  * @param {?proto.room.Room|undefined} value
  * @return {!proto.room.CreateRoomRequest} returns this
-*/
-proto.room.CreateRoomRequest.prototype.setRoom = function(value) {
+ */
+proto.room.CreateRoomRequest.prototype.setRoom = function (value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.CreateRoomRequest} returns this
  */
-proto.room.CreateRoomRequest.prototype.clearRoom = function() {
+proto.room.CreateRoomRequest.prototype.clearRoom = function () {
   return this.setRoom(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.CreateRoomRequest.prototype.hasRoom = function() {
+proto.room.CreateRoomRequest.prototype.hasRoom = function () {
   return jspb.Message.getField(this, 1) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.CreateRoomReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.CreateRoomReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.CreateRoomReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.CreateRoomReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.CreateRoomReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.CreateRoomReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.CreateRoomReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.CreateRoomReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.CreateRoomReply}
  */
-proto.room.CreateRoomReply.deserializeBinary = function(bytes) {
+proto.room.CreateRoomReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.CreateRoomReply;
+  var msg = new proto.room.CreateRoomReply();
   return proto.room.CreateRoomReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1926,41 +1792,39 @@ proto.room.CreateRoomReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.CreateRoomReply}
  */
-proto.room.CreateRoomReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.CreateRoomReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.CreateRoomReply.prototype.serializeBinary = function() {
+proto.room.CreateRoomReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.CreateRoomReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1969,135 +1833,115 @@ proto.room.CreateRoomReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.CreateRoomReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.CreateRoomReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.CreateRoomReply.prototype.getSuccess = function() {
+proto.room.CreateRoomReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.CreateRoomReply} returns this
  */
-proto.room.CreateRoomReply.prototype.setSuccess = function(value) {
+proto.room.CreateRoomReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.CreateRoomReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.CreateRoomReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.CreateRoomReply} returns this
-*/
-proto.room.CreateRoomReply.prototype.setError = function(value) {
+ */
+proto.room.CreateRoomReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.CreateRoomReply} returns this
  */
-proto.room.CreateRoomReply.prototype.clearError = function() {
+proto.room.CreateRoomReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.CreateRoomReply.prototype.hasError = function() {
+proto.room.CreateRoomReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.DeleteRoomRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.DeleteRoomRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.DeleteRoomRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.DeleteRoomRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.DeleteRoomRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.DeleteRoomRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.DeleteRoomRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.DeleteRoomRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.DeleteRoomRequest}
  */
-proto.room.DeleteRoomRequest.deserializeBinary = function(bytes) {
+proto.room.DeleteRoomRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.DeleteRoomRequest;
+  var msg = new proto.room.DeleteRoomRequest();
   return proto.room.DeleteRoomRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2106,36 +1950,34 @@ proto.room.DeleteRoomRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.DeleteRoomRequest}
  */
-proto.room.DeleteRoomRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.DeleteRoomRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.DeleteRoomRequest.prototype.serializeBinary = function() {
+proto.room.DeleteRoomRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.DeleteRoomRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2144,91 +1986,80 @@ proto.room.DeleteRoomRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.DeleteRoomRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.DeleteRoomRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.DeleteRoomRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.DeleteRoomRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.DeleteRoomRequest} returns this
  */
-proto.room.DeleteRoomRequest.prototype.setSid = function(value) {
+proto.room.DeleteRoomRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.DeleteRoomReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.DeleteRoomReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.DeleteRoomReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.DeleteRoomReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.DeleteRoomReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.DeleteRoomReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.DeleteRoomReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.DeleteRoomReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.DeleteRoomReply}
  */
-proto.room.DeleteRoomReply.deserializeBinary = function(bytes) {
+proto.room.DeleteRoomReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.DeleteRoomReply;
+  var msg = new proto.room.DeleteRoomReply();
   return proto.room.DeleteRoomReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2237,41 +2068,39 @@ proto.room.DeleteRoomReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.DeleteRoomReply}
  */
-proto.room.DeleteRoomReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.DeleteRoomReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.DeleteRoomReply.prototype.serializeBinary = function() {
+proto.room.DeleteRoomReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.DeleteRoomReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2280,136 +2109,116 @@ proto.room.DeleteRoomReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.DeleteRoomReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.DeleteRoomReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.DeleteRoomReply.prototype.getSuccess = function() {
+proto.room.DeleteRoomReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.DeleteRoomReply} returns this
  */
-proto.room.DeleteRoomReply.prototype.setSuccess = function(value) {
+proto.room.DeleteRoomReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.DeleteRoomReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.DeleteRoomReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.DeleteRoomReply} returns this
-*/
-proto.room.DeleteRoomReply.prototype.setError = function(value) {
+ */
+proto.room.DeleteRoomReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.DeleteRoomReply} returns this
  */
-proto.room.DeleteRoomReply.prototype.clearError = function() {
+proto.room.DeleteRoomReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.DeleteRoomReply.prototype.hasError = function() {
+proto.room.DeleteRoomReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.JoinRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.JoinRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.JoinRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.JoinRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f),
-password: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.JoinRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.JoinRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.JoinRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.JoinRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f),
+        password: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.JoinRequest}
  */
-proto.room.JoinRequest.deserializeBinary = function(bytes) {
+proto.room.JoinRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.JoinRequest;
+  var msg = new proto.room.JoinRequest();
   return proto.room.JoinRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2418,41 +2227,39 @@ proto.room.JoinRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.JoinRequest}
  */
-proto.room.JoinRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.JoinRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.Peer;
-      reader.readMessage(value,proto.room.Peer.deserializeBinaryFromReader);
-      msg.setPeer(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setPassword(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.Peer();
+        reader.readMessage(value, proto.room.Peer.deserializeBinaryFromReader);
+        msg.setPeer(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setPassword(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.JoinRequest.prototype.serializeBinary = function() {
+proto.room.JoinRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.JoinRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2461,140 +2268,120 @@ proto.room.JoinRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.JoinRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.JoinRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getPeer();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.Peer.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.Peer.serializeBinaryToWriter);
   }
   f = message.getPassword();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional Peer peer = 1;
  * @return {?proto.room.Peer}
  */
-proto.room.JoinRequest.prototype.getPeer = function() {
-  return /** @type{?proto.room.Peer} */ (
-    jspb.Message.getWrapperField(this, proto.room.Peer, 1));
+proto.room.JoinRequest.prototype.getPeer = function () {
+  return /** @type{?proto.room.Peer} */ (jspb.Message.getWrapperField(this, proto.room.Peer, 1));
 };
-
 
 /**
  * @param {?proto.room.Peer|undefined} value
  * @return {!proto.room.JoinRequest} returns this
-*/
-proto.room.JoinRequest.prototype.setPeer = function(value) {
+ */
+proto.room.JoinRequest.prototype.setPeer = function (value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.JoinRequest} returns this
  */
-proto.room.JoinRequest.prototype.clearPeer = function() {
+proto.room.JoinRequest.prototype.clearPeer = function () {
   return this.setPeer(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.JoinRequest.prototype.hasPeer = function() {
+proto.room.JoinRequest.prototype.hasPeer = function () {
   return jspb.Message.getField(this, 1) != null;
 };
-
 
 /**
  * optional string password = 2;
  * @return {string}
  */
-proto.room.JoinRequest.prototype.getPassword = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.JoinRequest.prototype.getPassword = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.JoinRequest} returns this
  */
-proto.room.JoinRequest.prototype.setPassword = function(value) {
+proto.room.JoinRequest.prototype.setPassword = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.Room.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.Room.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.Room} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.Room.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-name: jspb.Message.getFieldWithDefault(msg, 2, ""),
-lock: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-password: jspb.Message.getFieldWithDefault(msg, 4, ""),
-description: jspb.Message.getFieldWithDefault(msg, 5, ""),
-maxpeers: jspb.Message.getFieldWithDefault(msg, 6, 0)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.Room.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.Room.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.Room} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.Room.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        name: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        lock: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+        password: jspb.Message.getFieldWithDefault(msg, 4, ''),
+        description: jspb.Message.getFieldWithDefault(msg, 5, ''),
+        maxpeers: jspb.Message.getFieldWithDefault(msg, 6, 0),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.Room}
  */
-proto.room.Room.deserializeBinary = function(bytes) {
+proto.room.Room.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.Room;
+  var msg = new proto.room.Room();
   return proto.room.Room.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2603,56 +2390,54 @@ proto.room.Room.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.Room}
  */
-proto.room.Room.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.Room.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setName(value);
-      break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setLock(value);
-      break;
-    case 4:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setPassword(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setDescription(value);
-      break;
-    case 6:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setMaxpeers(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setName(value);
+        break;
+      case 3:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setLock(value);
+        break;
+      case 4:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setPassword(value);
+        break;
+      case 5:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setDescription(value);
+        break;
+      case 6:
+        var value = /** @type {number} */ (reader.readUint32());
+        msg.setMaxpeers(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.Room.prototype.serializeBinary = function() {
+proto.room.Room.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.Room.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2661,218 +2446,182 @@ proto.room.Room.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.Room.serializeBinaryToWriter = function(message, writer) {
+proto.room.Room.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getLock();
   if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
+    writer.writeBool(3, f);
   }
   f = message.getPassword();
   if (f.length > 0) {
-    writer.writeString(
-      4,
-      f
-    );
+    writer.writeString(4, f);
   }
   f = message.getDescription();
   if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
+    writer.writeString(5, f);
   }
   f = message.getMaxpeers();
   if (f !== 0) {
-    writer.writeUint32(
-      6,
-      f
-    );
+    writer.writeUint32(6, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.Room.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.Room.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Room} returns this
  */
-proto.room.Room.prototype.setSid = function(value) {
+proto.room.Room.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string name = 2;
  * @return {string}
  */
-proto.room.Room.prototype.getName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.Room.prototype.getName = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Room} returns this
  */
-proto.room.Room.prototype.setName = function(value) {
+proto.room.Room.prototype.setName = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional bool lock = 3;
  * @return {boolean}
  */
-proto.room.Room.prototype.getLock = function() {
+proto.room.Room.prototype.getLock = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.Room} returns this
  */
-proto.room.Room.prototype.setLock = function(value) {
+proto.room.Room.prototype.setLock = function (value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
-
 
 /**
  * optional string password = 4;
  * @return {string}
  */
-proto.room.Room.prototype.getPassword = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+proto.room.Room.prototype.getPassword = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Room} returns this
  */
-proto.room.Room.prototype.setPassword = function(value) {
+proto.room.Room.prototype.setPassword = function (value) {
   return jspb.Message.setProto3StringField(this, 4, value);
 };
-
 
 /**
  * optional string description = 5;
  * @return {string}
  */
-proto.room.Room.prototype.getDescription = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+proto.room.Room.prototype.getDescription = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Room} returns this
  */
-proto.room.Room.prototype.setDescription = function(value) {
+proto.room.Room.prototype.setDescription = function (value) {
   return jspb.Message.setProto3StringField(this, 5, value);
 };
-
 
 /**
  * optional uint32 maxPeers = 6;
  * @return {number}
  */
-proto.room.Room.prototype.getMaxpeers = function() {
+proto.room.Room.prototype.getMaxpeers = function () {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
-
 
 /**
  * @param {number} value
  * @return {!proto.room.Room} returns this
  */
-proto.room.Room.prototype.setMaxpeers = function(value) {
+proto.room.Room.prototype.setMaxpeers = function (value) {
   return jspb.Message.setProto3IntField(this, 6, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.JoinReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.JoinReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.JoinReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.JoinReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
-role: jspb.Message.getFieldWithDefault(msg, 3, 0),
-room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.JoinReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.JoinReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.JoinReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.JoinReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+        role: jspb.Message.getFieldWithDefault(msg, 3, 0),
+        room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.JoinReply}
  */
-proto.room.JoinReply.deserializeBinary = function(bytes) {
+proto.room.JoinReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.JoinReply;
+  var msg = new proto.room.JoinReply();
   return proto.room.JoinReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2881,50 +2630,48 @@ proto.room.JoinReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.JoinReply}
  */
-proto.room.JoinReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.JoinReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    case 3:
-      var value = /** @type {!proto.room.Role} */ (reader.readEnum());
-      msg.setRole(value);
-      break;
-    case 4:
-      var value = new proto.room.Room;
-      reader.readMessage(value,proto.room.Room.deserializeBinaryFromReader);
-      msg.setRoom(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      case 3:
+        var value = /** @type {!proto.room.Role} */ (reader.readEnum());
+        msg.setRole(value);
+        break;
+      case 4:
+        var value = new proto.room.Room();
+        reader.readMessage(value, proto.room.Room.deserializeBinaryFromReader);
+        msg.setRoom(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.JoinReply.prototype.serializeBinary = function() {
+proto.room.JoinReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.JoinReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2933,206 +2680,172 @@ proto.room.JoinReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.JoinReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.JoinReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
   f = message.getRole();
   if (f !== 0.0) {
-    writer.writeEnum(
-      3,
-      f
-    );
+    writer.writeEnum(3, f);
   }
   f = message.getRoom();
   if (f != null) {
-    writer.writeMessage(
-      4,
-      f,
-      proto.room.Room.serializeBinaryToWriter
-    );
+    writer.writeMessage(4, f, proto.room.Room.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.JoinReply.prototype.getSuccess = function() {
+proto.room.JoinReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.JoinReply} returns this
  */
-proto.room.JoinReply.prototype.setSuccess = function(value) {
+proto.room.JoinReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.JoinReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.JoinReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.JoinReply} returns this
-*/
-proto.room.JoinReply.prototype.setError = function(value) {
+ */
+proto.room.JoinReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.JoinReply} returns this
  */
-proto.room.JoinReply.prototype.clearError = function() {
+proto.room.JoinReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.JoinReply.prototype.hasError = function() {
+proto.room.JoinReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * optional Role role = 3;
  * @return {!proto.room.Role}
  */
-proto.room.JoinReply.prototype.getRole = function() {
+proto.room.JoinReply.prototype.getRole = function () {
   return /** @type {!proto.room.Role} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
-
 
 /**
  * @param {!proto.room.Role} value
  * @return {!proto.room.JoinReply} returns this
  */
-proto.room.JoinReply.prototype.setRole = function(value) {
+proto.room.JoinReply.prototype.setRole = function (value) {
   return jspb.Message.setProto3EnumField(this, 3, value);
 };
-
 
 /**
  * optional Room room = 4;
  * @return {?proto.room.Room}
  */
-proto.room.JoinReply.prototype.getRoom = function() {
-  return /** @type{?proto.room.Room} */ (
-    jspb.Message.getWrapperField(this, proto.room.Room, 4));
+proto.room.JoinReply.prototype.getRoom = function () {
+  return /** @type{?proto.room.Room} */ (jspb.Message.getWrapperField(this, proto.room.Room, 4));
 };
-
 
 /**
  * @param {?proto.room.Room|undefined} value
  * @return {!proto.room.JoinReply} returns this
-*/
-proto.room.JoinReply.prototype.setRoom = function(value) {
+ */
+proto.room.JoinReply.prototype.setRoom = function (value) {
   return jspb.Message.setWrapperField(this, 4, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.JoinReply} returns this
  */
-proto.room.JoinReply.prototype.clearRoom = function() {
+proto.room.JoinReply.prototype.clearRoom = function () {
   return this.setRoom(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.JoinReply.prototype.hasRoom = function() {
+proto.room.JoinReply.prototype.hasRoom = function () {
   return jspb.Message.getField(this, 4) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.LeaveRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.LeaveRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.LeaveRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.LeaveRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-uid: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.LeaveRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.LeaveRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.LeaveRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.LeaveRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        uid: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.LeaveRequest}
  */
-proto.room.LeaveRequest.deserializeBinary = function(bytes) {
+proto.room.LeaveRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.LeaveRequest;
+  var msg = new proto.room.LeaveRequest();
   return proto.room.LeaveRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3141,40 +2854,38 @@ proto.room.LeaveRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.LeaveRequest}
  */
-proto.room.LeaveRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.LeaveRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setUid(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setUid(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.LeaveRequest.prototype.serializeBinary = function() {
+proto.room.LeaveRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.LeaveRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3183,116 +2894,100 @@ proto.room.LeaveRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.LeaveRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.LeaveRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getUid();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.LeaveRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.LeaveRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.LeaveRequest} returns this
  */
-proto.room.LeaveRequest.prototype.setSid = function(value) {
+proto.room.LeaveRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string uid = 2;
  * @return {string}
  */
-proto.room.LeaveRequest.prototype.getUid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.LeaveRequest.prototype.getUid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.LeaveRequest} returns this
  */
-proto.room.LeaveRequest.prototype.setUid = function(value) {
+proto.room.LeaveRequest.prototype.setUid = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.LeaveReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.LeaveReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.LeaveReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.LeaveReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.LeaveReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.LeaveReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.LeaveReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.LeaveReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.LeaveReply}
  */
-proto.room.LeaveReply.deserializeBinary = function(bytes) {
+proto.room.LeaveReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.LeaveReply;
+  var msg = new proto.room.LeaveReply();
   return proto.room.LeaveReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3301,41 +2996,39 @@ proto.room.LeaveReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.LeaveReply}
  */
-proto.room.LeaveReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.LeaveReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.LeaveReply.prototype.serializeBinary = function() {
+proto.room.LeaveReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.LeaveReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3344,144 +3037,124 @@ proto.room.LeaveReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.LeaveReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.LeaveReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.LeaveReply.prototype.getSuccess = function() {
+proto.room.LeaveReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.LeaveReply} returns this
  */
-proto.room.LeaveReply.prototype.setSuccess = function(value) {
+proto.room.LeaveReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.LeaveReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.LeaveReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.LeaveReply} returns this
-*/
-proto.room.LeaveReply.prototype.setError = function(value) {
+ */
+proto.room.LeaveReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.LeaveReply} returns this
  */
-proto.room.LeaveReply.prototype.clearError = function() {
+proto.room.LeaveReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.LeaveReply.prototype.hasError = function() {
+proto.room.LeaveReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.Peer.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.Peer.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.Peer} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.Peer.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-displayname: jspb.Message.getFieldWithDefault(msg, 3, ""),
-extrainfo: msg.getExtrainfo_asB64(),
-destination: jspb.Message.getFieldWithDefault(msg, 5, ""),
-role: jspb.Message.getFieldWithDefault(msg, 6, 0),
-protocol: jspb.Message.getFieldWithDefault(msg, 7, 0),
-avatar: jspb.Message.getFieldWithDefault(msg, 8, ""),
-direction: jspb.Message.getFieldWithDefault(msg, 9, 0),
-vendor: jspb.Message.getFieldWithDefault(msg, 10, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.Peer.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.Peer.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.Peer} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.Peer.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        uid: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        displayname: jspb.Message.getFieldWithDefault(msg, 3, ''),
+        extrainfo: msg.getExtrainfo_asB64(),
+        destination: jspb.Message.getFieldWithDefault(msg, 5, ''),
+        role: jspb.Message.getFieldWithDefault(msg, 6, 0),
+        protocol: jspb.Message.getFieldWithDefault(msg, 7, 0),
+        avatar: jspb.Message.getFieldWithDefault(msg, 8, ''),
+        direction: jspb.Message.getFieldWithDefault(msg, 9, 0),
+        vendor: jspb.Message.getFieldWithDefault(msg, 10, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.Peer}
  */
-proto.room.Peer.deserializeBinary = function(bytes) {
+proto.room.Peer.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.Peer;
+  var msg = new proto.room.Peer();
   return proto.room.Peer.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3490,72 +3163,70 @@ proto.room.Peer.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.Peer}
  */
-proto.room.Peer.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.Peer.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setUid(value);
-      break;
-    case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setDisplayname(value);
-      break;
-    case 4:
-      var value = /** @type {!Uint8Array} */ (reader.readBytes());
-      msg.setExtrainfo(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setDestination(value);
-      break;
-    case 6:
-      var value = /** @type {!proto.room.Role} */ (reader.readEnum());
-      msg.setRole(value);
-      break;
-    case 7:
-      var value = /** @type {!proto.room.Protocol} */ (reader.readEnum());
-      msg.setProtocol(value);
-      break;
-    case 8:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setAvatar(value);
-      break;
-    case 9:
-      var value = /** @type {!proto.room.Peer.Direction} */ (reader.readEnum());
-      msg.setDirection(value);
-      break;
-    case 10:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setVendor(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setUid(value);
+        break;
+      case 3:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setDisplayname(value);
+        break;
+      case 4:
+        var value = /** @type {!Uint8Array} */ (reader.readBytes());
+        msg.setExtrainfo(value);
+        break;
+      case 5:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setDestination(value);
+        break;
+      case 6:
+        var value = /** @type {!proto.room.Role} */ (reader.readEnum());
+        msg.setRole(value);
+        break;
+      case 7:
+        var value = /** @type {!proto.room.Protocol} */ (reader.readEnum());
+        msg.setProtocol(value);
+        break;
+      case 8:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setAvatar(value);
+        break;
+      case 9:
+        var value = /** @type {!proto.room.Peer.Direction} */ (reader.readEnum());
+        msg.setDirection(value);
+        break;
+      case 10:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setVendor(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.Peer.prototype.serializeBinary = function() {
+proto.room.Peer.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.Peer.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3564,80 +3235,49 @@ proto.room.Peer.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.Peer.serializeBinaryToWriter = function(message, writer) {
+proto.room.Peer.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getUid();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getDisplayname();
   if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
+    writer.writeString(3, f);
   }
   f = message.getExtrainfo_asU8();
   if (f.length > 0) {
-    writer.writeBytes(
-      4,
-      f
-    );
+    writer.writeBytes(4, f);
   }
   f = message.getDestination();
   if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
+    writer.writeString(5, f);
   }
   f = message.getRole();
   if (f !== 0.0) {
-    writer.writeEnum(
-      6,
-      f
-    );
+    writer.writeEnum(6, f);
   }
   f = message.getProtocol();
   if (f !== 0.0) {
-    writer.writeEnum(
-      7,
-      f
-    );
+    writer.writeEnum(7, f);
   }
   f = message.getAvatar();
   if (f.length > 0) {
-    writer.writeString(
-      8,
-      f
-    );
+    writer.writeString(8, f);
   }
   f = message.getDirection();
   if (f !== 0.0) {
-    writer.writeEnum(
-      9,
-      f
-    );
+    writer.writeEnum(9, f);
   }
   f = message.getVendor();
   if (f.length > 0) {
-    writer.writeString(
-      10,
-      f
-    );
+    writer.writeString(10, f);
   }
 };
-
 
 /**
  * @enum {number}
@@ -3645,82 +3285,73 @@ proto.room.Peer.serializeBinaryToWriter = function(message, writer) {
 proto.room.Peer.Direction = {
   INCOMING: 0,
   OUTGOING: 1,
-  BILATERAL: 2
+  BILATERAL: 2,
 };
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.Peer.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.Peer.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setSid = function(value) {
+proto.room.Peer.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string uid = 2;
  * @return {string}
  */
-proto.room.Peer.prototype.getUid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.Peer.prototype.getUid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setUid = function(value) {
+proto.room.Peer.prototype.setUid = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional string displayName = 3;
  * @return {string}
  */
-proto.room.Peer.prototype.getDisplayname = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+proto.room.Peer.prototype.getDisplayname = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setDisplayname = function(value) {
+proto.room.Peer.prototype.setDisplayname = function (value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
-
 
 /**
  * optional bytes extraInfo = 4;
  * @return {!(string|Uint8Array)}
  */
-proto.room.Peer.prototype.getExtrainfo = function() {
-  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+proto.room.Peer.prototype.getExtrainfo = function () {
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 4, ''));
 };
-
 
 /**
  * optional bytes extraInfo = 4;
  * This is a type-conversion wrapper around `getExtrainfo()`
  * @return {string}
  */
-proto.room.Peer.prototype.getExtrainfo_asB64 = function() {
-  return /** @type {string} */ (jspb.Message.bytesAsB64(
-      this.getExtrainfo()));
+proto.room.Peer.prototype.getExtrainfo_asB64 = function () {
+  return /** @type {string} */ (jspb.Message.bytesAsB64(this.getExtrainfo()));
 };
-
 
 /**
  * optional bytes extraInfo = 4;
@@ -3729,183 +3360,163 @@ proto.room.Peer.prototype.getExtrainfo_asB64 = function() {
  * This is a type-conversion wrapper around `getExtrainfo()`
  * @return {!Uint8Array}
  */
-proto.room.Peer.prototype.getExtrainfo_asU8 = function() {
-  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
-      this.getExtrainfo()));
+proto.room.Peer.prototype.getExtrainfo_asU8 = function () {
+  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(this.getExtrainfo()));
 };
-
 
 /**
  * @param {!(string|Uint8Array)} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setExtrainfo = function(value) {
+proto.room.Peer.prototype.setExtrainfo = function (value) {
   return jspb.Message.setProto3BytesField(this, 4, value);
 };
-
 
 /**
  * optional string destination = 5;
  * @return {string}
  */
-proto.room.Peer.prototype.getDestination = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+proto.room.Peer.prototype.getDestination = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setDestination = function(value) {
+proto.room.Peer.prototype.setDestination = function (value) {
   return jspb.Message.setProto3StringField(this, 5, value);
 };
-
 
 /**
  * optional Role role = 6;
  * @return {!proto.room.Role}
  */
-proto.room.Peer.prototype.getRole = function() {
+proto.room.Peer.prototype.getRole = function () {
   return /** @type {!proto.room.Role} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
-
 
 /**
  * @param {!proto.room.Role} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setRole = function(value) {
+proto.room.Peer.prototype.setRole = function (value) {
   return jspb.Message.setProto3EnumField(this, 6, value);
 };
-
 
 /**
  * optional Protocol protocol = 7;
  * @return {!proto.room.Protocol}
  */
-proto.room.Peer.prototype.getProtocol = function() {
+proto.room.Peer.prototype.getProtocol = function () {
   return /** @type {!proto.room.Protocol} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
-
 
 /**
  * @param {!proto.room.Protocol} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setProtocol = function(value) {
+proto.room.Peer.prototype.setProtocol = function (value) {
   return jspb.Message.setProto3EnumField(this, 7, value);
 };
-
 
 /**
  * optional string avatar = 8;
  * @return {string}
  */
-proto.room.Peer.prototype.getAvatar = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
+proto.room.Peer.prototype.getAvatar = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setAvatar = function(value) {
+proto.room.Peer.prototype.setAvatar = function (value) {
   return jspb.Message.setProto3StringField(this, 8, value);
 };
-
 
 /**
  * optional Direction direction = 9;
  * @return {!proto.room.Peer.Direction}
  */
-proto.room.Peer.prototype.getDirection = function() {
+proto.room.Peer.prototype.getDirection = function () {
   return /** @type {!proto.room.Peer.Direction} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
 };
-
 
 /**
  * @param {!proto.room.Peer.Direction} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setDirection = function(value) {
+proto.room.Peer.prototype.setDirection = function (value) {
   return jspb.Message.setProto3EnumField(this, 9, value);
 };
-
 
 /**
  * optional string vendor = 10;
  * @return {string}
  */
-proto.room.Peer.prototype.getVendor = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 10, ""));
+proto.room.Peer.prototype.getVendor = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 10, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Peer} returns this
  */
-proto.room.Peer.prototype.setVendor = function(value) {
+proto.room.Peer.prototype.setVendor = function (value) {
   return jspb.Message.setProto3StringField(this, 10, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.AddPeerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.AddPeerRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.AddPeerRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.AddPeerRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.AddPeerRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.AddPeerRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.AddPeerRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.AddPeerRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.AddPeerRequest}
  */
-proto.room.AddPeerRequest.deserializeBinary = function(bytes) {
+proto.room.AddPeerRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.AddPeerRequest;
+  var msg = new proto.room.AddPeerRequest();
   return proto.room.AddPeerRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3914,37 +3525,35 @@ proto.room.AddPeerRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.AddPeerRequest}
  */
-proto.room.AddPeerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.AddPeerRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.Peer;
-      reader.readMessage(value,proto.room.Peer.deserializeBinaryFromReader);
-      msg.setPeer(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.Peer();
+        reader.readMessage(value, proto.room.Peer.deserializeBinaryFromReader);
+        msg.setPeer(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.AddPeerRequest.prototype.serializeBinary = function() {
+proto.room.AddPeerRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.AddPeerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3953,111 +3562,96 @@ proto.room.AddPeerRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.AddPeerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.AddPeerRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getPeer();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.Peer.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.Peer.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional Peer peer = 1;
  * @return {?proto.room.Peer}
  */
-proto.room.AddPeerRequest.prototype.getPeer = function() {
-  return /** @type{?proto.room.Peer} */ (
-    jspb.Message.getWrapperField(this, proto.room.Peer, 1));
+proto.room.AddPeerRequest.prototype.getPeer = function () {
+  return /** @type{?proto.room.Peer} */ (jspb.Message.getWrapperField(this, proto.room.Peer, 1));
 };
-
 
 /**
  * @param {?proto.room.Peer|undefined} value
  * @return {!proto.room.AddPeerRequest} returns this
-*/
-proto.room.AddPeerRequest.prototype.setPeer = function(value) {
+ */
+proto.room.AddPeerRequest.prototype.setPeer = function (value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.AddPeerRequest} returns this
  */
-proto.room.AddPeerRequest.prototype.clearPeer = function() {
+proto.room.AddPeerRequest.prototype.clearPeer = function () {
   return this.setPeer(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.AddPeerRequest.prototype.hasPeer = function() {
+proto.room.AddPeerRequest.prototype.hasPeer = function () {
   return jspb.Message.getField(this, 1) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.AddPeerReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.AddPeerReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.AddPeerReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.AddPeerReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.AddPeerReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.AddPeerReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.AddPeerReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.AddPeerReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.AddPeerReply}
  */
-proto.room.AddPeerReply.deserializeBinary = function(bytes) {
+proto.room.AddPeerReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.AddPeerReply;
+  var msg = new proto.room.AddPeerReply();
   return proto.room.AddPeerReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4066,41 +3660,39 @@ proto.room.AddPeerReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.AddPeerReply}
  */
-proto.room.AddPeerReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.AddPeerReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.AddPeerReply.prototype.serializeBinary = function() {
+proto.room.AddPeerReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.AddPeerReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4109,135 +3701,115 @@ proto.room.AddPeerReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.AddPeerReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.AddPeerReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.AddPeerReply.prototype.getSuccess = function() {
+proto.room.AddPeerReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.AddPeerReply} returns this
  */
-proto.room.AddPeerReply.prototype.setSuccess = function(value) {
+proto.room.AddPeerReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.AddPeerReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.AddPeerReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.AddPeerReply} returns this
-*/
-proto.room.AddPeerReply.prototype.setError = function(value) {
+ */
+proto.room.AddPeerReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.AddPeerReply} returns this
  */
-proto.room.AddPeerReply.prototype.clearError = function() {
+proto.room.AddPeerReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.AddPeerReply.prototype.hasError = function() {
+proto.room.AddPeerReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.GetPeersRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.GetPeersRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.GetPeersRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.GetPeersRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.GetPeersRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.GetPeersRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.GetPeersRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.GetPeersRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.GetPeersRequest}
  */
-proto.room.GetPeersRequest.deserializeBinary = function(bytes) {
+proto.room.GetPeersRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.GetPeersRequest;
+  var msg = new proto.room.GetPeersRequest();
   return proto.room.GetPeersRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4246,36 +3818,34 @@ proto.room.GetPeersRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.GetPeersRequest}
  */
-proto.room.GetPeersRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.GetPeersRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.GetPeersRequest.prototype.serializeBinary = function() {
+proto.room.GetPeersRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.GetPeersRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4284,36 +3854,29 @@ proto.room.GetPeersRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.GetPeersRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.GetPeersRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.GetPeersRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.GetPeersRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.GetPeersRequest} returns this
  */
-proto.room.GetPeersRequest.prototype.setSid = function(value) {
+proto.room.GetPeersRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
-
 
 /**
  * List of repeated fields within this message type.
@@ -4322,62 +3885,57 @@ proto.room.GetPeersRequest.prototype.setSid = function(value) {
  */
 proto.room.GetPeersReply.repeatedFields_ = [3];
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.GetPeersReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.GetPeersReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.GetPeersReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.GetPeersReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
-peersList: jspb.Message.toObjectList(msg.getPeersList(),
-    proto.room.Peer.toObject, includeInstance)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.GetPeersReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.GetPeersReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.GetPeersReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.GetPeersReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+        peersList: jspb.Message.toObjectList(msg.getPeersList(), proto.room.Peer.toObject, includeInstance),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.GetPeersReply}
  */
-proto.room.GetPeersReply.deserializeBinary = function(bytes) {
+proto.room.GetPeersReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.GetPeersReply;
+  var msg = new proto.room.GetPeersReply();
   return proto.room.GetPeersReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4386,46 +3944,44 @@ proto.room.GetPeersReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.GetPeersReply}
  */
-proto.room.GetPeersReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.GetPeersReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    case 3:
-      var value = new proto.room.Peer;
-      reader.readMessage(value,proto.room.Peer.deserializeBinaryFromReader);
-      msg.addPeers(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      case 3:
+        var value = new proto.room.Peer();
+        reader.readMessage(value, proto.room.Peer.deserializeBinaryFromReader);
+        msg.addPeers(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.GetPeersReply.prototype.serializeBinary = function() {
+proto.room.GetPeersReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.GetPeersReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4434,184 +3990,155 @@ proto.room.GetPeersReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.GetPeersReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.GetPeersReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
   f = message.getPeersList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      3,
-      f,
-      proto.room.Peer.serializeBinaryToWriter
-    );
+    writer.writeRepeatedMessage(3, f, proto.room.Peer.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.GetPeersReply.prototype.getSuccess = function() {
+proto.room.GetPeersReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.GetPeersReply} returns this
  */
-proto.room.GetPeersReply.prototype.setSuccess = function(value) {
+proto.room.GetPeersReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.GetPeersReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.GetPeersReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.GetPeersReply} returns this
-*/
-proto.room.GetPeersReply.prototype.setError = function(value) {
+ */
+proto.room.GetPeersReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.GetPeersReply} returns this
  */
-proto.room.GetPeersReply.prototype.clearError = function() {
+proto.room.GetPeersReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.GetPeersReply.prototype.hasError = function() {
+proto.room.GetPeersReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * repeated Peer Peers = 3;
  * @return {!Array<!proto.room.Peer>}
  */
-proto.room.GetPeersReply.prototype.getPeersList = function() {
-  return /** @type{!Array<!proto.room.Peer>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.room.Peer, 3));
+proto.room.GetPeersReply.prototype.getPeersList = function () {
+  return /** @type{!Array<!proto.room.Peer>} */ (jspb.Message.getRepeatedWrapperField(this, proto.room.Peer, 3));
 };
-
 
 /**
  * @param {!Array<!proto.room.Peer>} value
  * @return {!proto.room.GetPeersReply} returns this
-*/
-proto.room.GetPeersReply.prototype.setPeersList = function(value) {
+ */
+proto.room.GetPeersReply.prototype.setPeersList = function (value) {
   return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
-
 
 /**
  * @param {!proto.room.Peer=} opt_value
  * @param {number=} opt_index
  * @return {!proto.room.Peer}
  */
-proto.room.GetPeersReply.prototype.addPeers = function(opt_value, opt_index) {
+proto.room.GetPeersReply.prototype.addPeers = function (opt_value, opt_index) {
   return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.room.Peer, opt_index);
 };
-
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.room.GetPeersReply} returns this
  */
-proto.room.GetPeersReply.prototype.clearPeersList = function() {
+proto.room.GetPeersReply.prototype.clearPeersList = function () {
   return this.setPeersList([]);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.Message.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.Message.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.Message} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.Message.toObject = function(includeInstance, msg) {
-  var f, obj = {
-from: jspb.Message.getFieldWithDefault(msg, 1, ""),
-to: jspb.Message.getFieldWithDefault(msg, 2, ""),
-type: jspb.Message.getFieldWithDefault(msg, 3, ""),
-payload: msg.getPayload_asB64()
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.Message.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.Message.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.Message} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.Message.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        from: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        to: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        type: jspb.Message.getFieldWithDefault(msg, 3, ''),
+        payload: msg.getPayload_asB64(),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.Message}
  */
-proto.room.Message.deserializeBinary = function(bytes) {
+proto.room.Message.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.Message;
+  var msg = new proto.room.Message();
   return proto.room.Message.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4620,48 +4147,46 @@ proto.room.Message.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.Message}
  */
-proto.room.Message.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.Message.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setFrom(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setTo(value);
-      break;
-    case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setType(value);
-      break;
-    case 4:
-      var value = /** @type {!Uint8Array} */ (reader.readBytes());
-      msg.setPayload(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setFrom(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setTo(value);
+        break;
+      case 3:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setType(value);
+        break;
+      case 4:
+        var value = /** @type {!Uint8Array} */ (reader.readBytes());
+        msg.setPayload(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.Message.prototype.serializeBinary = function() {
+proto.room.Message.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.Message.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4670,112 +4195,90 @@ proto.room.Message.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.Message.serializeBinaryToWriter = function(message, writer) {
+proto.room.Message.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getFrom();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getTo();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getType();
   if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
+    writer.writeString(3, f);
   }
   f = message.getPayload_asU8();
   if (f.length > 0) {
-    writer.writeBytes(
-      4,
-      f
-    );
+    writer.writeBytes(4, f);
   }
 };
-
 
 /**
  * optional string from = 1;
  * @return {string}
  */
-proto.room.Message.prototype.getFrom = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.Message.prototype.getFrom = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Message} returns this
  */
-proto.room.Message.prototype.setFrom = function(value) {
+proto.room.Message.prototype.setFrom = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string to = 2;
  * @return {string}
  */
-proto.room.Message.prototype.getTo = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.Message.prototype.getTo = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Message} returns this
  */
-proto.room.Message.prototype.setTo = function(value) {
+proto.room.Message.prototype.setTo = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional string type = 3;
  * @return {string}
  */
-proto.room.Message.prototype.getType = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+proto.room.Message.prototype.getType = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Message} returns this
  */
-proto.room.Message.prototype.setType = function(value) {
+proto.room.Message.prototype.setType = function (value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
-
 
 /**
  * optional bytes payload = 4;
  * @return {!(string|Uint8Array)}
  */
-proto.room.Message.prototype.getPayload = function() {
-  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+proto.room.Message.prototype.getPayload = function () {
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 4, ''));
 };
-
 
 /**
  * optional bytes payload = 4;
  * This is a type-conversion wrapper around `getPayload()`
  * @return {string}
  */
-proto.room.Message.prototype.getPayload_asB64 = function() {
-  return /** @type {string} */ (jspb.Message.bytesAsB64(
-      this.getPayload()));
+proto.room.Message.prototype.getPayload_asB64 = function () {
+  return /** @type {string} */ (jspb.Message.bytesAsB64(this.getPayload()));
 };
-
 
 /**
  * optional bytes payload = 4;
@@ -4784,76 +4287,68 @@ proto.room.Message.prototype.getPayload_asB64 = function() {
  * This is a type-conversion wrapper around `getPayload()`
  * @return {!Uint8Array}
  */
-proto.room.Message.prototype.getPayload_asU8 = function() {
-  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
-      this.getPayload()));
+proto.room.Message.prototype.getPayload_asU8 = function () {
+  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(this.getPayload()));
 };
-
 
 /**
  * @param {!(string|Uint8Array)} value
  * @return {!proto.room.Message} returns this
  */
-proto.room.Message.prototype.setPayload = function(value) {
+proto.room.Message.prototype.setPayload = function (value) {
   return jspb.Message.setProto3BytesField(this, 4, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.SendMessageRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.SendMessageRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.SendMessageRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.SendMessageRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-message: (f = msg.getMessage()) && proto.room.Message.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.SendMessageRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.SendMessageRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.SendMessageRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.SendMessageRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        message: (f = msg.getMessage()) && proto.room.Message.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.SendMessageRequest}
  */
-proto.room.SendMessageRequest.deserializeBinary = function(bytes) {
+proto.room.SendMessageRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.SendMessageRequest;
+  var msg = new proto.room.SendMessageRequest();
   return proto.room.SendMessageRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4862,41 +4357,39 @@ proto.room.SendMessageRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.SendMessageRequest}
  */
-proto.room.SendMessageRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.SendMessageRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = new proto.room.Message;
-      reader.readMessage(value,proto.room.Message.deserializeBinaryFromReader);
-      msg.setMessage(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = new proto.room.Message();
+        reader.readMessage(value, proto.room.Message.deserializeBinaryFromReader);
+        msg.setMessage(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.SendMessageRequest.prototype.serializeBinary = function() {
+proto.room.SendMessageRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.SendMessageRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4905,136 +4398,116 @@ proto.room.SendMessageRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.SendMessageRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.SendMessageRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getMessage();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Message.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Message.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.SendMessageRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.SendMessageRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.SendMessageRequest} returns this
  */
-proto.room.SendMessageRequest.prototype.setSid = function(value) {
+proto.room.SendMessageRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional Message message = 2;
  * @return {?proto.room.Message}
  */
-proto.room.SendMessageRequest.prototype.getMessage = function() {
-  return /** @type{?proto.room.Message} */ (
-    jspb.Message.getWrapperField(this, proto.room.Message, 2));
+proto.room.SendMessageRequest.prototype.getMessage = function () {
+  return /** @type{?proto.room.Message} */ (jspb.Message.getWrapperField(this, proto.room.Message, 2));
 };
-
 
 /**
  * @param {?proto.room.Message|undefined} value
  * @return {!proto.room.SendMessageRequest} returns this
-*/
-proto.room.SendMessageRequest.prototype.setMessage = function(value) {
+ */
+proto.room.SendMessageRequest.prototype.setMessage = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SendMessageRequest} returns this
  */
-proto.room.SendMessageRequest.prototype.clearMessage = function() {
+proto.room.SendMessageRequest.prototype.clearMessage = function () {
   return this.setMessage(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SendMessageRequest.prototype.hasMessage = function() {
+proto.room.SendMessageRequest.prototype.hasMessage = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.SendMessageReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.SendMessageReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.SendMessageReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.SendMessageReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.SendMessageReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.SendMessageReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.SendMessageReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.SendMessageReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.SendMessageReply}
  */
-proto.room.SendMessageReply.deserializeBinary = function(bytes) {
+proto.room.SendMessageReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.SendMessageReply;
+  var msg = new proto.room.SendMessageReply();
   return proto.room.SendMessageReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5043,41 +4516,39 @@ proto.room.SendMessageReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.SendMessageReply}
  */
-proto.room.SendMessageReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.SendMessageReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.SendMessageReply.prototype.serializeBinary = function() {
+proto.room.SendMessageReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.SendMessageReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5086,136 +4557,116 @@ proto.room.SendMessageReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.SendMessageReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.SendMessageReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.SendMessageReply.prototype.getSuccess = function() {
+proto.room.SendMessageReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.SendMessageReply} returns this
  */
-proto.room.SendMessageReply.prototype.setSuccess = function(value) {
+proto.room.SendMessageReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.SendMessageReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.SendMessageReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.SendMessageReply} returns this
-*/
-proto.room.SendMessageReply.prototype.setError = function(value) {
+ */
+proto.room.SendMessageReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.SendMessageReply} returns this
  */
-proto.room.SendMessageReply.prototype.clearError = function() {
+proto.room.SendMessageReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.SendMessageReply.prototype.hasError = function() {
+proto.room.SendMessageReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.Disconnect.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.Disconnect.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.Disconnect} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.Disconnect.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.Disconnect.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.Disconnect.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.Disconnect} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.Disconnect.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        reason: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.Disconnect}
  */
-proto.room.Disconnect.deserializeBinary = function(bytes) {
+proto.room.Disconnect.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.Disconnect;
+  var msg = new proto.room.Disconnect();
   return proto.room.Disconnect.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5224,40 +4675,38 @@ proto.room.Disconnect.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.Disconnect}
  */
-proto.room.Disconnect.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.Disconnect.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setReason(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setReason(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.Disconnect.prototype.serializeBinary = function() {
+proto.room.Disconnect.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.Disconnect.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5266,116 +4715,100 @@ proto.room.Disconnect.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.Disconnect.serializeBinaryToWriter = function(message, writer) {
+proto.room.Disconnect.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getReason();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.Disconnect.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.Disconnect.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Disconnect} returns this
  */
-proto.room.Disconnect.prototype.setSid = function(value) {
+proto.room.Disconnect.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string reason = 2;
  * @return {string}
  */
-proto.room.Disconnect.prototype.getReason = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.Disconnect.prototype.getReason = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.Disconnect} returns this
  */
-proto.room.Disconnect.prototype.setReason = function(value) {
+proto.room.Disconnect.prototype.setReason = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.PeerEvent.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.PeerEvent.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.PeerEvent} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.PeerEvent.toObject = function(includeInstance, msg) {
-  var f, obj = {
-peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f),
-state: jspb.Message.getFieldWithDefault(msg, 2, 0)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.PeerEvent.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.PeerEvent.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.PeerEvent} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.PeerEvent.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f),
+        state: jspb.Message.getFieldWithDefault(msg, 2, 0),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.PeerEvent}
  */
-proto.room.PeerEvent.deserializeBinary = function(bytes) {
+proto.room.PeerEvent.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.PeerEvent;
+  var msg = new proto.room.PeerEvent();
   return proto.room.PeerEvent.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5384,41 +4817,39 @@ proto.room.PeerEvent.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.PeerEvent}
  */
-proto.room.PeerEvent.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.PeerEvent.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.Peer;
-      reader.readMessage(value,proto.room.Peer.deserializeBinaryFromReader);
-      msg.setPeer(value);
-      break;
-    case 2:
-      var value = /** @type {!proto.room.PeerState} */ (reader.readEnum());
-      msg.setState(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.Peer();
+        reader.readMessage(value, proto.room.Peer.deserializeBinaryFromReader);
+        msg.setPeer(value);
+        break;
+      case 2:
+        var value = /** @type {!proto.room.PeerState} */ (reader.readEnum());
+        msg.setState(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.PeerEvent.prototype.serializeBinary = function() {
+proto.room.PeerEvent.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.PeerEvent.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5427,135 +4858,115 @@ proto.room.PeerEvent.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.PeerEvent.serializeBinaryToWriter = function(message, writer) {
+proto.room.PeerEvent.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getPeer();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.Peer.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.Peer.serializeBinaryToWriter);
   }
   f = message.getState();
   if (f !== 0.0) {
-    writer.writeEnum(
-      2,
-      f
-    );
+    writer.writeEnum(2, f);
   }
 };
-
 
 /**
  * optional Peer Peer = 1;
  * @return {?proto.room.Peer}
  */
-proto.room.PeerEvent.prototype.getPeer = function() {
-  return /** @type{?proto.room.Peer} */ (
-    jspb.Message.getWrapperField(this, proto.room.Peer, 1));
+proto.room.PeerEvent.prototype.getPeer = function () {
+  return /** @type{?proto.room.Peer} */ (jspb.Message.getWrapperField(this, proto.room.Peer, 1));
 };
-
 
 /**
  * @param {?proto.room.Peer|undefined} value
  * @return {!proto.room.PeerEvent} returns this
-*/
-proto.room.PeerEvent.prototype.setPeer = function(value) {
+ */
+proto.room.PeerEvent.prototype.setPeer = function (value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.PeerEvent} returns this
  */
-proto.room.PeerEvent.prototype.clearPeer = function() {
+proto.room.PeerEvent.prototype.clearPeer = function () {
   return this.setPeer(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.PeerEvent.prototype.hasPeer = function() {
+proto.room.PeerEvent.prototype.hasPeer = function () {
   return jspb.Message.getField(this, 1) != null;
 };
-
 
 /**
  * optional PeerState state = 2;
  * @return {!proto.room.PeerState}
  */
-proto.room.PeerEvent.prototype.getState = function() {
+proto.room.PeerEvent.prototype.getState = function () {
   return /** @type {!proto.room.PeerState} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
-
 
 /**
  * @param {!proto.room.PeerState} value
  * @return {!proto.room.PeerEvent} returns this
  */
-proto.room.PeerEvent.prototype.setState = function(value) {
+proto.room.PeerEvent.prototype.setState = function (value) {
   return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.UpdateRoomRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.UpdateRoomRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.UpdateRoomRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.UpdateRoomRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.UpdateRoomRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.UpdateRoomRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.UpdateRoomRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.UpdateRoomRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        room: (f = msg.getRoom()) && proto.room.Room.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.UpdateRoomRequest}
  */
-proto.room.UpdateRoomRequest.deserializeBinary = function(bytes) {
+proto.room.UpdateRoomRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.UpdateRoomRequest;
+  var msg = new proto.room.UpdateRoomRequest();
   return proto.room.UpdateRoomRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5564,37 +4975,35 @@ proto.room.UpdateRoomRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.UpdateRoomRequest}
  */
-proto.room.UpdateRoomRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.UpdateRoomRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.Room;
-      reader.readMessage(value,proto.room.Room.deserializeBinaryFromReader);
-      msg.setRoom(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.Room();
+        reader.readMessage(value, proto.room.Room.deserializeBinaryFromReader);
+        msg.setRoom(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.UpdateRoomRequest.prototype.serializeBinary = function() {
+proto.room.UpdateRoomRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.UpdateRoomRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5603,111 +5012,96 @@ proto.room.UpdateRoomRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.UpdateRoomRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.UpdateRoomRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getRoom();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.Room.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.Room.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional Room room = 1;
  * @return {?proto.room.Room}
  */
-proto.room.UpdateRoomRequest.prototype.getRoom = function() {
-  return /** @type{?proto.room.Room} */ (
-    jspb.Message.getWrapperField(this, proto.room.Room, 1));
+proto.room.UpdateRoomRequest.prototype.getRoom = function () {
+  return /** @type{?proto.room.Room} */ (jspb.Message.getWrapperField(this, proto.room.Room, 1));
 };
-
 
 /**
  * @param {?proto.room.Room|undefined} value
  * @return {!proto.room.UpdateRoomRequest} returns this
-*/
-proto.room.UpdateRoomRequest.prototype.setRoom = function(value) {
+ */
+proto.room.UpdateRoomRequest.prototype.setRoom = function (value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.UpdateRoomRequest} returns this
  */
-proto.room.UpdateRoomRequest.prototype.clearRoom = function() {
+proto.room.UpdateRoomRequest.prototype.clearRoom = function () {
   return this.setRoom(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.UpdateRoomRequest.prototype.hasRoom = function() {
+proto.room.UpdateRoomRequest.prototype.hasRoom = function () {
   return jspb.Message.getField(this, 1) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.UpdateRoomReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.UpdateRoomReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.UpdateRoomReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.UpdateRoomReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.UpdateRoomReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.UpdateRoomReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.UpdateRoomReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.UpdateRoomReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.UpdateRoomReply}
  */
-proto.room.UpdateRoomReply.deserializeBinary = function(bytes) {
+proto.room.UpdateRoomReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.UpdateRoomReply;
+  var msg = new proto.room.UpdateRoomReply();
   return proto.room.UpdateRoomReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5716,41 +5110,39 @@ proto.room.UpdateRoomReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.UpdateRoomReply}
  */
-proto.room.UpdateRoomReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.UpdateRoomReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.UpdateRoomReply.prototype.serializeBinary = function() {
+proto.room.UpdateRoomReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.UpdateRoomReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5759,137 +5151,117 @@ proto.room.UpdateRoomReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.UpdateRoomReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.UpdateRoomReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.UpdateRoomReply.prototype.getSuccess = function() {
+proto.room.UpdateRoomReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.UpdateRoomReply} returns this
  */
-proto.room.UpdateRoomReply.prototype.setSuccess = function(value) {
+proto.room.UpdateRoomReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.UpdateRoomReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.UpdateRoomReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.UpdateRoomReply} returns this
-*/
-proto.room.UpdateRoomReply.prototype.setError = function(value) {
+ */
+proto.room.UpdateRoomReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.UpdateRoomReply} returns this
  */
-proto.room.UpdateRoomReply.prototype.clearError = function() {
+proto.room.UpdateRoomReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.UpdateRoomReply.prototype.hasError = function() {
+proto.room.UpdateRoomReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.EndRoomRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.EndRoomRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.EndRoomRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.EndRoomRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
-pb_delete: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.EndRoomRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.EndRoomRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.EndRoomRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.EndRoomRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        reason: jspb.Message.getFieldWithDefault(msg, 2, ''),
+        pb_delete: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.EndRoomRequest}
  */
-proto.room.EndRoomRequest.deserializeBinary = function(bytes) {
+proto.room.EndRoomRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.EndRoomRequest;
+  var msg = new proto.room.EndRoomRequest();
   return proto.room.EndRoomRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5898,44 +5270,42 @@ proto.room.EndRoomRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.EndRoomRequest}
  */
-proto.room.EndRoomRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.EndRoomRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setReason(value);
-      break;
-    case 3:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setDelete(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setReason(value);
+        break;
+      case 3:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setDelete(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.EndRoomRequest.prototype.serializeBinary = function() {
+proto.room.EndRoomRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.EndRoomRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5944,141 +5314,120 @@ proto.room.EndRoomRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.EndRoomRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.EndRoomRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getReason();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
   f = message.getDelete();
   if (f) {
-    writer.writeBool(
-      3,
-      f
-    );
+    writer.writeBool(3, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.EndRoomRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.EndRoomRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.EndRoomRequest} returns this
  */
-proto.room.EndRoomRequest.prototype.setSid = function(value) {
+proto.room.EndRoomRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string reason = 2;
  * @return {string}
  */
-proto.room.EndRoomRequest.prototype.getReason = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.EndRoomRequest.prototype.getReason = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.EndRoomRequest} returns this
  */
-proto.room.EndRoomRequest.prototype.setReason = function(value) {
+proto.room.EndRoomRequest.prototype.setReason = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
-
 
 /**
  * optional bool delete = 3;
  * @return {boolean}
  */
-proto.room.EndRoomRequest.prototype.getDelete = function() {
+proto.room.EndRoomRequest.prototype.getDelete = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.EndRoomRequest} returns this
  */
-proto.room.EndRoomRequest.prototype.setDelete = function(value) {
+proto.room.EndRoomRequest.prototype.setDelete = function (value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.EndRoomReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.EndRoomReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.EndRoomReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.EndRoomReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.EndRoomReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.EndRoomReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.EndRoomReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.EndRoomReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.EndRoomReply}
  */
-proto.room.EndRoomReply.deserializeBinary = function(bytes) {
+proto.room.EndRoomReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.EndRoomReply;
+  var msg = new proto.room.EndRoomReply();
   return proto.room.EndRoomReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6087,41 +5436,39 @@ proto.room.EndRoomReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.EndRoomReply}
  */
-proto.room.EndRoomReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.EndRoomReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.EndRoomReply.prototype.serializeBinary = function() {
+proto.room.EndRoomReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.EndRoomReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6130,135 +5477,113 @@ proto.room.EndRoomReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.EndRoomReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.EndRoomReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.EndRoomReply.prototype.getSuccess = function() {
+proto.room.EndRoomReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.EndRoomReply} returns this
  */
-proto.room.EndRoomReply.prototype.setSuccess = function(value) {
+proto.room.EndRoomReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.EndRoomReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.EndRoomReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.EndRoomReply} returns this
-*/
-proto.room.EndRoomReply.prototype.setError = function(value) {
+ */
+proto.room.EndRoomReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.EndRoomReply} returns this
  */
-proto.room.EndRoomReply.prototype.clearError = function() {
+proto.room.EndRoomReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.EndRoomReply.prototype.hasError = function() {
+proto.room.EndRoomReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.GetRoomsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.GetRoomsRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.GetRoomsRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.GetRoomsRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.GetRoomsRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.GetRoomsRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.GetRoomsRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.GetRoomsRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {};
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.GetRoomsRequest}
  */
-proto.room.GetRoomsRequest.deserializeBinary = function(bytes) {
+proto.room.GetRoomsRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.GetRoomsRequest;
+  var msg = new proto.room.GetRoomsRequest();
   return proto.room.GetRoomsRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6267,32 +5592,30 @@ proto.room.GetRoomsRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.GetRoomsRequest}
  */
-proto.room.GetRoomsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.GetRoomsRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    default:
-      reader.skipField();
-      break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.GetRoomsRequest.prototype.serializeBinary = function() {
+proto.room.GetRoomsRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.GetRoomsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6301,11 +5624,9 @@ proto.room.GetRoomsRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.GetRoomsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.GetRoomsRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
 };
-
-
 
 /**
  * List of repeated fields within this message type.
@@ -6314,62 +5635,57 @@ proto.room.GetRoomsRequest.serializeBinaryToWriter = function(message, writer) {
  */
 proto.room.GetRoomsReply.repeatedFields_ = [3];
 
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.GetRoomsReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.GetRoomsReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.GetRoomsReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.GetRoomsReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
-roomsList: jspb.Message.toObjectList(msg.getRoomsList(),
-    proto.room.Room.toObject, includeInstance)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.GetRoomsReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.GetRoomsReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.GetRoomsReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.GetRoomsReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+        roomsList: jspb.Message.toObjectList(msg.getRoomsList(), proto.room.Room.toObject, includeInstance),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.GetRoomsReply}
  */
-proto.room.GetRoomsReply.deserializeBinary = function(bytes) {
+proto.room.GetRoomsReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.GetRoomsReply;
+  var msg = new proto.room.GetRoomsReply();
   return proto.room.GetRoomsReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6378,46 +5694,44 @@ proto.room.GetRoomsReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.GetRoomsReply}
  */
-proto.room.GetRoomsReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.GetRoomsReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    case 3:
-      var value = new proto.room.Room;
-      reader.readMessage(value,proto.room.Room.deserializeBinaryFromReader);
-      msg.addRooms(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      case 3:
+        var value = new proto.room.Room();
+        reader.readMessage(value, proto.room.Room.deserializeBinaryFromReader);
+        msg.addRooms(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.GetRoomsReply.prototype.serializeBinary = function() {
+proto.room.GetRoomsReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.GetRoomsReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6426,181 +5740,152 @@ proto.room.GetRoomsReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.GetRoomsReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.GetRoomsReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
   f = message.getRoomsList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      3,
-      f,
-      proto.room.Room.serializeBinaryToWriter
-    );
+    writer.writeRepeatedMessage(3, f, proto.room.Room.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.GetRoomsReply.prototype.getSuccess = function() {
+proto.room.GetRoomsReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.GetRoomsReply} returns this
  */
-proto.room.GetRoomsReply.prototype.setSuccess = function(value) {
+proto.room.GetRoomsReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.GetRoomsReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.GetRoomsReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.GetRoomsReply} returns this
-*/
-proto.room.GetRoomsReply.prototype.setError = function(value) {
+ */
+proto.room.GetRoomsReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.GetRoomsReply} returns this
  */
-proto.room.GetRoomsReply.prototype.clearError = function() {
+proto.room.GetRoomsReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.GetRoomsReply.prototype.hasError = function() {
+proto.room.GetRoomsReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * repeated Room rooms = 3;
  * @return {!Array<!proto.room.Room>}
  */
-proto.room.GetRoomsReply.prototype.getRoomsList = function() {
-  return /** @type{!Array<!proto.room.Room>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.room.Room, 3));
+proto.room.GetRoomsReply.prototype.getRoomsList = function () {
+  return /** @type{!Array<!proto.room.Room>} */ (jspb.Message.getRepeatedWrapperField(this, proto.room.Room, 3));
 };
-
 
 /**
  * @param {!Array<!proto.room.Room>} value
  * @return {!proto.room.GetRoomsReply} returns this
-*/
-proto.room.GetRoomsReply.prototype.setRoomsList = function(value) {
+ */
+proto.room.GetRoomsReply.prototype.setRoomsList = function (value) {
   return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
-
 
 /**
  * @param {!proto.room.Room=} opt_value
  * @param {number=} opt_index
  * @return {!proto.room.Room}
  */
-proto.room.GetRoomsReply.prototype.addRooms = function(opt_value, opt_index) {
+proto.room.GetRoomsReply.prototype.addRooms = function (opt_value, opt_index) {
   return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.room.Room, opt_index);
 };
-
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.room.GetRoomsReply} returns this
  */
-proto.room.GetRoomsReply.prototype.clearRoomsList = function() {
+proto.room.GetRoomsReply.prototype.clearRoomsList = function () {
   return this.setRoomsList([]);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.UpdatePeerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.UpdatePeerRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.UpdatePeerRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.UpdatePeerRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.UpdatePeerRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.UpdatePeerRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.UpdatePeerRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.UpdatePeerRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        peer: (f = msg.getPeer()) && proto.room.Peer.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.UpdatePeerRequest}
  */
-proto.room.UpdatePeerRequest.deserializeBinary = function(bytes) {
+proto.room.UpdatePeerRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.UpdatePeerRequest;
+  var msg = new proto.room.UpdatePeerRequest();
   return proto.room.UpdatePeerRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6609,37 +5894,35 @@ proto.room.UpdatePeerRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.UpdatePeerRequest}
  */
-proto.room.UpdatePeerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.UpdatePeerRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = new proto.room.Peer;
-      reader.readMessage(value,proto.room.Peer.deserializeBinaryFromReader);
-      msg.setPeer(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = new proto.room.Peer();
+        reader.readMessage(value, proto.room.Peer.deserializeBinaryFromReader);
+        msg.setPeer(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.UpdatePeerRequest.prototype.serializeBinary = function() {
+proto.room.UpdatePeerRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.UpdatePeerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6648,111 +5931,96 @@ proto.room.UpdatePeerRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.UpdatePeerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.UpdatePeerRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getPeer();
   if (f != null) {
-    writer.writeMessage(
-      1,
-      f,
-      proto.room.Peer.serializeBinaryToWriter
-    );
+    writer.writeMessage(1, f, proto.room.Peer.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional Peer peer = 1;
  * @return {?proto.room.Peer}
  */
-proto.room.UpdatePeerRequest.prototype.getPeer = function() {
-  return /** @type{?proto.room.Peer} */ (
-    jspb.Message.getWrapperField(this, proto.room.Peer, 1));
+proto.room.UpdatePeerRequest.prototype.getPeer = function () {
+  return /** @type{?proto.room.Peer} */ (jspb.Message.getWrapperField(this, proto.room.Peer, 1));
 };
-
 
 /**
  * @param {?proto.room.Peer|undefined} value
  * @return {!proto.room.UpdatePeerRequest} returns this
-*/
-proto.room.UpdatePeerRequest.prototype.setPeer = function(value) {
+ */
+proto.room.UpdatePeerRequest.prototype.setPeer = function (value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.UpdatePeerRequest} returns this
  */
-proto.room.UpdatePeerRequest.prototype.clearPeer = function() {
+proto.room.UpdatePeerRequest.prototype.clearPeer = function () {
   return this.setPeer(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.UpdatePeerRequest.prototype.hasPeer = function() {
+proto.room.UpdatePeerRequest.prototype.hasPeer = function () {
   return jspb.Message.getField(this, 1) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.UpdatePeerReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.UpdatePeerReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.UpdatePeerReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.UpdatePeerReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.UpdatePeerReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.UpdatePeerReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.UpdatePeerReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.UpdatePeerReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.UpdatePeerReply}
  */
-proto.room.UpdatePeerReply.deserializeBinary = function(bytes) {
+proto.room.UpdatePeerReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.UpdatePeerReply;
+  var msg = new proto.room.UpdatePeerReply();
   return proto.room.UpdatePeerReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6761,41 +6029,39 @@ proto.room.UpdatePeerReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.UpdatePeerReply}
  */
-proto.room.UpdatePeerReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.UpdatePeerReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.UpdatePeerReply.prototype.serializeBinary = function() {
+proto.room.UpdatePeerReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.UpdatePeerReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6804,136 +6070,116 @@ proto.room.UpdatePeerReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.UpdatePeerReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.UpdatePeerReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.UpdatePeerReply.prototype.getSuccess = function() {
+proto.room.UpdatePeerReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.UpdatePeerReply} returns this
  */
-proto.room.UpdatePeerReply.prototype.setSuccess = function(value) {
+proto.room.UpdatePeerReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.UpdatePeerReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.UpdatePeerReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.UpdatePeerReply} returns this
-*/
-proto.room.UpdatePeerReply.prototype.setError = function(value) {
+ */
+proto.room.UpdatePeerReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.UpdatePeerReply} returns this
  */
-proto.room.UpdatePeerReply.prototype.clearError = function() {
+proto.room.UpdatePeerReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.UpdatePeerReply.prototype.hasError = function() {
+proto.room.UpdatePeerReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.RemovePeerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.RemovePeerRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.RemovePeerRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.RemovePeerRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-uid: jspb.Message.getFieldWithDefault(msg, 2, "")
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.RemovePeerRequest.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.RemovePeerRequest.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.RemovePeerRequest} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.RemovePeerRequest.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        sid: jspb.Message.getFieldWithDefault(msg, 1, ''),
+        uid: jspb.Message.getFieldWithDefault(msg, 2, ''),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.RemovePeerRequest}
  */
-proto.room.RemovePeerRequest.deserializeBinary = function(bytes) {
+proto.room.RemovePeerRequest.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.RemovePeerRequest;
+  var msg = new proto.room.RemovePeerRequest();
   return proto.room.RemovePeerRequest.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6942,40 +6188,38 @@ proto.room.RemovePeerRequest.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.RemovePeerRequest}
  */
-proto.room.RemovePeerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.RemovePeerRequest.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSid(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setUid(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setSid(value);
+        break;
+      case 2:
+        var value = /** @type {string} */ (reader.readString());
+        msg.setUid(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.RemovePeerRequest.prototype.serializeBinary = function() {
+proto.room.RemovePeerRequest.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.RemovePeerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6984,116 +6228,100 @@ proto.room.RemovePeerRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.RemovePeerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.room.RemovePeerRequest.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSid();
   if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
+    writer.writeString(1, f);
   }
   f = message.getUid();
   if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
+    writer.writeString(2, f);
   }
 };
-
 
 /**
  * optional string sid = 1;
  * @return {string}
  */
-proto.room.RemovePeerRequest.prototype.getSid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.room.RemovePeerRequest.prototype.getSid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.RemovePeerRequest} returns this
  */
-proto.room.RemovePeerRequest.prototype.setSid = function(value) {
+proto.room.RemovePeerRequest.prototype.setSid = function (value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
-
 
 /**
  * optional string uid = 2;
  * @return {string}
  */
-proto.room.RemovePeerRequest.prototype.getUid = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+proto.room.RemovePeerRequest.prototype.getUid = function () {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ''));
 };
-
 
 /**
  * @param {string} value
  * @return {!proto.room.RemovePeerRequest} returns this
  */
-proto.room.RemovePeerRequest.prototype.setUid = function(value) {
+proto.room.RemovePeerRequest.prototype.setUid = function (value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
-
-
-
-
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.room.RemovePeerReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.room.RemovePeerReply.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.room.RemovePeerReply} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.room.RemovePeerReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f)
+  /**
+   * Creates an object representation of this proto.
+   * Field names that are reserved in JavaScript and will be renamed to pb_name.
+   * Optional fields that are not set will be set to undefined.
+   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+   * For the list of reserved names please see:
+   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+   *     JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @return {!Object}
+   */
+  proto.room.RemovePeerReply.prototype.toObject = function (opt_includeInstance) {
+    return proto.room.RemovePeerReply.toObject(opt_includeInstance, this);
   };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
+  /**
+   * Static version of the {@see toObject} method.
+   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+   *     the JSPB instance for transitional soy proto support:
+   *     http://goto/soy-param-migration
+   * @param {!proto.room.RemovePeerReply} msg The msg instance to transform.
+   * @return {!Object}
+   * @suppress {unusedLocalVariables} f is only used for nested messages
+   */
+  proto.room.RemovePeerReply.toObject = function (includeInstance, msg) {
+    var f,
+      obj = {
+        success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+        error: (f = msg.getError()) && proto.room.Error.toObject(includeInstance, f),
+      };
 
+    if (includeInstance) {
+      obj.$jspbMessageInstance = msg;
+    }
+    return obj;
+  };
+}
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.room.RemovePeerReply}
  */
-proto.room.RemovePeerReply.deserializeBinary = function(bytes) {
+proto.room.RemovePeerReply.deserializeBinary = function (bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.room.RemovePeerReply;
+  var msg = new proto.room.RemovePeerReply();
   return proto.room.RemovePeerReply.deserializeBinaryFromReader(msg, reader);
 };
-
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -7102,41 +6330,39 @@ proto.room.RemovePeerReply.deserializeBinary = function(bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.room.RemovePeerReply}
  */
-proto.room.RemovePeerReply.deserializeBinaryFromReader = function(msg, reader) {
+proto.room.RemovePeerReply.deserializeBinaryFromReader = function (msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = new proto.room.Error;
-      reader.readMessage(value,proto.room.Error.deserializeBinaryFromReader);
-      msg.setError(value);
-      break;
-    default:
-      reader.skipField();
-      break;
+      case 1:
+        var value = /** @type {boolean} */ (reader.readBool());
+        msg.setSuccess(value);
+        break;
+      case 2:
+        var value = new proto.room.Error();
+        reader.readMessage(value, proto.room.Error.deserializeBinaryFromReader);
+        msg.setError(value);
+        break;
+      default:
+        reader.skipField();
+        break;
     }
   }
   return msg;
 };
 
-
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.room.RemovePeerReply.prototype.serializeBinary = function() {
+proto.room.RemovePeerReply.prototype.serializeBinary = function () {
   var writer = new jspb.BinaryWriter();
   proto.room.RemovePeerReply.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
-
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -7145,80 +6371,65 @@ proto.room.RemovePeerReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.room.RemovePeerReply.serializeBinaryToWriter = function(message, writer) {
+proto.room.RemovePeerReply.serializeBinaryToWriter = function (message, writer) {
   var f = undefined;
   f = message.getSuccess();
   if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
+    writer.writeBool(1, f);
   }
   f = message.getError();
   if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.room.Error.serializeBinaryToWriter
-    );
+    writer.writeMessage(2, f, proto.room.Error.serializeBinaryToWriter);
   }
 };
-
 
 /**
  * optional bool success = 1;
  * @return {boolean}
  */
-proto.room.RemovePeerReply.prototype.getSuccess = function() {
+proto.room.RemovePeerReply.prototype.getSuccess = function () {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
-
 
 /**
  * @param {boolean} value
  * @return {!proto.room.RemovePeerReply} returns this
  */
-proto.room.RemovePeerReply.prototype.setSuccess = function(value) {
+proto.room.RemovePeerReply.prototype.setSuccess = function (value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
-
 
 /**
  * optional Error error = 2;
  * @return {?proto.room.Error}
  */
-proto.room.RemovePeerReply.prototype.getError = function() {
-  return /** @type{?proto.room.Error} */ (
-    jspb.Message.getWrapperField(this, proto.room.Error, 2));
+proto.room.RemovePeerReply.prototype.getError = function () {
+  return /** @type{?proto.room.Error} */ (jspb.Message.getWrapperField(this, proto.room.Error, 2));
 };
-
 
 /**
  * @param {?proto.room.Error|undefined} value
  * @return {!proto.room.RemovePeerReply} returns this
-*/
-proto.room.RemovePeerReply.prototype.setError = function(value) {
+ */
+proto.room.RemovePeerReply.prototype.setError = function (value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
-
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.room.RemovePeerReply} returns this
  */
-proto.room.RemovePeerReply.prototype.clearError = function() {
+proto.room.RemovePeerReply.prototype.clearError = function () {
   return this.setError(undefined);
 };
-
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.room.RemovePeerReply.prototype.hasError = function() {
+proto.room.RemovePeerReply.prototype.hasError = function () {
   return jspb.Message.getField(this, 2) != null;
 };
-
 
 /**
  * @enum {number}
@@ -7234,7 +6445,7 @@ proto.room.ErrorType = {
   ROOMNOTEXIST: 7,
   INVALIDPARAMS: 8,
   PEERALREADYEXIST: 9,
-  PEERNOTEXIST: 10
+  PEERNOTEXIST: 10,
 };
 
 /**
@@ -7242,7 +6453,7 @@ proto.room.ErrorType = {
  */
 proto.room.Role = {
   HOST: 0,
-  GUEST: 1
+  GUEST: 1,
 };
 
 /**
@@ -7253,7 +6464,7 @@ proto.room.Protocol = {
   WEBRTC: 1,
   SIP: 2,
   RTMP: 3,
-  RTSP: 4
+  RTSP: 4,
 };
 
 /**
@@ -7262,7 +6473,7 @@ proto.room.Protocol = {
 proto.room.PeerState = {
   JOIN: 0,
   UPDATE: 1,
-  LEAVE: 2
+  LEAVE: 2,
 };
 
 goog.object.extend(exports, proto.room);

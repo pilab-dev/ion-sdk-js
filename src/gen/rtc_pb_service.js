@@ -1,22 +1,25 @@
 // package: rtc
 // file: rtc.proto
 
-var rtc_pb = require("./rtc_pb");
-var grpc = require("@improbable-eng/grpc-web").grpc;
+// var rtc_pb = require("./rtc_pb");
+// var grpc = require("@improbable-eng/grpc-web").grpc;
+
+import { grpc } from '@improbable-eng/grpc-web';
+import * as rtc_pb from './rtc_pb';
 
 var RTC = (function () {
   function RTC() {}
-  RTC.serviceName = "rtc.RTC";
+  RTC.serviceName = 'rtc.RTC';
   return RTC;
-}());
+})();
 
 RTC.Signal = {
-  methodName: "Signal",
+  methodName: 'Signal',
   service: RTC,
   requestStream: true,
   responseStream: true,
   requestType: rtc_pb.Request,
-  responseType: rtc_pb.Reply
+  responseType: rtc_pb.Reply,
 };
 
 exports.RTC = RTC;
@@ -30,12 +33,12 @@ RTCClient.prototype.signal = function signal(metadata) {
   var listeners = {
     data: [],
     end: [],
-    status: []
+    status: [],
   };
   var client = grpc.client(RTC.Signal, {
     host: this.serviceHost,
     metadata: metadata,
-    transport: this.options.transport
+    transport: this.options.transport,
   });
   client.onEnd(function (status, statusMessage, trailers) {
     listeners.status.forEach(function (handler) {
@@ -49,7 +52,7 @@ RTCClient.prototype.signal = function signal(metadata) {
   client.onMessage(function (message) {
     listeners.data.forEach(function (handler) {
       handler(message);
-    })
+    });
   });
   client.start(metadata);
   return {
@@ -67,9 +70,8 @@ RTCClient.prototype.signal = function signal(metadata) {
     cancel: function () {
       listeners = null;
       client.close();
-    }
+    },
   };
 };
 
 exports.RTCClient = RTCClient;
-
