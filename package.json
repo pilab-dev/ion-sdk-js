@@ -1,23 +1,24 @@
 {
   "name": "@pilab/ion-sdk-js",
   "version": "1.8.3",
-  "description": "A js sdk for ion-sfu or ion",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "description": "A JS SDK for ion-sfu or ion / forked by Progressive Innovation LAB",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "types": "lib/index.d.mts",
+  "module": "dist/index.js",
   "files": [
-    "dist/*",
-    "lib/**/*"
+    "dist/*"
   ],
   "scripts": {
     "build": "tsc",
-    "bundle": "webpack",
+    "bundle": "rm -Rf dist lib && NODE_ENV=production tsup",
     "dev": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build && npm run bundle",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
+    "prepare": "yarn build && yarn bundle",
+    "prepublishOnly": "yarn lint",
+    "preversion": "yarn lint",
+    "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "author": "Progressive Innovation LAB",
@@ -38,6 +39,7 @@
     "ts-loader": "8.0.12",
     "tslint": "6.1.3",
     "tslint-config-prettier": "1.18.0",
+    "tsup": "^8.3.5",
     "typescript": "4.1.3",
     "uglifyjs-webpack-plugin": "1.3.0",
     "webpack": "^4.44.2",
