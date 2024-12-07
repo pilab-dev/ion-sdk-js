@@ -76,7 +76,7 @@ export default class Client {
   onspeaker?: (ev: string[]) => void;
   onerrnegotiate?: (
     role: Role,
-    err: Error,
+    err: Error | unknown,
     offer?: RTCSessionDescriptionInit,
     answer?: RTCSessionDescriptionInit,
   ) => void;

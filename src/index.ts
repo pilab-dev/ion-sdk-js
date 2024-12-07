@@ -6,3 +6,4 @@
 export * from './client';
 export * from './connector';
 export * from './signal';
+export * from './stream';
