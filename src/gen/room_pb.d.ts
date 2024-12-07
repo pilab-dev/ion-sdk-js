@@ -1,5 +1,5 @@
 // package: room
-// file: apps/room/proto/room.proto
+// file: room.proto
 
 import * as jspb from 'google-protobuf';
 
@@ -27,7 +27,7 @@ export namespace Error {
   };
 }
 
-export class Request extends jspb.Message {
+export class SignalRequest extends jspb.Message {
   hasJoin(): boolean;
   clearJoin(): void;
   getJoin(): JoinRequest | undefined;
@@ -43,22 +43,28 @@ export class Request extends jspb.Message {
   getSendmessage(): SendMessageRequest | undefined;
   setSendmessage(value?: SendMessageRequest): void;
 
-  getPayloadCase(): Request.PayloadCase;
+  hasUpdateroom(): boolean;
+  clearUpdateroom(): void;
+  getUpdateroom(): UpdateRoomRequest | undefined;
+  setUpdateroom(value?: UpdateRoomRequest): void;
+
+  getPayloadCase(): SignalRequest.PayloadCase;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Request.AsObject;
-  static toObject(includeInstance: boolean, msg: Request): Request.AsObject;
+  toObject(includeInstance?: boolean): SignalRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: SignalRequest): SignalRequest.AsObject;
   static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
   static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
-  static serializeBinaryToWriter(message: Request, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): Request;
-  static deserializeBinaryFromReader(message: Request, reader: jspb.BinaryReader): Request;
+  static serializeBinaryToWriter(message: SignalRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): SignalRequest;
+  static deserializeBinaryFromReader(message: SignalRequest, reader: jspb.BinaryReader): SignalRequest;
 }
 
-export namespace Request {
+export namespace SignalRequest {
   export type AsObject = {
     join?: JoinRequest.AsObject;
     leave?: LeaveRequest.AsObject;
     sendmessage?: SendMessageRequest.AsObject;
+    updateroom?: UpdateRoomRequest.AsObject;
   };
 
   export enum PayloadCase {
@@ -66,10 +72,11 @@ export namespace Request {
     JOIN = 1,
     LEAVE = 2,
     SENDMESSAGE = 3,
+    UPDATEROOM = 4,
   }
 }
 
-export class Reply extends jspb.Message {
+export class SignalReply extends jspb.Message {
   hasJoin(): boolean;
   clearJoin(): void;
   getJoin(): JoinReply | undefined;
@@ -105,18 +112,18 @@ export class Reply extends jspb.Message {
   getRoom(): Room | undefined;
   setRoom(value?: Room): void;
 
-  getPayloadCase(): Reply.PayloadCase;
+  getPayloadCase(): SignalReply.PayloadCase;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Reply.AsObject;
-  static toObject(includeInstance: boolean, msg: Reply): Reply.AsObject;
+  toObject(includeInstance?: boolean): SignalReply.AsObject;
+  static toObject(includeInstance: boolean, msg: SignalReply): SignalReply.AsObject;
   static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
   static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
-  static serializeBinaryToWriter(message: Reply, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): Reply;
-  static deserializeBinaryFromReader(message: Reply, reader: jspb.BinaryReader): Reply;
+  static serializeBinaryToWriter(message: SignalReply, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): SignalReply;
+  static deserializeBinaryFromReader(message: SignalReply, reader: jspb.BinaryReader): SignalReply;
 }
 
-export namespace Reply {
+export namespace SignalReply {
   export type AsObject = {
     join?: JoinReply.AsObject;
     leave?: LeaveReply.AsObject;
@@ -936,7 +943,7 @@ export namespace RemovePeerReply {
 
 export interface ErrorTypeMap {
   NONE: 0;
-  UNKOWNERROR: 1;
+  UNKNOWNERROR: 1;
   PERMISSIONDENIED: 2;
   SERVICEUNAVAILABLE: 3;
   ROOMLOCKED: 4;

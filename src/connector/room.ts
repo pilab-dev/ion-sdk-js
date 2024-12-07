@@ -1,8 +1,11 @@
 import { grpc } from '@improbable-eng/grpc-web';
-import { Service, Connector } from './ion';
-import * as room from '../_library/apps/room/proto/room_pb';
-import * as room_rpc from '../_library/apps/room/proto/room_pb_service';
 import { EventEmitter } from 'events';
+import * as room from '../gen/room_pb';
+
+import * as pb from '../gen/room_pb';
+
+import * as room_rpc from '../gen/room_pb_service';
+import { Connector, Service } from './ion';
 
 /**
  * PeerState: The state of a peer
@@ -194,13 +197,13 @@ export class Room implements Service {
  */
 class RoomGRPCClient extends EventEmitter {
   connector: Connector;
-  protected _client: grpc.Client<room.Request, room.Reply>;
+  protected _client: grpc.Client<pb.SignalRequest, room.SignalReply>;
   constructor(service: Service, connector: Connector) {
     super();
     this.connector = connector;
     const client = grpc.client(room_rpc.RoomSignal.Signal, connector.grpcClientRpcOptions()) as grpc.Client<
-      room.Request,
-      room.Reply
+      room.SignalRequest,
+      room.SignalReply
     >;
 
     client.onEnd((status: grpc.Code, statusMessage: string, trailers: grpc.Metadata) =>
@@ -208,9 +211,9 @@ class RoomGRPCClient extends EventEmitter {
     );
     client.onHeaders((headers: grpc.Metadata) => connector.onHeaders(service, headers));
 
-    client.onMessage((reply: room.Reply) => {
+    client.onMessage((reply: room.SignalReply) => {
       switch (reply.getPayloadCase()) {
-        case room.Reply.PayloadCase.JOIN:
+        case room.SignalReply.PayloadCase.JOIN:
           this.emit('join-reply', {
             success: reply.getJoin()?.getSuccess() || false,
             error: reply.getJoin()?.getError() || { errType: ErrorType.NONE, reason: '' },
@@ -227,11 +230,11 @@ class RoomGRPCClient extends EventEmitter {
               : undefined,
           });
           break;
-        case room.Reply.PayloadCase.LEAVE:
+        case room.SignalReply.PayloadCase.LEAVE:
           const reason = reply.getLeave()?.getError()?.getReason() || 'unkown reason';
           this.emit('leave-reply', reason);
           break;
-        case room.Reply.PayloadCase.PEER:
+        case room.SignalReply.PayloadCase.PEER:
           const evt = reply.getPeer();
           let state = PeerState.NONE;
           switch (evt?.getState()) {
@@ -259,7 +262,7 @@ class RoomGRPCClient extends EventEmitter {
           };
           this.emit('peer-event', { state, peer });
           break;
-        case room.Reply.PayloadCase.MESSAGE:
+        case room.SignalReply.PayloadCase.MESSAGE:
           const msg = reply.getMessage();
           this.emit('message', {
             from: msg?.getFrom() || '',
@@ -268,7 +271,7 @@ class RoomGRPCClient extends EventEmitter {
             data: msg?.getPayload() || {},
           });
           break;
-        case room.Reply.PayloadCase.ROOM:
+        case room.SignalReply.PayloadCase.ROOM:
           const info = reply.getRoom() || undefined;
           this.emit('room-info', {
             sid: info?.getSid() || '',
@@ -279,7 +282,7 @@ class RoomGRPCClient extends EventEmitter {
             maxpeers: info?.getMaxpeers() || 0,
           });
           break;
-        case room.Reply.PayloadCase.DISCONNECT:
+        case room.SignalReply.PayloadCase.DISCONNECT:
           const dis = reply.getDisconnect() || {};
           this.emit('disconnect', dis);
           break;
@@ -298,7 +301,7 @@ class RoomGRPCClient extends EventEmitter {
    * @returns {any}
    */
   async join(peer: Peer, password: string | undefined): Promise<JoinResult> {
-    const request = new room.Request();
+    const request = new room.SignalRequest();
     const join = new room.JoinRequest();
     const p = new room.Peer();
 
@@ -336,7 +339,7 @@ class RoomGRPCClient extends EventEmitter {
    * @returns
    */
   async leave(sid: string, uid: string) {
-    const request = new room.Request();
+    const request = new room.SignalRequest();
     const leave = new room.LeaveRequest();
     leave.setSid(sid);
     leave.setUid(uid);
@@ -376,7 +379,7 @@ class RoomGRPCClient extends EventEmitter {
    * @returns
    */
   async sendMessage(sid: string, from: string, to: string, mineType: string, data: Map<string, any>) {
-    const request = new room.Request();
+    const request = new room.SignalRequest();
     const sendMessage = new room.SendMessageRequest();
     const message = new room.Message();
     message.setFrom(from);

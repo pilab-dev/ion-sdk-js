@@ -1,7 +1,7 @@
 // package: room
-// file: apps/room/proto/room.proto
+// file: room.proto
 
-var apps_room_proto_room_pb = require("../../../apps/room/proto/room_pb");
+var room_pb = require("./room_pb");
 var grpc = require("@improbable-eng/grpc-web").grpc;
 
 var RoomService = (function () {
@@ -15,8 +15,8 @@ RoomService.CreateRoom = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.CreateRoomRequest,
-  responseType: apps_room_proto_room_pb.CreateRoomReply
+  requestType: room_pb.CreateRoomRequest,
+  responseType: room_pb.CreateRoomReply
 };
 
 RoomService.UpdateRoom = {
@@ -24,8 +24,8 @@ RoomService.UpdateRoom = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.UpdateRoomRequest,
-  responseType: apps_room_proto_room_pb.UpdateRoomReply
+  requestType: room_pb.UpdateRoomRequest,
+  responseType: room_pb.UpdateRoomReply
 };
 
 RoomService.EndRoom = {
@@ -33,8 +33,8 @@ RoomService.EndRoom = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.EndRoomRequest,
-  responseType: apps_room_proto_room_pb.EndRoomReply
+  requestType: room_pb.EndRoomRequest,
+  responseType: room_pb.EndRoomReply
 };
 
 RoomService.GetRooms = {
@@ -42,8 +42,8 @@ RoomService.GetRooms = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.GetRoomsRequest,
-  responseType: apps_room_proto_room_pb.GetRoomsReply
+  requestType: room_pb.GetRoomsRequest,
+  responseType: room_pb.GetRoomsReply
 };
 
 RoomService.AddPeer = {
@@ -51,8 +51,8 @@ RoomService.AddPeer = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.AddPeerRequest,
-  responseType: apps_room_proto_room_pb.AddPeerReply
+  requestType: room_pb.AddPeerRequest,
+  responseType: room_pb.AddPeerReply
 };
 
 RoomService.UpdatePeer = {
@@ -60,8 +60,8 @@ RoomService.UpdatePeer = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.UpdatePeerRequest,
-  responseType: apps_room_proto_room_pb.UpdatePeerReply
+  requestType: room_pb.UpdatePeerRequest,
+  responseType: room_pb.UpdatePeerReply
 };
 
 RoomService.RemovePeer = {
@@ -69,8 +69,8 @@ RoomService.RemovePeer = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.RemovePeerRequest,
-  responseType: apps_room_proto_room_pb.RemovePeerReply
+  requestType: room_pb.RemovePeerRequest,
+  responseType: room_pb.RemovePeerReply
 };
 
 RoomService.GetPeers = {
@@ -78,8 +78,8 @@ RoomService.GetPeers = {
   service: RoomService,
   requestStream: false,
   responseStream: false,
-  requestType: apps_room_proto_room_pb.GetPeersRequest,
-  responseType: apps_room_proto_room_pb.GetPeersReply
+  requestType: room_pb.GetPeersRequest,
+  responseType: room_pb.GetPeersReply
 };
 
 exports.RoomService = RoomService;
@@ -350,8 +350,8 @@ RoomSignal.Signal = {
   service: RoomSignal,
   requestStream: true,
   responseStream: true,
-  requestType: apps_room_proto_room_pb.Request,
-  responseType: apps_room_proto_room_pb.Reply
+  requestType: room_pb.SignalRequest,
+  responseType: room_pb.SignalReply
 };
 
 exports.RoomSignal = RoomSignal;

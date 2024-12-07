@@ -1,38 +1,38 @@
-// package: sfu
-// file: proto/sfu/sfu.proto
+// package: rtc
+// file: rtc.proto
 
-var proto_sfu_sfu_pb = require("../../proto/sfu/sfu_pb");
+var rtc_pb = require("./rtc_pb");
 var grpc = require("@improbable-eng/grpc-web").grpc;
 
-var SFU = (function () {
-  function SFU() {}
-  SFU.serviceName = "sfu.SFU";
-  return SFU;
+var RTC = (function () {
+  function RTC() {}
+  RTC.serviceName = "rtc.RTC";
+  return RTC;
 }());
 
-SFU.Signal = {
+RTC.Signal = {
   methodName: "Signal",
-  service: SFU,
+  service: RTC,
   requestStream: true,
   responseStream: true,
-  requestType: proto_sfu_sfu_pb.SignalRequest,
-  responseType: proto_sfu_sfu_pb.SignalReply
+  requestType: rtc_pb.Request,
+  responseType: rtc_pb.Reply
 };
 
-exports.SFU = SFU;
+exports.RTC = RTC;
 
-function SFUClient(serviceHost, options) {
+function RTCClient(serviceHost, options) {
   this.serviceHost = serviceHost;
   this.options = options || {};
 }
 
-SFUClient.prototype.signal = function signal(metadata) {
+RTCClient.prototype.signal = function signal(metadata) {
   var listeners = {
     data: [],
     end: [],
     status: []
   };
-  var client = grpc.client(SFU.Signal, {
+  var client = grpc.client(RTC.Signal, {
     host: this.serviceHost,
     metadata: metadata,
     transport: this.options.transport
@@ -71,5 +71,5 @@ SFUClient.prototype.signal = function signal(metadata) {
   };
 };
 
-exports.SFUClient = SFUClient;
+exports.RTCClient = RTCClient;
 

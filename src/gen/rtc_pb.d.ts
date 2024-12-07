@@ -1,5 +1,5 @@
 // package: rtc
-// file: proto/rtc/rtc.proto
+// file: rtc.proto
 
 import * as jspb from 'google-protobuf';
 
@@ -523,7 +523,7 @@ export interface MediaTypeMap {
   MEDIAUNKNOWN: 0;
   USERMEDIA: 1;
   SCREENCAPTURE: 2;
-  CAVANS: 3;
+  CANVAS: 3;
   STREAMING: 4;
   VOIP: 5;
 }

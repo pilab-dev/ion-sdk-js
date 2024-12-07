@@ -1,16 +1,25 @@
-// source: proto/rtc/rtc.proto
+// source: rtc.proto
 /**
  * @fileoverview
  * @enhanceable
+ * @suppress {missingRequire} reports error on implicit type usages.
  * @suppress {messageConventions} JS Compiler reports an error if a variable or
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
 // GENERATED CODE -- DO NOT EDIT!
+/* eslint-disable */
+// @ts-nocheck
 
 var jspb = require('google-protobuf');
 var goog = jspb;
-var global = Function('return this')();
+var global =
+    (typeof globalThis !== 'undefined' && globalThis) ||
+    (typeof window !== 'undefined' && window) ||
+    (typeof global !== 'undefined' && global) ||
+    (typeof self !== 'undefined' && self) ||
+    (function () { return this; }).call(null) ||
+    Function('return this')();
 
 goog.exportSymbol('proto.rtc.ActiveSpeaker', null, global);
 goog.exportSymbol('proto.rtc.AudioLevelSpeaker', null, global);
@@ -379,10 +388,10 @@ proto.rtc.JoinRequest.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.JoinRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    configMap: (f = msg.getConfigMap()) ? f.toObject(includeInstance, undefined) : [],
-    description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f)
+sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
+uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
+configMap: (f = msg.getConfigMap()) ? f.toObject(includeInstance, undefined) : [],
+description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -551,7 +560,8 @@ proto.rtc.JoinRequest.prototype.getConfigMap = function(opt_noLazyCreate) {
  */
 proto.rtc.JoinRequest.prototype.clearConfigMap = function() {
   this.getConfigMap().clear();
-  return this;};
+  return this;
+};
 
 
 /**
@@ -623,9 +633,9 @@ proto.rtc.JoinReply.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.JoinReply.toObject = function(includeInstance, msg) {
   var f, obj = {
-    success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-    error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
-    description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f)
+success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f),
+description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -855,16 +865,16 @@ proto.rtc.TrackInfo.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.TrackInfo.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    kind: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    muted: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-    type: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    streamid: jspb.Message.getFieldWithDefault(msg, 5, ""),
-    label: jspb.Message.getFieldWithDefault(msg, 6, ""),
-    layer: jspb.Message.getFieldWithDefault(msg, 7, ""),
-    width: jspb.Message.getFieldWithDefault(msg, 8, 0),
-    height: jspb.Message.getFieldWithDefault(msg, 9, 0),
-    framerate: jspb.Message.getFieldWithDefault(msg, 10, 0)
+id: jspb.Message.getFieldWithDefault(msg, 1, ""),
+kind: jspb.Message.getFieldWithDefault(msg, 2, ""),
+muted: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+type: jspb.Message.getFieldWithDefault(msg, 4, 0),
+streamid: jspb.Message.getFieldWithDefault(msg, 5, ""),
+label: jspb.Message.getFieldWithDefault(msg, 6, ""),
+layer: jspb.Message.getFieldWithDefault(msg, 7, ""),
+width: jspb.Message.getFieldWithDefault(msg, 8, 0),
+height: jspb.Message.getFieldWithDefault(msg, 9, 0),
+framerate: jspb.Message.getFieldWithDefault(msg, 10, 0)
   };
 
   if (includeInstance) {
@@ -1262,10 +1272,10 @@ proto.rtc.SessionDescription.prototype.toObject = function(opt_includeInstance) 
  */
 proto.rtc.SessionDescription.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    type: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    sdp: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    trackinfosList: jspb.Message.toObjectList(msg.getTrackinfosList(),
+target: jspb.Message.getFieldWithDefault(msg, 1, 0),
+type: jspb.Message.getFieldWithDefault(msg, 2, ""),
+sdp: jspb.Message.getFieldWithDefault(msg, 3, ""),
+trackinfosList: jspb.Message.toObjectList(msg.getTrackinfosList(),
     proto.rtc.TrackInfo.toObject, includeInstance)
   };
 
@@ -1505,8 +1515,8 @@ proto.rtc.Trickle.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.Trickle.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    init: jspb.Message.getFieldWithDefault(msg, 2, "")
+target: jspb.Message.getFieldWithDefault(msg, 1, 0),
+init: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -1665,8 +1675,8 @@ proto.rtc.Error.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.Error.toObject = function(includeInstance, msg) {
   var f, obj = {
-    code: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+code: jspb.Message.getFieldWithDefault(msg, 1, 0),
+reason: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -1832,9 +1842,9 @@ proto.rtc.TrackEvent.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.TrackEvent.toObject = function(includeInstance, msg) {
   var f, obj = {
-    state: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    tracksList: jspb.Message.toObjectList(msg.getTracksList(),
+state: jspb.Message.getFieldWithDefault(msg, 1, 0),
+uid: jspb.Message.getFieldWithDefault(msg, 2, ""),
+tracksList: jspb.Message.toObjectList(msg.getTracksList(),
     proto.rtc.TrackInfo.toObject, includeInstance)
   };
 
@@ -2054,10 +2064,10 @@ proto.rtc.Subscription.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.Subscription.toObject = function(includeInstance, msg) {
   var f, obj = {
-    trackid: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    mute: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-    subscribe: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
-    layer: jspb.Message.getFieldWithDefault(msg, 5, "")
+trackid: jspb.Message.getFieldWithDefault(msg, 2, ""),
+mute: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+subscribe: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
+layer: jspb.Message.getFieldWithDefault(msg, 5, "")
   };
 
   if (includeInstance) {
@@ -2281,7 +2291,7 @@ proto.rtc.SubscriptionRequest.prototype.toObject = function(opt_includeInstance)
  */
 proto.rtc.SubscriptionRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    subscriptionsList: jspb.Message.toObjectList(msg.getSubscriptionsList(),
+subscriptionsList: jspb.Message.toObjectList(msg.getSubscriptionsList(),
     proto.rtc.Subscription.toObject, includeInstance)
   };
 
@@ -2434,8 +2444,8 @@ proto.rtc.SubscriptionReply.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.SubscriptionReply.toObject = function(includeInstance, msg) {
   var f, obj = {
-    success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-    error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
+success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2615,8 +2625,8 @@ proto.rtc.UpdateTrackReply.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.UpdateTrackReply.toObject = function(includeInstance, msg) {
   var f, obj = {
-    success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-    error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
+success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
+error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2803,7 +2813,7 @@ proto.rtc.ActiveSpeaker.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.ActiveSpeaker.toObject = function(includeInstance, msg) {
   var f, obj = {
-    speakersList: jspb.Message.toObjectList(msg.getSpeakersList(),
+speakersList: jspb.Message.toObjectList(msg.getSpeakersList(),
     proto.rtc.AudioLevelSpeaker.toObject, includeInstance)
   };
 
@@ -2956,9 +2966,9 @@ proto.rtc.AudioLevelSpeaker.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.AudioLevelSpeaker.toObject = function(includeInstance, msg) {
   var f, obj = {
-    sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    level: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
-    active: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
+sid: jspb.Message.getFieldWithDefault(msg, 1, ""),
+level: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
+active: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -3174,10 +3184,10 @@ proto.rtc.Request.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.Request.toObject = function(includeInstance, msg) {
   var f, obj = {
-    join: (f = msg.getJoin()) && proto.rtc.JoinRequest.toObject(includeInstance, f),
-    description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
-    trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
-    subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionRequest.toObject(includeInstance, f)
+join: (f = msg.getJoin()) && proto.rtc.JoinRequest.toObject(includeInstance, f),
+description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
+trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
+subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionRequest.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -3508,12 +3518,12 @@ proto.rtc.Reply.prototype.toObject = function(opt_includeInstance) {
  */
 proto.rtc.Reply.toObject = function(includeInstance, msg) {
   var f, obj = {
-    join: (f = msg.getJoin()) && proto.rtc.JoinReply.toObject(includeInstance, f),
-    description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
-    trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
-    trackevent: (f = msg.getTrackevent()) && proto.rtc.TrackEvent.toObject(includeInstance, f),
-    subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionReply.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
+join: (f = msg.getJoin()) && proto.rtc.JoinReply.toObject(includeInstance, f),
+description: (f = msg.getDescription()) && proto.rtc.SessionDescription.toObject(includeInstance, f),
+trickle: (f = msg.getTrickle()) && proto.rtc.Trickle.toObject(includeInstance, f),
+trackevent: (f = msg.getTrackevent()) && proto.rtc.TrackEvent.toObject(includeInstance, f),
+subscription: (f = msg.getSubscription()) && proto.rtc.SubscriptionReply.toObject(includeInstance, f),
+error: (f = msg.getError()) && proto.rtc.Error.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -3897,7 +3907,7 @@ proto.rtc.MediaType = {
   MEDIAUNKNOWN: 0,
   USERMEDIA: 1,
   SCREENCAPTURE: 2,
-  CAVANS: 3,
+  CANVAS: 3,
   STREAMING: 4,
   VOIP: 5
 };

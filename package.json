@@ -1,6 +1,6 @@
 {
-  "name": "ion-sdk-js",
-  "version": "1.8.2",
+  "name": "@pilab/ion-sdk-js",
+  "version": "1.8.3",
   "description": "A js sdk for ion-sfu or ion",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,10 +18,9 @@
     "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
-    "web-dev": "webpack serve --mode development --open --config ./webpack.dev.config.js --hot --inline --port 8081 --host localhost"
+    "postversion": "git push && git push --tags"
   },
-  "author": "pion",
+  "author": "Progressive Innovation LAB",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.12.10",

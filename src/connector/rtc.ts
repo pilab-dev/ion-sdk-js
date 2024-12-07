@@ -1,11 +1,11 @@
 import { grpc } from '@improbable-eng/grpc-web';
-import { Service, Connector } from './ion';
-import Client, { Configuration, Trickle } from '../client';
-import { Signal } from '../signal';
 import { EventEmitter } from 'events';
-import * as sfu_rpc from '../_library/proto/rtc/rtc_pb_service';
-import * as pb from '../_library/proto/rtc/rtc_pb';
+import Client, { Configuration, Trickle } from '../client';
+import * as pb from '../gen/rtc_pb';
+import * as sfu_rpc from '../gen/rtc_pb_service';
+import { Signal } from '../signal';
 import { LocalStream, RemoteStream } from '../stream';
+import { Connector, Service } from './ion';
 
 /**
  * TrackState: track state
