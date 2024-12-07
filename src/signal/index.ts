@@ -1,5 +1,4 @@
 import { Trickle } from '../client';
-export { Trickle };
 
 export interface Signal {
   onnegotiate?: (jsep: RTCSessionDescriptionInit) => void;
