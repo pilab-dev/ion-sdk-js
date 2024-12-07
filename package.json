@@ -15,7 +15,6 @@
     "dev": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare": "yarn build && yarn bundle",
     "prepublishOnly": "yarn lint",
     "preversion": "yarn lint",
     "version": "yarn format && git add -A src",
@@ -49,6 +48,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.3.7",
     "@improbable-eng/grpc-web": "^0.14.1",
+    "@pilab/ion-sdk-js": "^1.8.3-2",
     "browser-headers": "^0.4.1",
     "events": "^3.0.0",
     "google-protobuf": "^3.6.1",
