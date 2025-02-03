@@ -1301,10 +1301,10 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-14.14.14.tgz"
   integrity sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
 
-"@types/sdp-transform@2.4.4":
-  version "2.4.4"
-  resolved "https://registry.npmjs.org/@types/sdp-transform/-/sdp-transform-2.4.4.tgz"
-  integrity sha512-cTpXVbNaN1YL++3mYArwlaujujeVe8ty66rbZPdFWx94fxM7jFjs5X621esca40yRe45htNdXROMIr2cgI+xGg==
+"@types/sdp-transform@2.4.9":
+  version "2.4.9"
+  resolved "https://registry.yarnpkg.com/@types/sdp-transform/-/sdp-transform-2.4.9.tgz#26ef39f487a6909b0512f580b80920a366b27f52"
+  integrity sha512-bVr+/OoZZy7wrHlNcEAAa6PAgKA4BoXPYVN2EijMC5WnGgQ4ZEuixmKnVs2roiAvr7RhIFVH17QD27cojgIZCg==
 
 "@types/uuid@8.3.0":
   version "8.3.0"
@@ -4970,9 +4970,9 @@ schema-utils@^1.0.0:
     ajv-keywords "^3.1.0"
 
 sdp-transform@^2.14.0:
-  version "2.14.0"
-  resolved "https://registry.npmjs.org/sdp-transform/-/sdp-transform-2.14.0.tgz"
-  integrity sha512-8ZYOau/o9PzRhY0aMuRzvmiM6/YVQR8yjnBScvZHSdBnywK5oZzAJK+412ZKkDq29naBmR3bRw8MFu0C01Gehg==
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/sdp-transform/-/sdp-transform-2.15.0.tgz#79d37a2481916f36a0534e07b32ceaa87f71df42"
+  integrity sha512-KrOH82c/W+GYQ0LHqtr3caRpM3ITglq3ljGUIb8LTki7ByacJZ9z+piSGiwZDsRyhQbYBOBJgr2k6X4BZXi3Kw==
 
 select-hose@^2.0.0:
   version "2.0.0"
